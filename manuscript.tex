@@ -1,0 +1,212 @@
+% This template is from ^^^iulatex^^^. Everything except this comment and where marked is from that
+% file. Area added to the original version of this file marked with "% Ben" and horizontal bracket
+% delimiters (Area includes any whitespace, the brackets themselves, and the "% Ben" comment).
+% Authors in section titles are ordered to respect their order in their reference entries.
+
+\documentclass[showabstract,showacknowledgments,showpreface,showdedication]{iuphd} 
+
+% For title and abstract page
+
+% Ben modified the value between the squiggly brackets of the commands in this section (and added
+% this line and comment, as well as the section indicators enclosing this area). He also uncommented
+% the \department command and removed the comment that came with that line.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                                  %
+\title{Exploring Representation Learning Through Alternate Lenses}
+\author{Benjamin Vincent Cutilli}
+\date{December 2021} % Completion date of Dissertation
+\department{Luddy School of Informatics, Computing, and Engineering} 
+%                                                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% For acceptance and abstract page
+
+% The names here were changed by Ben (but he kept the ", PhD" part), with the \readerthree and
+% \readerfour commands removed entirely as well as the line using \defensedate
+\committeechair{Professor David Crandall, PhD}
+\readertwo{Professor Donald Williamson, PhD}
+
+% Ben changed the year here
+% For Copyright Page
+\cryear{2021} % Copyright year
+% Ben
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                                  %
+
+% Using ^^^amsmath^^^ here
+\usepackage{amsmath}
+% And ^^^biblatex^^^ here. Using "alphabetical" because this file used the "alpha" style in a
+% (now-commented-out) command below
+\usepackage[style=alphabetic]{biblatex}
+% Package is found at ^^^graphicx^^^
+\usepackage{graphicx}
+
+\addbibresource{bibtex.bib}
+
+%                                                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\acceptancepage
+
+% This page is optional
+%\copyrightpage
+
+
+% This page is optional but generally included
+
+% Ben; however, the enclosing part of the command was here before
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                                  %
+
+% Originally the contents of this command said that it is a good idea to "mention the members of
+% your committee here", so by including the reviewers, this recommendation is likely fulfilled.
+\begin{acknowledgments}
+David Crandall was the advisor of this thesis, and was helpful in many ways (including, but not
+limited to, what should go into the manuscript, super accommodating when personal issues have
+arisen, and general advice for thesis). He and Professor Donald Williamson (Indiana University
+Bloomington) reviewed this thesis, so for that I am grateful. Sven Bambach (a postdoc at the time)
+talked with me about subitization with networks, which surely helped with the thesis. And, finally,
+my family and friends for the general support they have provided during what, personally, was a
+difficult time for the author. Thank you, everyone.
+\end{acknowledgments}
+
+%                                                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% This page is optional
+
+% Next three lines were commented out by Ben because he doesn't want to give one, and it says
+%"(optional)" in it
+%\begin{dedication}
+%This is the (optional) dedication page. Per Graduate School standards, this page should appear with no title and should be centered horizontally and vertically.
+%\end{dedication}
+
+% This page is optional
+
+% Same reason as the "dedication" section above for why neutralized as comments
+%\begin{preface}
+%This is the (optional) preface page which can be used if you wish. This page should appear after the dedication (or acknowledgements page if there is no dedication page) and before the abstract page.
+%\end{preface}
+
+% % This page is required
+
+\begin{abstract}
+% The contents that were here originally were removed and replaced with these three lines (the third
+% being the line below) by Ben
+\input{abstract.tex}
+\end{abstract}
+
+\newpage
+
+% This page is required
+
+\tableofcontents
+
+
+% Ben
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                                  %
+
+\chapter*{Introduction}
+
+\input{introduction.tex}
+
+\chapter{Representation via Subitization}
+
+\section{History}
+
+\subsection{\textit{Learning to Count Objects in Images} (Lempitsky and Zisserman)}
+\input{Counting/LaTeX/learningtocount.tex}
+\subsection{\textit{Counting in the Wild} (Arteta et.\ al)}
+\input{Counting/LaTeX/countinginthewild.tex}
+\subsection{\textit{Salient Object Subitizing} (Zhang et.\ al)}
+\input{Counting/LaTeX/salientobjectsubitizing.tex}
+\subsection{\textit{Understanding the Ability of Deep Neural Networks to Count Connected Components in Images} (Guan and Loew)}
+\input{Counting/LaTeX/understandingtheability.tex}
+\subsection{\textit{Deep Inside Convolutional Networks: Visualizing Image Classification Models and Saliency Maps} (Simonyan, Vedaldi, and Zisserman)}
+\input{Counting/LaTeX/deepinsideconvolutionalnetworks.tex}
+
+\section{The Network Whisperer}
+\label{detectionasproofofrepresentation}
+\input{Counting/LaTeX/nonliteraturereview.tex}
+
+
+
+\chapter{Representation in the Face of Adversaries}
+
+\section{Predecessors}
+
+\subsection{\textit{Intriguing Properties of Neural Networks} (Szegedy et. al)}
+\input{Friendly/LaTeX/intriguingproperties.tex}
+\subsection{\textit{Explaining and Harnessing Adversarial Examples} (Goodfellow, Schlens, and Szegedy)}
+\input{Friendly/LaTeX/harnessing.tex}
+\subsection{\textit{Towards Deep Neural Network Architectures Robust to Adversarial Examples} (Gu and Rigazio)}
+\input{Friendly/LaTeX/towardsgu.tex}
+\subsection{\textit{Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples} (Athalye, Carlini, and Wagner)}
+\input{Friendly/LaTeX/obfuscated.tex}
+\label{oggafsoscdtae}
+\subsection{\textit{Towards Deep Learning Models Resistant to Adversarial Attacks} (Madry et. al)}
+\label{tdlmrtaa}
+\input{Friendly/LaTeX/towardsmadry.tex}
+\subsection{\textit{Adversarial Logit Pairing} (Kannan, Kurakin, and Goodfellow)}
+\input{Friendly/LaTeX/adversariallogit.tex}
+\subsection{\textit{Ensemble Adversarial Training: Attacks and Defenses} (Tramèr et. al)}
+\input{Friendly/LaTeX/ensemble.tex}
+
+\section{Defense Proposals}
+
+\subsection{Gradient Magnitude Reduction}
+\label{gradientmagnitudereduction}
+\input{Friendly/LaTeX/gradientbased.tex}
+
+\subsection{Elastic Sigmoid}
+\input{Friendly/LaTeX/elastic.tex}
+
+\subsection{Pairwise Difference}
+\input{Friendly/LaTeX/pairwise.tex}
+
+\subsection{Angular Neurons}
+\label{cosineneurons}
+\input{Friendly/LaTeX/angular.tex}
+
+
+\section{Evaluation}
+\input{Friendly/LaTeX/results.tex}
+
+\chapter*{Conclusion}
+\input{conclusion.tex}
+
+%                                                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\addcontentsline{toc}{chapter}{Bibliography}
+
+% This line was in here originally, but needed to be removed
+% \bibliographystyle{alpha}
+
+% Ben
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                                  %
+
+% Removed the appendix code and the \newpage above it from this file because I didn't need it and
+% ^^^iulatex^^^ said I could.
+
+\printbibliography
+
+%                                                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+% Adds a line for your CV without a page number
+
+% Ben commented this whole command out
+%\addtocontents{toc}{%
+%  \protect\contentsline{chapter}{Curriculum Vitae}{}}
+\end{document}

@@ -1,0 +1,34 @@
+A simple modification to penalizing the gradient is that, while doing so can change the weights, a
+sigmoid function's derivative formulation cannot. Therefore, it make make sense to modify the
+sigmoid activation function so that this is possible. There are many ways to do this: essentially,
+one could enumerate all different combinations of sigmoid and some learnable parameter. One simple
+use case for such a parameter is to multiply the activation potential by a scalar parameter $s$. The
+reason why this can help change the layer's derivative is very simple: given the chain rule, the
+derivative w.r.t. the potential $d$ (for ``dot product'') for the sigmoid activation function is
+\begin{gather}
+    \frac{\partial \text{sigmoid}(d)}{\partial d}
+    = \frac{\partial}{\partial d} \frac{1}{1 + e^{-d}} \notag \\[10pt]
+    = - \frac{1}{(1 + e^{-d})^2} \frac{\partial}{\partial d} e^{-d} \label{etothe} \\[10pt]
+    = - \frac{1}{(1 + e^{-d})^2} e^{-d} \frac{\partial}{\partial d} (-d)
+    = - \frac{1}{(1 + e^{-d})^2} e^{-d} (-1) \notag
+\end{gather}
+When we add in $s$, (\ref{etothe}) (and the rest of the derivative) becomes
+\[
+    - \frac{1}{(1 + e^{-sd})^2} \frac{\partial}{\partial d} e^{-sd}
+    = - \frac{1}{(1 + e^{-sd})^2} e^{-sd} \frac{\partial}{\partial d} (-sd)
+    = - \frac{1}{(1 + e^{-sd})^2} e^{-sd} (-s)
+\]
+As you can see, $s$ has a direct effect on the derivative of this new sigmoid function. If this is a
+learnable parameter, decreasing $\left| s \right|$ through gradient descent will help with decreasing the norm of
+the gradient. We call this new activation the \textit{Elastic Sigmoid}.
+
+Note that there are nice properties in both directions in which the magnitude of $s$ can change. If
+said magnitude gets smaller, we get the aforementioned effect. However, it is possible that it
+becomes large if activation potentials never end up close to the origin. This is because, as $s$
+increases in magnitude, the sigmoid tightens up to approximate the step function (or the
+flipped-around-the-y-axis version of it caused by $s < 0$), exploiting the flatness of the step
+function as long as the potentials end up far from the d-axis origin.
+
+Another decision to make is whether or not there should be an $s$ for each neuron in the layer. This
+obviously allows more flexibility if one neuron could benefit from a differently shaped Elastic Sigmoid
+compared to another. We just use a single $s$ for the layer's activation due to time constraints.

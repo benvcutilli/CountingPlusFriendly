@@ -1,0 +1,44 @@
+One solution to the adversarial examples problem is a simple and intuitive one: to penalize the
+gradient with respect to the image. As stated in the literature review, this was proposed by
+\cite{gu2015deep} (however, we independently developed it). To see why this makes sense, consider
+the fundamental situation when it comes to adversarial examples: as \cite{goodfellow2015explaining}
+states, dot products in deep learning can have \textit{many} terms. If this is unavoidable (more
+on that later in other proposed defenses), then all we can do is to reduce the importance of each
+pixel/subpixel, which can be seen as penalizing the gradient w.r.t. the (sub)pixels.
+
+How to do this is not necessarily straightforward. For starters, we could penalize its norm. Which
+norm to use may matter, but, in our implementation of this technique, we stuck with a normal 2-norm.
+The calculation of the loss comes in two steps. The first step is do normal backpropagation towards
+the image in order to get the gradient with respect to the image. The norm is then calculated, and
+added to the normal loss term. Backpropagation occurs from there, which requires calculating the
+``second derivative'' of the gradient (we use the derivative of the norm as the the gradient is a
+vector and, therefore, its gradient is not well-defined). However, our choice of activation
+function(s) may be problematic if they are not smooth (for example, the
+ReLU\cite{pmlr-v15-glorot11a} activation function, which we found to be
+problematic)\footnote{Double-checked by Stefan Lee}. To see why let us look at the ReLU activation
+function. ReLU is specified as
+\[
+    \begin{cases}p & \text{for }p > 0 \\ 0 & \text{otherwise}\end{cases}
+\]
+where $p$ is the activation potential coming into the activation function. On one side of this
+piecewise function, the derivative is always $0$, and on the other side, it is always $1$. It is
+plain to see, then, that the second derivative will be zero everywhere, thus providing no utility when
+it comes to gradient descent. This is a flaw in the nature of its linear, piecewise behavior;
+mathematically, the second derivative does \textit{approximately} exist in the form of the
+derivative of the SoftPlus~\cite{NIPS2000_44968aec} function. As a result (see § \ref{detectingshapes}), the image's
+second derivative is zero. This is the case if we ignore the loss function, as one thing to consider
+is the loss function's effect on the second derivative. Here, we can run into some trouble in our
+hypothesis. Considering that using a smooth non-linear loss function $L$ is extremely common (for
+example, mean squared error), there \textit{does} exist a non-zero second derivative for it. When
+applying the product rule in this situation, for neural network $f$, we get
+\[
+    \frac{\partial}{\partial a} \left[ \frac{\partial L}{\partial f} \cdot \frac{\partial f}{\partial a} \right]
+\]
+as one of the terms in the product rule. This is non-zero (as our only hope of this being zero is if
+the \textit{derivative} of the network output is zero). So, it \textit{is} possible to get some
+second derivative out of a ReLU-based network (or any piecewise linear network, for that matter).
+However, for our experiments, smooth functions were used to be more mathematically sound and to be
+more sure that we have gotten closer to exhausting ways in which this method can go wrong.
+
+Following \cite{goodfellow2015explaining}, we backpropagate from the correct class's loss. We will
+call this method \textit{Gradient Magnitude Reduction} (GMR).

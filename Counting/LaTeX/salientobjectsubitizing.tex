@@ -1,0 +1,31 @@
+From the perspective of subitizing, \cite{Zhang_2015_CVPR} took a more canonical approach. In this
+paper, they worked with the definition that subitization capabilities generally end for more than
+four objects within the image. With that in mind, they built a network (among other methods to
+compare against) that placed an image within five categories: counts zero through three were four
+of them, and a final ``4+'' category was used for images with more than three objects (the number,
+they state, comes from
+\cite{edselc.2-52.0-001709992019760101, edssch.oai:escholarship.org/ark:/13030/qt9fn2777219820101}
+(in that order), but we too have heard from \cite{edselc.2-52.0-001709992019760101} and, initially,
+\cite{subitizingyoutube}). Further, they used the defintion of subitization that states that any
+kind of object within the image is part of the count (the objects do not need to be similar) as long
+as they are considered ``salient'' in the sense that they are important. They ended up addressing
+two tasks: pure subitization and using the subitization count to make object detection more
+reliable.
+
+They generated their own dataset by taking images from other ones and paid annotators via Amazon
+Mechanical Turk (AMT)~\cite{annotators} to determine how many objects were in each image. Further,
+they needed subitization performance to compare to; the AMT annotators were not subitizing when
+annotating, as the authors were looking for ground truth information. Although the author believes
+this was not stated in the paper, doing a human experiment via AMT is probably not easy to run. As a
+result, they set up an experiment where they asked three people separate from AMT to perform
+subitization, showing a participant each image for a half of a second. This was used as a
+point-of-comparison as subitization is an anthropological phenomenon. Further, they came up with
+various subitization algorithms, with their main contribution being two neural networks, one which
+directly regressed the counts, and the other which was used to generate features which were
+classified with a support vector machine. All but one of the other methods also used an SVM to
+classify method-specific features. Both network-based solutions handily beat the others, and the
+non-SVM network version drastically outperformed the SVM one except in detecting when no salient
+objects are present. They went on to apply the winner to two different detection problems, normal
+detection (where the network was used as a prior to determine whether any object should be detected
+at all) and object proposal (where the number of bounding boxes was limited by the count of objects
+determined by the network).

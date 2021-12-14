@@ -1,0 +1,36 @@
+Neural networks have been an indispensable tool when it comes to artificial intelligence. They have
+made possible the automation of many tasks that were previously impossible~\cite{redmon2016look,
+ILSVRC15}. Due to the Universal Approximation Theorem~\cite{HORNIK1989359}, neural networks are
+theoretically able to perform any task, and thus we find them effective at solving previously
+unsolved problems. Mainstream training algorithms for neural networks, such as Stochastic Gradient
+Descent, require lots of data for the neural network to learn an effective function. However, the
+definition of ``effective'' does not necessary mean that the learned function truly represents the
+data on which it is trained~\cite{szegedy2014intriguing}. While some work (for example,
+\cite{yosinski2015understanding}) has shown that this seems to be the case, other
+evidence~\cite{szegedy2014intriguing} suggests the exact opposite. Clearly, more work into which
+training for proper representations is examined is necessary.
+
+In this thesis, we explore some interesting points regarding representation. The first subject we
+discuss is \textit{subitization}~\cite{10.2307/1418556, subitizingyoutube}, a counting method that
+humans possess in which the process of keeping track of an internal counter of each instance of an
+object (or ``each object instance''; the difference is discussed/debated later) is short-circuited,
+the count being directly determined by what the view containing the object looks like. The question
+we pose is: can we train a neural network to do the same, and does the learning process translate
+into the network actually understanding what the object looks like? Further, how can we even
+determine that a network has such properties in the first place? If a proper representation exists,
+can we localize each instance of an object?
+
+In the second part, we directly address the aforementioned issue brought to light by
+\cite{szegedy2014intriguing}. We take a look at multiple types of defenses, one of which modifies
+the loss function, a commonly used strategy~\cite{goodfellow2015explaining, kannan2018adversarial,
+madry2019deep}, and three structural techniques, one of which modifies the former non-structural
+defense. While not successful, at the very least, we analytically asses the defenses to provide some
+kind of justification for them that structural changes can produce some sort of defense against
+adversaries. As a result, it may make sense for future research to consider different types of
+networks as an alternative.
+
+These two subjects probably do not do much more than scratch the surface of the topic of
+representation learning, but hopefully it injects some amount of motivation into the field to
+further explore the topic. The author believes that not enough focus has been on the core concepts
+that underpin representation, which is backed up by the general consensus that neural networks are a
+mathematical black box.

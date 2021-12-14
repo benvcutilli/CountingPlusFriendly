@@ -1,0 +1,729 @@
+{
+    "references": {
+        "shapelyvia": {
+            "Title": "algorithm - Finding if two polygons Intersect in Python? - Geographic Information Systems Stack Exchange",
+            "Author": "Users \"radouxju\", \"Martin Thoma\", \"Devdatta Tengshe\"",
+            "URL": "https://gis.stackexchange.com/questions/90055/how-to-find-if-two-polygons-intersect-in-python",
+            "Fetched": "2017.8/9",
+            "Via": "Probably Google"
+        },
+        "softplus": {
+            "Title": "Incorporating Second-Order Functional Knowledge for Better Option Pricing",
+            "Authors": "Charles Dugas, Yoshua Bengio, François Bélise, Claude Nadeau, René Garcia",
+            "URL": "https://proceedings.neurips.cc/paper/2000/file/44968aece94f667e4095002d140b5896-Paper.pdf",
+            "Published in": "Neural Information Processing Systems proceedings, year 2000",
+            "Via": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks), which said in \"Variants\" that this was one of the original papers for this function. I used the sequence of authors found on this paper (as in, where the authors were placed) for the sequence in this reference.",
+            "Fetched": "2021.4.13 EDT"
+        },
+        "hintonslides": {
+            "Title": "lec6.pdf",
+            "Author": "Geoffrey Hinton, Nitish Srivastava, Kevin Swersky (authors appeared in that order on first slide)",
+            "URL": "http://www.cs.toronto.edu/~hinton/coursera/lecture6/lec6.pdf"
+            "Fetched": "2021.4.16 EDT and 2021.4.17 EDT",
+            "Via": "Googling",
+            "Comment": "https://towardsdatascience.com/understanding-rmsprop-faster-neural-network-learning-62e116fcf29a, in section 1, suggests that this is the correct reference for RMSprop seeing as these are just slides which appear to be \"unpublished\" (the word chosen by that Towards Data Science section)"
+        },
+        "rmspropcode": {
+            "Title": "rmsprop.py",
+            "Author": "User \"chainer\"",
+            "URL": "https://github.com/chainer/chainer/blob/v7.7.0/chainer/optimizers/rmsprop.py",
+            "Fetched": "2021.4.17 EDT"
+        },
+        "changeofbasemethod": {
+            "Title": "NumPy: Logarithm with base n - Stack Overflow",
+            "Author": "Users \"dwitvliet\" and \"Philipp Stephan\"",
+            "URL": "https://stackoverflow.com/questions/25169297/numpy-logarithm-with-base-n",
+            "Fetched": "2021.4.18 EDT",
+            "Version Date": "2020.1.31 EDT",
+            "Via": "Google-searching for \"numpy logarithm with custom base\""
+        },
+        "pythonargparse": {
+            "Title": "argparse — Parser for command-line options, arguments and sub-commands — Python 3.9.4 documentation",
+            "Author": "Python Software Foundation",
+            "URL": "https://docs.python.org/3/library/argparse.html",
+            "Revision date": "2021.4.19",
+            "Fetched": "2021.4.19 EDT"
+        },
+        "pythonbuiltins": {
+            "Title": "Built-in Functions — Python 3.9.4 documentation",
+            "Author": "Python Software Foundation",
+            "URL": "https://docs.python.org/3/library/functions.html"
+        },
+        "chainertutorial": {
+            "Title": "Define your own function — Chainer 7.7.0 documentation",
+            "Author": "Preferred Networks, Preferred Infrastructure",
+            "URL": "https://docs.chainer.org/en/stable/guides/functions.html",
+            "Fetched": "late 2020 or early 2021 (timezone unknown), 2021.4.24 EDT"
+        },
+        "backproputils": {
+            "Title": "_backprop_utils.py",
+            "Author": "User \"chainer\"",
+            "URL": "https://github.com/chainer/chainer/blob/f53e57434089fa6f8dfe93a1306ba394cbabf8ad/chainer/_backprop_utils.py",
+            "Chainer version": "7.7.0"
+        },
+        "pythoncopy": {
+            "Title": "copy — Shallow and deep copy operations — Python 3.9.4 documentation",
+            "Author": "Python Software Foundation",
+            "URL": "https://docs.python.org/3/library/copy.html?highlight=copy#module-copy",
+            "Fetched": "2021.4.24 EDT"
+        },
+        "softplusmodule": {
+            "Title": "softplus.py",
+            "Author": "User \"chainer\"",
+            "URL": "https://github.com/chainer/chainer/blob/v7.7.0/chainer/functions/activation/softplus.py",
+            "Fetched": "Around 2021.4.24 EDT"
+        },
+        "derivativeidentities": {
+            "Title": "Derivative Rules",
+            "Author": "MathIsFun.com",
+            "URL": "https://www.mathsisfun.com/calculus/derivatives-rules.html",
+            "Fetched": "2021.4.21 EDT",
+            "Via": "Googling \"derivative identities\""
+        },
+        "python": {
+            "Title": "Python 3",
+            "Author": "Python Software Foundation",
+            "URL": "python.org"
+        },
+        "matrixcookbook": {
+            "Title": "The Matrix Cookbook",
+            "Authors": "Kaare Brandt Petersen, Michael Syskind Pedersen (I assume it is in that order because the book has it that way)",
+            "URL": "https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf",
+            "Published": "2012.11.15"
+        },
+        "numpyargmax": {
+            "Title": "numpy.argmax — NumPy v1.20 Manual",
+            "Author": "SciPy contributors",
+            "URL": "https://numpy.org/doc/stable/reference/generated/numpy.argmax.html",
+            "Fetched": "2021.4 EDT or 2021.5.1-2 EDT"
+        },
+        "numpyunravel": {
+            "Title": "numpy.unravel_index — NumPy v1.20 Manual",
+            "Author": "SciPy contributors",
+            "URL": "https://numpy.org/doc/stable/reference/generated/numpy.unravel_index.html"
+        },
+        "chainerbatchnormalizationcode": {
+            "Title": "batch_normalization.py",
+            "Author": "User \"chainer\"",
+            "URL": "https://github.com/chainer/chainer/blob/v7.7.0/chainer/links/normalization/batch_normalization.py",
+            "Fetched": "First half of 2021",
+            "Commit hash": "6264c21937efacf8c2b744e78a3714964864b95e"
+        },
+        "chainergetdevice": {
+            "Title": "chainer.get_device — Chainer 7.7.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others"
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.get_device.htm"
+        },
+        "pythonpathlib": {
+            "Title": "pathlib",
+            "Author": "Python Software Foundation",
+            "URL": "https://docs.python.org/3/library/pathlib.htm"
+        },
+        "pythonjson": {
+            "Title": "json",
+            "Author": "Python Software Foundation",
+            "URL": "https://docs.python.org/3/library/json.html"
+        },
+        "pythonmath": {
+            "Title": "math",
+            "Author": "Python Software Foundation",
+            "URL": "https://docs.python.org/3/library/math.html"
+        },
+        "pythoncollections": {
+            "Title": "collections",
+            "Author": "Python Software Foundation",
+            "URL": "https://docs.python.org/3/library/collections.html"
+        },
+        "chainersin": {
+            "Title": "chainer.functions.sin — Chainer 7.7.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.functions.sin.html"
+        },
+        "chainerrelu": {
+            "Title": "chainer.functions.relu — Chainer 7.7.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.functions.relu.html"
+        },
+        "chainersigmoid": {
+            "Title": "chainer.functions.sigmoid — Chainer 7.7.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.functions.sigmoid.html"
+        },
+        "bruceemail": {
+            "Email Information": "This was, I believe, one or more emails in which Bruce told me to limit the number of processes and/or threads I'm using. Probably was around late 2018."
+        },
+        "numpydtype": {
+            "Title": "https://numpy.org/doc/stable/reference/arrays.dtypes.html"
+            "Author": "People that contribute to SciPy"
+            "URL": "https://numpy.org/doc/stable/reference/arrays.scalars.html"
+        },
+        "batchrenormalization": {
+            "Title": "Batch Renormalization: Towards Reducing Minibatch Dependence in Batch-Normalized Models",
+            "Author": "Sergey Ioffe",
+            "URL": "https://arxiv.org/pdf/1702.03275.pdf",
+            "arXiv ID": "1702.03275v2",
+            "Version date": "2017.3.30"
+        },
+        "chainerbatchrenormalization": {
+            "Title": "chainer.links.BatchRenormalization — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others"
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.links.BatchRenormalization.html"
+        },
+        "chainerextension": {
+            "Title": "chainer.training.Extension — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.training.Extension.html"
+        },
+        "stackoverflowweirdbug": {
+            "Title": "python - Matplotlib - Fail to allocate bitmap - Stack Overflow",
+            "Author": "Users \"Jordy\", Valentino Lorentz",
+            "URL": "https://stackoverflow.com/questions/53897248/matplotlib-fail-to-allocate-bitmap",
+            "Fetched": "2021.6.23 EDT",
+            "Version Date": "Starting 2018.12.22, ending 2018.12.31, EDT",
+            "Via": "I googled the error \"[f]ailed to allocate bitmap\""
+        },
+        "chainer": {
+            "Title": "Chainer",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "chainer.org"
+        },
+        "chainerrmsprop": {
+            "Title": "chainer.optimizers.RMSprop — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.optimizers.RMSprop.html"
+        },
+        "chainerprogressbar": {
+            "Title": "chainer.training.extensions.ProgressBar — Chainer 7.8.0 documentation"
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.training.extensions.ProgressBar.html"
+        },
+        "json": {
+            "Title": "Standard ECMA-404: The JSON Data Interchange Syntax",
+            "Author": "ECMA International",
+            "Edition": "2nd",
+            "Version Date": "2017.12",
+            "URL": "https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf"
+        },
+        "missing": {
+            "Reference Meaning": "Don't know which reference should be cited, there can be multiple unknown references that use this single one"
+        },
+        "labeledimagedataset": {
+            "Title": "chainer.datasets.LabeledImageDataset — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.datasets.LabeledImageDataset.html"
+        },
+        "saliency": {
+            "Title": "Deep Inside Convolutional Networks: Visualize Image Classification Models and Saliency Maps",
+            "Author": "Karen Simonyan, Andrea Vedaldi, and Andrew Zisserman",
+            "URL": "https://arxiv.org/pdf/1312.6034.pdf",
+            "Version Date": "2014.4.19",
+            "arXiv ID": "1312.6034v2",
+            "Common": "Paper put the authors in that order"
+        },
+        "pillow": {
+            "Title": "Pillow",
+            "Author": "Many, including Fredrik Lundh and Alex Clark",
+            "URL": "https://pillow.readthedocs.io/en/stable/"
+        },
+        "numpy": {
+            "Title": "NumPy",
+            "URL": "numpy.org"
+        },
+        "chainerfunctionnode": {
+            "Title": "chainer.FunctionNode — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.FunctionNode.html"
+        },
+        "chainervariable": {
+            "Title": "chainer.Variable — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.Variable.html"
+        },
+        "pytorchcallable": {
+            "Title": "Module — PyTorch 1.9.0 documentation",
+            "Author": "Non-specific PyTorch authors",
+            "URL": "https://pytorch.org/docs/stable/generated/torch.nn.Module.html"
+        },
+        "chainerlink": {
+            "Title": "chainer.Link — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others"
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.Link.html"
+        },
+        "cudacore": {
+            "Title": "Programming Guide :: CUDA Toolkit Documentation",
+            "Author": "NVIDIA Corporation",
+            "URL": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html"
+        },
+        "cuda": {
+            "Title": "CUDA Toolkit | NVIDIA Developer",
+            "Author": "NVIDIA Corporation",
+            "URL": "https://developer.nvidia.com/cuda-toolkit"
+        },
+        "batchnormalization": {
+            "Title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+            "Author": "Christian Szegedy and Sergey Ioffe",
+            "URL": "https://arxiv.org/pdf/1502.03167.pdf",
+            "Comment": "Sequence in which the authors are displayed is from the paper",
+            "arXiV ID": "1502.03167v7",
+            "Version Date": "2015.3.2"
+        },
+        "chainerbatchnormalization": {
+            "Title": "chainer.links.BatchNormalization — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others"
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.links.BatchNormalization.html"
+        },
+        "networksizecrandall": {
+            "Comment": "Talking (or emailing or whatever) with David Crandall around the fall of 2017"
+        },
+        "pythonrandom": {
+            "Title": "random — Generate pseudo-random numbers — Python 3.9.7 documentation",
+            "Author": "Python Software Foundation",
+            "URL": "https://docs.python.org/3/library/random.html"
+        },
+        "pythonmultiprocessing": {
+            "Title": "multiprocessing — Process-based parallelism — Python 3.9.7 documentation",
+            "Author": "Python Software Foundation",
+            "URL": "https://docs.python.org/3/library/multiprocessing.html"
+        },
+        "chainermultiprocessiterator": {
+            "Title": "chainer.iterators.MultiprocessIterator — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.iterators.MultiprocessIterator.html"
+        },
+        "multiprocessslownsysresults": {
+            "Comment": "Profiling the program showed this, but I can't remember how"
+        },
+        "pytorchutils": {
+            "Title": "torch.utils.data — PyTorch 1.9.1 documentation",
+            "Author": "Multiple",
+            "URL": "https://pytorch.org/docs/stable/data.html"
+        },
+        "chaineriterator": {
+            "Title": "chainer.dataset.Iterator — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.dataset.Iterator.html"
+        },
+        "chainermultithreadediterator": {
+            "Title": "chainer.iterators.MultithreadIterator — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.iterators.MultithreadIterator.html"
+        },
+        "chainergithubiterator": {
+            "Title": "chainer/iterator.py at v7.8.0 · chainer/chainer",
+            "Author": "Whoever wrote this file",
+            "URL": "https://github.com/chainer/chainer/blob/v7.8.0/chainer/dataset/iterator.py",
+            "Git hash": "0e5d6127ebc9adb8112442c6e3a8a2abe9e3b007"
+        },
+        "shapely": {
+            "Title": "Shapely",
+            "Author": "See \"Credits\" on https://shapely.readthedocs.io/en/stable/project.html",
+            "URL": "https://shapely.readthedocs.io/en/stable/"
+        },
+        "b551fall": {
+            "Title": "CS B551: Elements of Artificial Intelligence",
+            "Author": "David Crandall, Sven Bambach, Zhenhua Chen, Shujon Naha, Yang Zhang, Hanfei Mei, and Tejashree Khot",
+            "School": "Indiana University Bloomington",
+            "Semester": "Fall 2017",
+            "Department": "School of Informatics and Computing"
+        }
+        "b551spring": {
+            "Title": "CS B551: Elements of Artificial Intelligence",
+            "Author": "David Crandall, Ali Varamesh, Zehua Zhang, and Ben Cutilli",
+            "School": "Indiana University Bloomington",
+            "Semester": "Spring 2017",
+            "Department": "School of Informatics and Computing"
+        },
+        "identicalshapes": {
+            "Comment": "Email from David Crandall",
+            "Date": "2017.9.23"
+        },
+        "squaresfrom": {
+            "Comment": "Discussion with David Crandall, approximately in the fall of 2017"
+        }
+    },
+    
+    "markers": {
+        "shapelyvia": [
+            {
+                "refkey": "shapelyvia",
+                "locator": "radouxju's answer"
+            }
+        ],
+        "softplus": [
+            {
+                "refkey": "softplus"
+            }
+        ],
+        "rmsprop": [
+            {
+                "refkey": "hintonslides",
+                "locator": "slide \"6e\" up to (non-inclusive) last slide"
+            }
+        ],
+        "rmspropcode": [
+            {
+                "refkey": "rmspropcode",
+                "locator": "RMSpropRule.update_core_cpu(...)"
+            }
+        ],
+        "changeofbasemethod": [
+            {
+                "refkey": "changeofbasemethod"
+            }
+        ],
+        "argparsenamespace": [
+            {
+                "refkey": "pythonargparse",
+                "locator": "\"The Namespace object\""
+            }
+        ],
+        "builtinsvars": [
+            {
+                "refkey": "pythonbuiltins",
+                "locator": "vars(...) documentation"
+            }
+        ],
+        "chainerkernels": [
+            {
+                "refkey": "chainertutorial",
+                "locator": "\"Write an Elementwise Kernel Function\""
+            }
+        ],
+        "chainermultipleapplys": [
+            {
+                "refkey": "chainertutorial",
+                "locator": "first part of \"Implementing New-Style Functions\""
+            }
+        ],
+        "backproputils": [
+            {
+                "refkey": "backproputils"
+            }
+        ],
+        "pythoncopy": [
+            {
+                "refkey": "pythoncopy"
+            }
+        ],
+        "wrappingandcalling": [
+            {
+                "refkey": "softplusmodule",
+                "locator": "softplus(...) function"
+            },
+            {
+                "refkey": "chainerfunctions",
+                "locator": "maybe functions under \"Activation functions\""
+            }
+        ],
+        "mathisfunlog": [
+            {
+                "refkey": "derivativeidentites",
+                "locator": "\"Common Functions\" -> \"Logarithms\""
+            },
+        ],
+        "mathisfunexponent": [
+            {
+                "refkey": "mathisfunexponent",
+                "locator": "\"Common Functions\" -> \"Exponential\""
+            }
+        ],
+        "python": [
+            {
+                "refkey": "python"
+            }
+        ],
+        "matrixcookbookderivatives": [
+            {
+                "refkey": "matrixcookbook",
+                "locator": "equations 69, 74, 75"
+            }
+        ],
+        "unravelargmax": [
+            {
+                "refkey": "numpyargmax",
+                "locator": "\"Examples\""
+            }
+        ],
+        "numpyargmax": [
+            {
+                "refkey": "numpyargmax"
+            }
+        ],
+        "numpyunravel": [
+            {
+                "refkey": "numpyunravel"
+            }
+        ],
+        "chainerbatchnormalizationinit": [
+            {
+                "refkey": "chainerbatchnormalizationcode",
+                "locator": "BatchNormalization.__init__(..)"
+            }
+        ],
+        "chainerbatchnormalizationcode": [
+            {
+                "refkey": "chainerbatchnormalizationcode"
+            }
+        ],
+        "chainergetdevice": [
+            {
+                "refkey": "chainergetdevice"
+            }
+        ],
+        "pythonpathlib": [
+            {
+                "refkey": "pythonpathlib"
+            }
+        ],
+        "pythonjson": [
+            {
+                "refkey": "pythonjson"
+            }
+        ],
+        "pythonmath": [
+            {
+                "refkey": "pythonmath"
+            }
+        ],
+        "pythoncollections": [
+            {
+                "refkey": "pythoncollections"
+            }
+        ],
+        "chainersin": [
+            {
+                "refkey": "chainersin"
+            }
+        ],
+        "chainerrelu": [
+            {
+                "refkey": "chainerrelu"
+            }
+        ],
+        "chainersigmoid": [
+            {
+                "refkey": "chainersigmoid"
+            }
+        ],
+        "bruceemail": [
+            {
+                "refkey": "bruceemail"
+            }
+        ],
+        "numpydtypestring": [
+            {
+                "refkey": "numpydtype",
+                "locator": "Specifying and constructing data types"
+            }
+        ],
+        "numpydtype": [
+            {
+                "refkey": "numpydtype"
+            }
+        ],
+        "batchrenormalization": [
+            {
+                "refkey": "batchrenormalization"
+            }
+        ],
+        "chainerbatchrenormalization": [
+            {
+                "refkey": "chainerbatchrenormalization"
+            }
+        ],
+        "chainerextension": [
+            {
+                "refkey": "chainerextension"
+            }
+        ],
+        "chainerrmsprop": [
+            {
+                "refkey": "chainerrmsprop"
+            }
+        ],
+        "stackoverflowweirdbug": [
+            {
+                "refkey": "stackoverflowweirddbug",
+                "locator": "page title"
+            }
+        ],
+        "pythonargparse": [
+            {
+                "refkey": "pythonargparse"
+            }
+        ],
+        "chainer": [
+            {
+                "refkey": "chainer"
+            }
+        ],
+        "chainerprogressbar": [
+            {
+                "refkey": "chainerprogressbar"
+            }
+        ],
+        "json": [
+            {
+                "refkey": "json"
+            }
+        ],
+        "missing": [
+            {
+                "refkey": "missing"
+            }
+        ],
+        "builtinsvars": [
+            {
+                "refkey": "pythonbuiltins",
+                "locator": "vars(...) section"
+            }
+        ],
+        "labeledimagedataset": [
+            {
+                "refkey": "labeledimagedataset"
+            }
+        ],
+        "saliency": [
+            {
+                "refkey": "saliency"
+            }
+        ],
+        "pillow": [
+            {
+                "refkey": "pillow"
+            }
+        ],
+        "numpy": [
+            {
+                "refkey": "numpy"
+            }
+        ],
+        "chainerfunctionnode": [
+            {
+                "refkey": "chainerfunctionnode"
+            }
+        ],
+        "chainervariable": [
+            {
+                "refkey": "chainervariable"
+            }
+        ],
+        "pytorchcallable": [
+            {
+                "refkey": "pytorchcallable"
+            }
+        ],
+        "chainerlink": [
+            {
+                "refkey": "chainerlink"
+            }
+        ],
+        "kernelparadigm": [
+            {
+                "refkey": "cudacore",
+                "locator": "see 2.1"
+            }
+        ],
+        "gpulanguage": [
+            {
+                "refkey": "cudacore",
+                "locator": "throughout"
+            }
+        ],
+        "cuda": [
+            {
+                "refkey": "cuda"
+            }
+        ],
+        "batchnormalization": [
+            {
+                "refkey": "batchnormalization"
+            }
+        ],
+        "chainerbatchnormalization": [
+            {
+                "refkey": "chainerbatchnormalization"
+            }
+        ],
+        "networksizecrandall": [
+            {
+                "refkey": "networksizecrandall"
+            }
+        ],
+        "batchnormalizationplacement": [
+            {
+                "refkey": "batchnormalization",
+                "locator": "§ 3.2"
+            }
+        ],
+        "pythonrandom": [
+            {
+                "refkey": "pythonrandom"
+            }
+        ],
+        "pythonmultiprocessing": [
+            {
+                "refkey": "pythonmultiprocessing"
+            }
+        ],
+        "chainermultiprocessiterator": [
+            {
+                "refkey": "chainermultiprocessiterator"
+            }
+        ],
+        "multiprocessiteratorslownsysresults": [
+            {
+                "refkey": "multiprocessiteratorslownsysresults"
+            }
+        ],
+        "pytorchdataloader": [
+            {
+                "refkey": "pytorchutils",
+                "locator": "torch.utils.data.DataLoader"
+            }
+        ],
+        "chaineriterator": [
+            {
+                "refkey": "chaineriterator"
+            }
+        ],
+        "chainermultiprocessmultithreaded": [
+            {
+                "refkey": "chainermultiprocessiterator"
+            },
+            {
+                "refkey": "chainermultithreadediterator"
+            }
+        ],
+        "chainergithubiterator": [
+            {
+                "refkey": "chainergithubiterator"
+            }
+        ],
+        "shapely": [
+            {
+                "refkey": "shapely"
+            }
+        ],
+        "b551fall": [
+            {
+                "refkey": "b551fall"
+            }
+        ],
+        "b551spring": [
+            {
+                "refkey": "b551spring"
+            }
+        ],
+        "identicalshapes": [
+            {
+                "refkey": "identicalshapes"
+            }
+        ],
+        "squaresfrom": [
+            {
+                "refkey": "squaresfrom"
+            }
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+\cite{learningtocount} uses the idea of density in order to count objects. Density is the idea that
+each pixel has the ability to change the total count by a certain amount by just existing within the
+image. In other words, the density is the rate of change over a single pixel. The density of every
+pixel forms a \textit{density map}, and the way one is to use this density map is by calculating the
+integral of the density from the first pixel to the last.
+
+The task then is to find a model that outputs a proper density map. As this paper points out, the
+main question becomes ground truth collection. They point out that when humans count, it is common
+for them to tap on each instance of the object in the image. They therefore decided that \textit{dot
+annotations}, where the annotator puts a dot on each of the objects, is a reasonable expectation.
+However, dot annotations don't explicitly state density, just where the objects are. Therefore, the
+ground truth density needs to be modeled some other way.
+
+Naturally, they needed to pick a loss function. They define a function called the \textit{Maximum
+Excess Over Subarrays} (MESA). MESA finds the subarray (over $x$ and $y$, forming a box) whose $L_1$
+distance between two sets of density maps (in this case) is greatest. They give two reasons, via two
+counterexamples, for this choice. One of them is that, if we take the degenerate case of MESA where
+the only subarray is the whole image, then regression may be possible, but it requires that each
+sample be a full image (and also eliminates the usefulness of having a density map in the first
+place; they state that this is ``a direct mapping from some global image characteristics...to the
+number of objects is learned''\cite{learningtocount}[§ 1.1]). This is in contrast to the other scenario that they
+mention, where the summation of distances between each density value and its counterpart in the
+other density map addresses the issue of accurate density maps in theory and gives you substantially
+more samples to work with (as each pixel is a sample). However, it may be the case that an input
+image during training may output a density map that integrates to the right value, but small
+deviations between the ground truth density map and the predicted density map would cause the
+pixel-wise error to dramatically increase. They point out that this is bad for training purposes as
+it does not truly encode the counting error.
+
+They settled on the ground truth density being modeled as a 2D Gaussian kernel. The Gaussian
+kernel's values were that of a normal distribution, so integrating over them summed approximately to
+1, the number of objects covered by the kernel. The reason why the shape of the density does not matter, as
+they state, is that, in the end, they only care about the densities summing to the count of objects
+in the image. However, as stated previously, training a model to be specific about the density of
+each pixel allows for less training data.
+
+For the first dataset that they discuss (involving determining the number of biological cells in an
+image), each annotation was given a kernel the size of one pixel, and that pixel's value was one as
+a result. The second dataset fo which they were counting humans, each annotation had a kernel with
+diagonal covariance matrix with 4s on the diagonal, making the kernel much wider than the former
+one. These sizes were chosen empirically. The regression model used in both was a simple linear one, whose
+inputs were specific features, not merely the values of the pixels in the image. Overall, the method
+was successful at outperforming what they deemed ``baseline approaches''\cite{learningtocount}[§ 3].

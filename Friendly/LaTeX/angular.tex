@@ -1,0 +1,135 @@
+Again, addressing the issue from \cite{goodfellow2015explaining} with the dot product, another
+structural approach was taken. To reduce the impact of the number of elements in the input vector(s),
+the cosine between the input vector and the weights was considered. There is more than one way to
+view why this may address this issue. A goal of this layer is subtle: we want to make sure that
+extreme dimensionality does not increase the chances of the dot product going through major change.
+In the case of cosine, we can see why it may address this issue: generally (more on that later), as
+the number of elements increases, the number of elements that need to change in order to change the
+angle the same amount also increases. Therefore, if a very small angular neuron with, say, two
+inputs, does not change easily, the idea is that one with many inputs would not either.
+
+Using the identity $\cos(\mathbf{a}, \mathbf{w}) \left\| \mathbf{w} \right\| \left\| \mathbf{a}
+\right\| = w \cdot a$, one can see that $\cos(\mathbf{a}, \mathbf{w}) = \frac{w \cdot a}{\left\|
+\mathbf{w} \right\| \left\| \mathbf{a} \right\|}$. Following standard neuron implementations, we add
+a linear bias term to the resulting cosine as well. To see why a decreasing derivative is the case,
+consider the derivative of the cosine (we omit the bias because it disappears when differentiating
+due to it having no analytical relationship with $\mathbf{w}$ and $\mathbf{a}$)
+\begin{flalign}
+    \frac{\partial}{\partial a} \cos(\mathbf{a}, \mathbf{w}) \notag
+    &= \frac{\partial}{\partial a} \frac{\mathbf{w} \cdot \mathbf{a}}{\left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|}\\[10pt] \notag
+    &= \frac{
+        \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\| \frac{\partial}{\partial \mathbf{a}} w \cdot a     -    \mathbf{w} \cdot \mathbf{a} \frac{\partial}{\partial \mathbf{a}} \left( \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\| \right) 
+    }{
+        \left(   \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|   \right)^2
+    } & \text{quotient rule} \notag \\[10pt]
+    &= \frac{
+        \left\| \mathbf{w} \right\|   \left\| \mathbf{a} \right\|   \mathbf{w}      +      \mathbf{w} \cdot \mathbf{a}   \left\| \mathbf{w} \right\|   \mathbf{a}
+    }{
+        \left\| \mathbf{w} \right\|^2 \left\| \mathbf{a} \right\|^3
+    } & \text{\protect\parbox{2.5in}{derivative of $\mathbf{w} \cdot \mathbf{a}$ and $\left\| \mathbf{a} \right\|^2$ are $\mathbf{w}$~\cite{IMM2012-03274}[eqn. 69] and $2 \mathbf{a}$~\cite{IMM2012-03274}[eqn. 131]}} \notag \\[10pt]
+    &= \frac{
+                w
+    }{
+        \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|
+    }   +   \frac{
+                    (\mathbf{w} \cdot \mathbf{a}) \mathbf{a}
+            }{
+                    \left\| \mathbf{a} \right\|^3   \left\| \mathbf{w} \right\|
+            }
+    \label{angularderivative}
+\end{flalign}
+Because (\ref{angularderivative}) contains the cosine function $\frac{ (\mathbf{w} \cdot
+\mathbf{a}) } { \left\| \mathbf{a} \right\|   \left\| \mathbf{w} \right\| }$ hidden within it, we
+can cap its contribution to increasing the gradient. In fact, it can never multiplicatively increase
+the operand that contains it as values of cosine are between $-1$ and $1$. If we set it to $1$ ($-1$
+would only change the sign, which does not matter when it comes to the magnitude of the gradient)
+for that part of the equation as a worst-case scenario (where ``worst-case'' refers to the least
+favorable conditions for the defense), we are left with
+\begin{equation}
+    \frac{
+            \mathbf{w}
+    }{
+        \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|
+    }   +   \frac{
+                    \mathbf{a}
+            }{
+                    \left\| \mathbf{a} \right\|^2
+            }
+    = \frac{
+              \mathbf{w}
+      }{
+          \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|
+      }   +   \frac{
+                      \mathbf{a}
+              }{
+                      \mathbf{a}^T \mathbf{a}
+              }
+    \label{upperbounded}
+\end{equation}
+Adding an element with value $q$ to $\mathbf{a}$ (which is of length $l$) results in the second term
+of the derivative's addition turning from $\frac{  (\mathbf{a} \cdot 2)  }{  \left[ \sum_{i = 0}^{l}
+a^2_{i} \right]  }$ to $\frac{  (\mathbf{a} \cdot 2)  }{  \left[ \sum_{i = 0}^{l} a^2_{i} \right] +
+q^2  }$. Notice that the derivative with respect to $a_i$ scales with $q^2$, so it is not an ideal
+linear scaling that spreads the gradient across the vector proportionally. However, this may pass
+the test of the dot product's gradient contributions described in the beginning of this section, the
+only issue possibly being that the quadratic scaling imposed by $q$ may cause an inversion of the problem,
+where large vectors become less affected by perturbations than short ones, at least for added $q$s
+that are greater than or equal to one (the ``equal to one'' case would give us the aforementioned perfect
+scaling).
+
+In regard to the same scenario with respect to the first term, we see that that term's contribution
+scales sub-linearly when adding that same $q$ to $\mathbf{a}$, as the term of the denominator is the
+norm of $\mathbf{a}$, not its squared norm. This \textit{reduces} the dot product issue, but does
+not completely mitigate it. However (though we have not analytically shown it), when in combination
+with the second term's scaling, it may be that they cancel out somewhat to give us a more linear
+scaling overall. The conjectures about this second term of the addition depend on $\mathbf{w}$'s
+requisite increase in the number of elements not throwing a wrench in the works; however,
+$\textbf{w}$ is static at test time, so this may not matter.
+
+
+It is important to note that, in the end result of (\ref{upperbounded}), the term on the right is
+divided by the squared norm of $\mathbf{a}$, our input. If the elements of $\mathbf{a}$ become too
+small, you start to see that fraction grow in magnitude (because $a^T a \to 0$, while each
+individual element of $a$ that it is divided by decreases linearly). In the case of
+MNIST\cite{lecun}, this becomes a serious issue if the images are fed directly into the network;
+this is due to the fact that the inverted version of MNIST (as used in \cite{szegedy2014intriguing})
+has many locations where the input $\mathbf{a}_0$ into layer $0$ of an image (a) completely, or (b)
+almost completely consists of zero elements. For case (a), the derivative is even undefined. There
+is a simple solution to this, however. If we put a constant value $c$ into the denominator of the
+cosine, the derivative becomes
+\begin{flalign*}
+    &\frac{\partial}{\partial a} \frac{\mathbf{w} \cdot \mathbf{a}}{\left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|}
+    = \frac{
+        \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\| \frac{\partial }{\partial \mathbf{a}} \mathbf{w} \cdot \mathbf{a}     -    \mathbf{w} \cdot \mathbf{a} \frac{\partial }{\partial \mathbf{a}} \left( \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\| + c\right) 
+    }{
+        \left(   \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|   +   c \right)^2
+    } & \text{according to the quotient rule}\\[10pt]
+    &= \frac{
+        \left\| \mathbf{w} \right\|   \left\| \mathbf{a} \right\|   \mathbf{w}      -       \mathbf{w} \cdot \mathbf{a}   \left\| \mathbf{w} \right\|   \mathbf{a} \cdot 2
+    }{
+        \left(   \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|   +   c    \right)^2   \left\| a \right\|
+    } & \text{\cite[eqn. 69]{IMM2012-03274} and \cite[eqn. 131]{IMM2012-03274} again}\\[10pt]
+    &= \frac{
+        \left\| \mathbf{w} \right\|   \left\| \mathbf{a} \right\|   \mathbf{w}      -       \mathbf{w} \cdot \mathbf{a}   \left\| \mathbf{w} \right\|   \mathbf{a} \cdot 2
+    }{
+        \left(   \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|^2   +   2c \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|   +   c^2     \right)   \left\| a \right\|
+    } \\[10pt]
+    &= \frac{
+        \left\| \mathbf{w} \right\|   \left\| \mathbf{a} \right\|   \mathbf{w}      -       \mathbf{w} \cdot \mathbf{a}   \left\| \mathbf{w} \right\|   \mathbf{a} \cdot 2
+    }{
+        \left(   \left\| \mathbf{w} \right\|^2 \left\| \mathbf{a} \right\|^3   +   2c \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|^2   +   c^2     \right)
+    }
+\end{flalign*}
+Notice that, as the norm of $\mathbf{a}$ increases, this modification starts to look more like what
+you would get from cosine, and the derivative does the same with respect to cosine's derivative (for
+the latter case, $\left\| \mathbf{w} \right\|^2 \left\| \mathbf{a} \right\|^3$ drastically outpaces
+both the $2c \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|^2$ term, and $c^2$ stays
+constant). Therefore, we get the reduced derivative behavior of cosine for large norms. As
+the norm gets smaller, the first and second aforementioned terms go to $0$, leaving us with the
+third constant term. When this occurs, the cosine transforms into a scaled dot product (with scaling
+factor $\frac{1}{c}$), and, as a result, the derivative (by \cite{IMM2012-03274}[eqn. 69]) becomes
+$\frac{1}{c^2} \mathbf{w}$, thus avoiding the trend of the derivative going to infinity. A downside
+is that $\mathbf{a}$s that cause this dot product-like behavior do not get the same protections as
+what is afforded by cosine. Further, at the time of writing, it is not clear to the author if and
+when a certain value of $c$ is needed to prevent adversarial examples from exploiting even a little
+boost to the derivative by a shrinking norm.
