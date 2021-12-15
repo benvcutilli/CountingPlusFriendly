@@ -44,16 +44,19 @@ were drawn and saved with Pillow~\cite{imagesinpython}. Larger shapes resulted i
 we had no luck with smaller shapes. The network is a convolutional network, with no other layers
 besides activation functions and a linear layer at the end to output a single
 ReLU\cite{pmlr-v15-glorot11a}\footnote{This reference is commonly pointed to as the source of
-ReLU}-filtered number. This is done because the network~\cite{szegedy2014going} they use in \cite{10.1007/978-3-319-46487-9_48} does as well
-(except for the output layer) The loss function is mean squared error, with the ground truth being the raw
-number of each kind of shape (this is in contrast to \cite{Zhang_2015_CVPR}, which had separate
-classes that represented different counts). Because the images are automatically generated, we are
-able to use extremely large datasets, which may not be a reasonable expectation when training on
-non-artificial data. For now, we stick with shapes as it is a simplified problem for which a
-proof-of-concept could lead to further research into whether the concept can be applied in the real
-world (not just from a subitization standpoint, but also from a detection one as well). We used
-Chainer~\cite{tokui2019chainer} to implement our research in this section, as well as
-CuPy~\cite{cupy_learningsys2017}, NumPy~\cite{2020NumPy-Array}, and Python 3~\cite{language}.
+ReLU}-filtered number. This is done because the network~\cite{szegedy2014going} they use in
+\cite{10.1007/978-3-319-46487-9_48} does as well (except for the output layer). The loss function is
+mean squared error, with the ground truth being the raw number of each kind of shape (this is in
+contrast to \cite{Zhang_2015_CVPR}, which had separate classes that represented different counts).
+Because the images are automatically generated, we are able to use extremely large datasets, which
+may not be a reasonable expectation when training on non-artificial data. For now, we stick with
+shapes as it is a simplified problem for which a proof-of-concept could lead to further research
+into whether the concept can be applied in the real world (not just from a subitization standpoint,
+but also from a detection one as well). We used Chainer~\cite{tokui2019chainer} to implement our
+research in this section, as well as CuPy~\cite{cupy_learningsys2017}, NumPy~\cite{2020NumPy-Array},
+and Python 3~\cite{language}. There was previous code that addressed this topic based on
+PyTorch~\cite{NEURIPS2019_9015}; we did use it to some extent, but it was rewritten to use Chainer
+later on. This code may have used Nesterov momentum instead.
 
 \subsection{Detecting Shapes}
 \label{detectingshapes}
@@ -228,15 +231,16 @@ y-axis.
 Initially, our ReLU-activated network was trained on images of shapes that did not vary in size.
 Prediction was extremely accurate, so much so that it was suggested\footnote{by the author's
 advisor, David Crandall} that the network may be effectively adding up the number of black pixels
-(non-shape pixels) and dividing it by the number of pixels within a shape (see figure
-\ref{exactviapixel}), or that corners were being counted instead. To ameliorate this issue, the
-network was trained on shapes of different sizes and was restructured to be bigger\footnote{David
-Crandall implied that capacity might be a potential issue}. The ability of the network to predict
-correctly was significantly reduced but was not bad, initially indicating that the network had
-learned some kind of representation of the shapes. Further, it gave us saliency maps that appeared
-to be what we were looking for, which was that the network learned the representation of the shapes
-itself (see figure \ref{initialsaliency}). However, due to the problem of the second derivative
-mentioned above, the second derivative did not give us anything meaningful. As a result,
+(non-shape pixels) and dividing it by the number of pixels within a shape, or that corners were
+being counted instead (a graph of the network output against the ground truth created with
+\cite{Hunter:2007} when classifying both shapes and squares confirmed this). To ameliorate this
+issue, the network was trained on shapes of different sizes and was restructured to be
+bigger\footnote{David Crandall implied that capacity might be a potential issue}. The ability of the
+network to predict correctly was significantly reduced but was not bad, initially indicating that
+the network had learned some kind of representation of the shapes. Further, it gave us saliency maps
+that appeared to be what we were looking for, which was that the network learned the representation
+of the shapes itself (see figure \ref{initialsaliency}). However, due to the problem of the second
+derivative mentioned above, the second derivative did not give us anything meaningful. As a result,
 SoftPlus~\cite{NIPS2000_44968aec} was tried, but this resulted in numerical issues that sill might
 have squeaked some interesting detection pixels (see figure \ref{norenormalizationsoftplus}).
 

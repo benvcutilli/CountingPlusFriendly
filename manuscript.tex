@@ -9,13 +9,14 @@
 
 % Ben modified the value between the squiggly brackets of the commands in this section (and added
 % this line and comment, as well as the section indicators enclosing this area). He also uncommented
-% the \department command and removed the comment that came with that line.
+% the \department command and removed the comment that came with that line. Capitalization style
+% used here followed that of the original template.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                                                  %
 \title{Exploring Representation Learning Through Alternate Lenses}
 \author{Benjamin Vincent Cutilli}
 \date{December 2021} % Completion date of Dissertation
-\department{Luddy School of Informatics, Computing, and Engineering} 
+\department{Computer Science} 
 %                                                                                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -41,7 +42,7 @@
 % Package is found at ^^^graphicx^^^
 \usepackage{graphicx}
 
-\addbibresource{bibtex.bib}
+\addbibresource{biblatex.bib}
 
 %                                                                                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -68,8 +69,8 @@ limited to, what should go into the manuscript, super accommodating when persona
 arisen, and general advice for thesis). He and Professor Donald Williamson (Indiana University
 Bloomington) reviewed this thesis, so for that I am grateful. Sven Bambach (a postdoc at the time)
 talked with me about subitization with networks, which surely helped with the thesis. And, finally,
-my family and friends for the general support they have provided during what, personally, was a
-difficult time for the author. Thank you, everyone.
+my family, friends, and others who have helped for the general support they have provided during
+what, personally, was a difficult time for the author. Thank you, everyone.
 \end{acknowledgments}
 
 %                                                                                                  %
@@ -94,7 +95,8 @@ difficult time for the author. Thank you, everyone.
 
 \begin{abstract}
 % The contents that were here originally were removed and replaced with these three lines (the third
-% being the line below) by Ben
+% being the line below) by Ben. Further the instructions in ^^^iulatex^^^ said to not sign this
+% section; this is relevant for Professors Crandall and Williamson, as I don't sign it.
 \input{abstract.tex}
 \end{abstract}
 
@@ -106,10 +108,13 @@ difficult time for the author. Thank you, everyone.
 
 
 % Ben
+% Which author comes before others in their resepective lists found in the \section{} commands are
+% from the papers that they refer to; see biblatex.bib for these orders.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                                                  %
 
-\chapter*{Introduction}
+% Made this numbered because David asked^^^numbering^^^ me to
+\chapter{Introduction}
 
 \input{introduction.tex}
 
@@ -175,7 +180,8 @@ difficult time for the author. Thank you, everyone.
 \section{Evaluation}
 \input{Friendly/LaTeX/results.tex}
 
-\chapter*{Conclusion}
+% At David's request^^^numbering^^^, this chapter now has a number
+\chapter{Conclusion}
 \input{conclusion.tex}
 
 %                                                                                                  %

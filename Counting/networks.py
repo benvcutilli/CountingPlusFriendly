@@ -195,17 +195,14 @@ class BatchNormalizationCustom(chainer.Link):
         super().__init__()
 
         with self.init_scope():
-            # "Gamma" and "Beta" from ^^^batchnormalization^^^. Set to a non-initialized Parameter
-            # which mimics the code pattern described above the two lines in this method that set
-            # self.expectation and self.standardDeviation. Might also have seen an initialization
-            # like this used in Chainer, possibly ^^^chainerbatchnormalizationinit^^^ (the
-            # code pattern would have been the only thing taken from there).
+            # "Gamma" and "Beta" from ^^^batchnormalization^^^. Waiting until the first use
+            # of this layer to generate the parameters in these variables is what
+            # ^^^chainerbatchnormalizationcode^^^ does (or some other class in Chainer, possibly
+            # ^^^chainerlinearcode^^^), so this may be why I do this here (code not copied from
+            # anywhere; the pattern would have been the only thing taken from there).
             self.scale = chainer.Parameter(chainer.numpy.array(1, dtype=chainer.numpy.float32))
             self.push  = chainer.Parameter(chainer.numpy.array(1, dtype=chainer.numpy.float32))
 
-        # Setting these to None is what ^^^chainerbatchnormalizationinit^^^ does (or some other
-        # class in Chainer), so this may be why I do this here (again, code not copied from
-        # anywhere)
         self.expectation          = None
         self.standardDeviation    = None
         self.n                    = n
@@ -230,9 +227,9 @@ class BatchNormalizationCustom(chainer.Link):
                                  else self.calculateStandardDeviation(potentials,batchExpectation)
 
         # Lazy-initializing self.scale and self.push if needed like BatchNormalization
-        # ^^^chainerbatchnormalizationcode^^^; using an if statement to check for initialization is
-        # what I believe Chainer's BatchNormalization.forward(...) does; if not, it was some other
-        # Chainer class.
+        # ^^^chainerbatchnormalizationcode^^^ and/or ^^^chainerlinearcode^^^; using an if statement
+        # to check for initialization is what I believe Chainer's BatchNormalization.forward(...)
+        # does; if not, it was some other Chainer class.
         ############################################################################################
         #                                                                                          #
         
@@ -330,13 +327,16 @@ class BatchNormalizationCustom(chainer.Link):
 # that overflows.
 #   Easily swapping out activation functions is desired for the reasons in the README, so that is
 # why this class allows users to specify which activation function they want.
-#   Usage of batch normalization^^^batchnormalization^^^ was recommended by ^^^alibatchnorm^^^,
+#   Usage of batch normalization^^^batchnormalization^^^ was recommended by ^^^alivaramesh^^^,
 # which was actually a recommendation for the adversarial defenses part of this thesis; I just
 # thought I'd find it useful here as I am also having trouble training sigmoid and sine-based
 # activation functions (although I don't use sine in the other part's networks). However, batch
 # normalization wasn't working during inference, so I went with Batch
 # Renormalization^^^batchrenormalization^^^. Using ^^^chainerbatchrenormalization^^^ defaults for
 # initial_{gamma, beta, avg_var, avg_mean} because they probably know better than I do.
+#   The reason why convolutional layers are used everywhere except for in the last layer is because
+# it is meant to be similar to ^^^cowc^^^'s InceptionV3^^^inception^^^-based network (the last
+# layer being linear was not inspired by them).
 class Convolutional(chainer.Chain):
     
     # countableShapes refers to the how many kinds of shapes are in the image, renormalize to
@@ -354,12 +354,6 @@ class Convolutional(chainer.Chain):
         self.renormalize            = renormalize
 
         with self.init_scope():
-            # These are the layer choices for the network. The number of layers used was chosen
-            # because David Crandall^^^networksizecrandall^^^ suspected that the original network
-            # had too few layers to learn how to count two kinds of shapes (he didn't suggest any
-            # specific number of layers to add).
-            ########################################################################################
-            #                                                                                      #
 
             # Turning on bias with what we passed into "renormalize", a technique taken from the
             # network constructors in Friendly/networks.py
@@ -394,9 +388,7 @@ class Convolutional(chainer.Chain):
                                                                   rmax=1.0,
                                                                   dmax=0.0)                        \
                                                             if self.renormalize else identity
-            
-            #                                                                                      #
-            ########################################################################################
+
 
     
     def forward(self, volume):
@@ -447,9 +439,12 @@ class ConvolutionalLarge(chainer.Chain):
         self.countableShapes           = countableShapes
         self.renormalize               = renormalize
         with self.init_scope():
-            # The comments in __init__(...) of the Convolutional class above are relevant here.
-            # However, because of the aforementioned change to the sigmoid activation function used
-            # in Convolutional.forward(...) (which appears to have made the network incapable of
+            # The comments in __init__(...) of the Convolutional class above are relevant here. The
+            # number of layers used was chosen because David Crandall^^^networksizecrandall^^^
+            # suspected that the original network had too few layers to learn how to count two kinds
+            # of shapes (he didn't suggest any specific number of layers to add). However, because
+            # of the aforementioned change to the sigmoid activation function used in
+            # Convolutional.forward(...) (which appears to have made the network incapable of
             # learning how to count triangles and squares at the same time) two things occurred to
             # follow Dr. Crandall's suggestion even further:
             #   1. the layers in the subsection "Sigmoid Compensation Layers" were added in addition
@@ -463,7 +458,7 @@ class ConvolutionalLarge(chainer.Chain):
             # common to do so to give the network more power to learn intermediate representations,
             # which I think lack of such power could be the issue here. This modification didn't
             # seem to help, but I'm keeping it here because I imagine it can only help accuracy if
-            # I can get the network to converge some other way.
+            # I can get the network to converge some other way. 
             ########################################################################################
             #                                                                                      #
             

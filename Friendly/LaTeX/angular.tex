@@ -14,9 +14,9 @@ Using the identity $\cos(\mathbf{a}, \mathbf{w}) \left\| \mathbf{w} \right\| \le
 a linear bias term to the resulting cosine as well. To see why a decreasing derivative is the case,
 consider the derivative of the cosine (we omit the bias because it disappears when differentiating
 due to it having no analytical relationship with $\mathbf{w}$ and $\mathbf{a}$)
-\begin{flalign}
-    \frac{\partial}{\partial a} \cos(\mathbf{a}, \mathbf{w}) \notag
-    &= \frac{\partial}{\partial a} \frac{\mathbf{w} \cdot \mathbf{a}}{\left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|}\\[10pt] \notag
+\begin{align}
+    &\frac{\partial}{\partial a} \cos(\mathbf{a}, \mathbf{w}) \notag \\[10pt]
+    &= \frac{\partial}{\partial a} \frac{\mathbf{w} \cdot \mathbf{a}}{\left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|} \notag \\[10pt]
     &= \frac{
         \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\| \frac{\partial}{\partial \mathbf{a}} w \cdot a     -    \mathbf{w} \cdot \mathbf{a} \frac{\partial}{\partial \mathbf{a}} \left( \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\| \right) 
     }{
@@ -37,7 +37,7 @@ due to it having no analytical relationship with $\mathbf{w}$ and $\mathbf{a}$)
                     \left\| \mathbf{a} \right\|^3   \left\| \mathbf{w} \right\|
             }
     \label{angularderivative}
-\end{flalign}
+\end{align}
 Because (\ref{angularderivative}) contains the cosine function $\frac{ (\mathbf{w} \cdot
 \mathbf{a}) } { \left\| \mathbf{a} \right\|   \left\| \mathbf{w} \right\| }$ hidden within it, we
 can cap its contribution to increasing the gradient. In fact, it can never multiplicatively increase
@@ -97,9 +97,9 @@ has many locations where the input $\mathbf{a}_0$ into layer $0$ of an image (a)
 almost completely consists of zero elements. For case (a), the derivative is even undefined. There
 is a simple solution to this, however. If we put a constant value $c$ into the denominator of the
 cosine, the derivative becomes
-\begin{flalign*}
-    &\frac{\partial}{\partial a} \frac{\mathbf{w} \cdot \mathbf{a}}{\left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|}
-    = \frac{
+\begin{align*}
+    &\frac{\partial}{\partial a} \frac{\mathbf{w} \cdot \mathbf{a}}{\left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|}\\[10pt]
+    &= \frac{
         \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\| \frac{\partial }{\partial \mathbf{a}} \mathbf{w} \cdot \mathbf{a}     -    \mathbf{w} \cdot \mathbf{a} \frac{\partial }{\partial \mathbf{a}} \left( \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\| + c\right) 
     }{
         \left(   \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|   +   c \right)^2
@@ -119,7 +119,7 @@ cosine, the derivative becomes
     }{
         \left(   \left\| \mathbf{w} \right\|^2 \left\| \mathbf{a} \right\|^3   +   2c \left\| \mathbf{w} \right\| \left\| \mathbf{a} \right\|^2   +   c^2     \right)
     }
-\end{flalign*}
+\end{align*}
 Notice that, as the norm of $\mathbf{a}$ increases, this modification starts to look more like what
 you would get from cosine, and the derivative does the same with respect to cosine's derivative (for
 the latter case, $\left\| \mathbf{w} \right\|^2 \left\| \mathbf{a} \right\|^3$ drastically outpaces

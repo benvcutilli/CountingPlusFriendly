@@ -1,0 +1,102 @@
+This code runs with Chainer^^^chainer^^^ on Python 3^^^python^^^. All .py files are written in
+Python 3. These files are for section 2 of ^^^cutilli^^^.
+
+
+
+Derivation of Modified SoftPlus derivatives:
+
+
+
+ ∂                                  1         ∂                        1          ∂
+-- base_b_log(1 + b^a)   =   --------------  -- (1 + b^a)   =   -------------- 1 -- b^a
+∂a                           ln(b)(1 + b^a)  ∂a                 ln(b)(1 + b^a)   ∂a
+                            |_____________| |___________|                     |_________|
+                                   ^              ^                                ^
+                ___________________|              |                                |
+               |                                  |                 Straight-forward chain rule
+               |   The chain rule ----------------   needs
+                -- this (derivative of base_b_log(a) from
+                   ^^^mathisfunlog^^^) in order to be
+                   executed
+
+
+
+                                  1                                b^a
+                       =   --------------  1 ln(b) b^a    =    ----------                        (1)
+                           ln(b)(1 + b^a)   |_________|          1 + b^a
+                                                ^
+                                                |
+                                    ^^^mathisfunexponent^^^'s
+                                       derivative for b^a
+
+
+This result can be turned into a Sigmoidal-like form (I hoped to be able to do this because
+^^^softplus^^^ implies that the derivative of SoftPlus is the sigmoid function) like this:
+
+         b^a             1                    1                 1
+     ---------- = ---------------- = ------------------- = ------------                          (2)
+      1 + b^a     b^(-a) (1 + b^a)   b^(-a) + b^(-a) b^a    1 + b^(-a)
+
+This final form reduces the number of exponentiations we need to do compared to (1), so that is why
+I have chosen it. Further, since ^^^softplus^^^ implies that (less a constant) integrating sigmoid
+results in SoftPlus, I sanity checked my derivative by comparing it to the sigmoid function. The
+second derivative of Modified SoftPlus would be the derivative of (2) (not sure if I have seen a
+similar derivation before -- I probably have, but I don't think I remember any of it if I did --
+because it is basically the same as that of the sigmoid function's derivative):
+ 
+ 
+ 
+ 
+                        _     _                        _                _
+   ∂      1            |   ∂   |                      |   ∂              |
+  -- ------------   =  |  -- 1 | (1 + b^(-a))   -   1 |  -- (1 + b^(-a)) |
+  ∂a  1 + b^(-a)       |_ ∂a  _|                      |_ ∂a             _|
+                       ---------------------------------------------------        
+                                         (1 + b^(-a))^2                    
+                      |___________________________________________________|
+                                               ^
+                                        quotient rule
+
+
+                                  ----Derivative of a base to a power
+                                  |  ^^^mathisfunexponent^^^ to
+          chain rule _            | facilitate the use of the chain rule
+            __________|__         |                            |
+           |             |        |          ____________  ____|__
+               ∂                  --------->|            || ∂     |
+            1 -- (b^(-a))                  1 ln(b) b^(-a)  -- (-a) 
+              ∂a                                           ∂a                ln(b) b^(-a)
+  = - -------------------------        = - ------------------------    =  ---------------------
+           (1 + b^(-a))^2                       (1 + b^(-a))^2              (1 + b^(-a))^2
+                                           
+                                           
+
+                                         ln(b) b^(-a)
+                                    =  ----------------                                          (3)
+                                        (1 + b^(-a))^2
+
+
+
+
+References and in-text citations were generated with InText^^^intext^^^; relevant files to this
+program are intextconfig.json, THE REST OF THIS PARAGRAPH IS NOT CURRENTLY APPLICABLE and the input
+files found under the "intext" folder^^^hidinginputfiles^^^ both of which were written by me but
+follow the requirements of InText^^^intextreadme^^^; "references" is the biliography that is
+automatically generated^^^intextreadme^^^ by Intext. All files outside the "intext" folder were
+automatically cited in by InText, except:
+    intextconfig.json
+    
+
+
+
+The shape files and models can be found in ModelsAndData.zip at
+https://drive.google.com/file/d/1auT4J6Jgm1yjqj1eoq1DzCbWRCyLyFMW/view?usp=sharing. The "forpaper"
+and "forpaper2" folders contained images that were used in the manuscript, and their byproducts from
+detection.py were also used in the paper. In the LaTeX^^^latex^^^ .tex files in the LaTeX folder,
+you can see which images correspond to which model by looking at the folder name, and suffixing it
+with "network"; this results in the folder for the model, and can be found in the first level of
+that archive. The datasets and settings used for that model can be found in the settings.json folder
+of that folder. Figures in LaTeX/figures/putasideall are based on inputs found in forpaper and
+forpaper2; the former was generated with sampler.py with the --limit-scale-resampling, the latter
+with without that option. The training datasets are created with important options that should
+be self-evident by the dataset's folder name.

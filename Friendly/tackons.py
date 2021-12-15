@@ -7,8 +7,8 @@ import common
 
 # Both jacobianNorm(...) and hessianNorm(...) are zero-dimensional in their return value because
 # chainer.functions.mean_squared_error ^^^chainermeansquarederror^^^ is and they may need to be
-# added to what it hands back (see workbench.py). The "jacobianNorm" function may have been inspired
-# by ^^^slackgradient^^^.
+# added to what it hands back (see workbench.py). The "jacobianNorm" function refers to GMR in
+# ^^^cutilligradient^^^
 ####################################################################################################
 #                                                                                                  #
 

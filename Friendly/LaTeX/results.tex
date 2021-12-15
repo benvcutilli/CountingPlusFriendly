@@ -60,11 +60,11 @@ iterations)''~\cite{athalye2018obfuscated}[§ 6.1].
     \begin{center}
         \begin{tabular}{| c | c | c | c | c | c | c |}
             \hline
-                                  &     S       &     RS      &   A     &     GMR     &  PD       \\
+                                  &     S       &     RS      &   A     &     GMR     &      GMRES        &   PD     \\
             \hline
-            Batch Renormalization &     no      &     yes     &   yes   &     no      &  yes      \\
-            Activation function   &   sigmoid   &   sigmoid   &   N/A   &   sigmoid   &  sigmoid  \\
-            Learning rate         &    0.002    &    0.002    &         &    0.002    &  0.002    \\
+            Batch Renormalization &     no      &     yes     &   yes   &     no      &        no         &  yes     \\
+            Activation function   &   sigmoid   &   sigmoid   &   N/A   &   sigmoid   &  Elastic Sigmoid  & sigmoid  \\
+            Learning rate         &    0.002    &    0.002    & 0.0002  &    0.0009   &      0.002        &  0.002   \\
             \hline
         \end{tabular}
     \end{center}
@@ -87,7 +87,11 @@ The results on the MNIST test set can be found in table \ref{defensiveproficienc
 noise that they chose. We use $L_{\infty}$ as it is used throughout the literature
 (\cite{goodfellow2015explaining, madry2019deep, tramèr2020ensemble}, etc) and is the easiest to
 program for. To disclose discrepancies in performance under normal circumstances, we present table
-\ref{clean}.
+\ref{clean}. All testing was performed \textit{not} using the values Batch Renormalization learned
+(which turns it into Batch Normalization~\cite{ioffe2015batch}, according to \cite{ioffe2017batch}[§
+3]) as we had very strange (at least from the perspective of our knowledge of Batch Renormalization)
+performance issues otherwise; this issue may be the author's fault, but we did not get to resolving
+it.
 
 \begin{table}
     \begin{center}
@@ -111,7 +115,7 @@ program for. To disclose discrepancies in performance under normal circumstances
             \hline
             S        &     RS    &     A     &   GMR    &   GMRES   &   PD     \\
             \hline
-            95.86\%  &  97.73\%  &  85.09\%  &  96.09\% &  96.72\%  &  95.91\% \\
+            95.86\%  &  97.80\%  &  85.40\%  &  96.09\% &  96.72\%  &  95.91\% \\
             \hline
         \end{tabular}
     \end{center}
@@ -125,9 +129,13 @@ The results turned out to be poor. It is questionable whether or not we can make
 whatsoever. Angular's adversarial performance was just bad (even relative to a normal network
 without defenses) when up against a white-box attack, a surprising find. It did do pretty well for
 the black-box equivalent, but, again, its performance in table \ref{clean} makes this network nearly
-useless considering that most scenarios in real life will not be adversarial. It also turned out
-that there was no point to ablation because there were no benefits of using Batch (Re)normalization.
-Speculation about the results can be found in \ref{analysis}.
+useless considering that most scenarios in real life will not be adversarial. Further, such
+comparisons are not fair because Angular is not in the same performance ``state'' as the other
+networks; this is why ~\cite{szegedy2014intriguing} tries to keep performance across networks the
+same. If we were to actually get the angular network's accuracy up enough, it could be that the
+black-box benefits would disappear. It also turned out that there was no point to ablation because
+there were no benefits of using Batch (Re)normalization. Speculation about the results can be found
+in \ref{analysis}.
 
 
 \subsection{Analysis}

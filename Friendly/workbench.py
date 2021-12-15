@@ -1,4 +1,4 @@
-# "argparse": ^^^pythonargparse^^^
+# argparse package: ^^^pythonargparse^^^
 import argparse
 
 # The package supplied by ^^^chainer^^^
@@ -207,7 +207,13 @@ argumentParser.add_argument("--fraction-validation",
                             default=0.07,
                             help="How much of the training dataset you'd like to devote to \
                                  validation. Actual sample count will be rounded as necessary.")
-# PGD refers to ^^^towards^^^, while FGSM refers to ^^^explaining^^^.
+
+#   --perturbation-norm and --adversarial-training-with refer to the usage of adversarial training,
+# which (I believe) is from ^^^explaining^^^, and uses either PGD from ^^^towards^^^ or
+# FGSM^^^explaining^^^ as training adversaries.
+####################################################################################################
+#                                                                                                  #
+
 # "https://arxiv.org/pdf/1706.06083.pdf" refers to ^^^towards^^^. Valid inputs were made to be the
 # same as that of testbench.py.
 argumentParser.add_argument("--adversarial-training-with",
@@ -227,6 +233,9 @@ argumentParser.add_argument("--perturbation-norm",
                                  FGSM or the maximum L-infinity noise allowed when using PGD")
 
 parameters =  argumentParser.parse_args()
+
+#                                                                                                  #
+####################################################################################################
 
 #                                                                                                  #
 ####################################################################################################

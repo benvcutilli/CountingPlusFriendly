@@ -1,4 +1,11 @@
-% Again, the next line of text onward wasn't created by Ben, it was from ^^^classfile^^^
+% Ben modified this file where marked, but, otherwise, the line of text after the whitespace gap
+% onward wasn't created by Ben, it was from ^^^classfile^^^. Ben changed the degree from "Doctor of
+% Philosophy" to "Master of Science" and the "Doctoral" in "Doctoral committee" to "Master's" (these
+% word/phrase changes were chosen because it matched the grammar of the surrounding text in addition
+% to capitalization). Lines with a comment containing only "@" were created to signify where this
+% point comes into play, while I commented out lines trailing with "---"; note that any whitespace
+% these "---" lines have, I didn't add to them.
+
 
 
 
@@ -255,7 +262,8 @@
 \vfill
 {Submitted to the faculty of the University Graduate School\\
 in partial fulfillment of the requirements\\ for the degree\\ 
-Doctor of Philosophy\\ in the \if@school School \else Department \fi of \@department,\\
+% @
+Master of Science\\ in the \if@school School \else Department \fi of \@department,\\
 Indiana University\\ \@date \par}
 \vskip 30\p@
 \end{center}
@@ -361,10 +369,12 @@ Indiana University\\ \@date \par}
 %
 \begin{center}
  Accepted by the Graduate Faculty, Indiana University, in partial fulfillment
- of the requirements for the degree of Doctor of Philosophy.\par
+ % @
+ of the requirements for the degree of Master of Science.\par
 \end{center}
 
-Doctoral Committee
+% @
+Master's Committee
 \vspace{2\baselineskip}
 
 \hspace{\fill}\line(1,0){240}\par
@@ -377,14 +387,14 @@ Doctoral Committee
 \hfill \@readertwo
 \vspace{1.5\baselineskip}
 
-\hspace{\fill}\line(1,0){240}\par
-\vspace{-0.5\baselineskip}
-\hfill \@readerthree
-\vspace{1.5\baselineskip}
+%\hspace{\fill}\line(1,0){240}\par---
+%\vspace{-0.5\baselineskip}---
+%\hfill \@readerthree---
+%\vspace{1.5\baselineskip}---
 
-\hspace{\fill}\line(1,0){240}\par
-\vspace{-0.5\baselineskip}
-\hfill \@readerfour
+%\hspace{\fill}\line(1,0){240}\par
+%\vspace{-0.5\baselineskip}
+%\hfill \@readerfour
 
 \@defensedate\par
   \global\let\committeechair\relax
@@ -624,14 +634,14 @@ Copyright \copyright\ \@cryear\\ %set to use \@Year
 \hfill \@readertwo
 \vspace{1.5\baselineskip}
 
-\hspace{\fill}\line(1,0){240}\par
-\vspace{-0.5\baselineskip}
-\hfill \@readerthree
-\vspace{1.5\baselineskip}
+%\hspace{\fill}\line(1,0){240}\par---
+%\vspace{-0.5\baselineskip}---
+%\hfill \@readerthree---
+%\vspace{1.5\baselineskip}---
 
-\hspace{\fill}\line(1,0){240}\par
-\vspace{-0.5\baselineskip}
-\hfill \@readerfour 
+%\hspace{\fill}\line(1,0){240}\par---
+%\vspace{-0.5\baselineskip}---
+%\hfill \@readerfour ---
   }
 \else
   \newenvironment{abstract}{%

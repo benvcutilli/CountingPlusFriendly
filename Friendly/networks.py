@@ -106,6 +106,9 @@ class SzegedyLinear(chainer.Chain):
                                         hyperparameters["final"][kwargNames["in"]],
                                         hyperparameters["final"][kwargNames["out"]]
                                     )
+            # They may have meant to have a SoftMax activation on the last layer, but it isn't clear
+            # on page 8 of ^^^intriguingproperties^^^, so I just go with the activation specified by
+            # the user
             self.final_activ      = activationType() if construct else activationType
             # Note 1 applies
             self.final_renorm     = chainer.links.BatchRenormalization(
@@ -194,73 +197,6 @@ class SzegedyLinear(chainer.Chain):
         
 
         return three
-
-
-
-
-# Original implementation of SzegedyLinear (just the class body)
-####################################################################################################
-#                                                                                                  #
-
-#     def __init__(self,
-#                  which,
-#                  layerType=chainer.links.Linear,
-#                  activationType=chainer.functions.sigmoid,
-#                  usingBatchRenorm=False):
-#         super().__init__()
-#         self.usingBatchRenorm = usingBatchRenorm
-#         self.activationType   = activationType
-#         with self.init_scope():
-#             if which == "FC-100-100-10":
-#                 self.first  = chainer.links.Linear(None, 100)
-#                 self.second = chainer.links.Linear(100, 100)
-#                 self.third  = chainer.links.Linear(100, 10)
-#                 self.batchRenormA = chainer.links.BatchRenormalization((100, 1, 1))
-#                 self.batchRenormB = chainer.links.BatchRenormalization((100, 1, 1))
-#                 self.batchRenormC = chainer.links.BatchRenormalization((1, 100, 1, 1))
-#             if which == "FC-123-456-10":
-#                 self.first  = chainer.links.Linear(None, 123)
-#                 self.second = chainer.links.Linear(123, 456)
-#                 self.third  = chainer.links.Linear(456, 10)
-#                 self.batchRenormFirst = chainer.links.BatchRenormalization((123, 1, 1))
-#                 self.batchRenormSecond = chainer.links.BatchRenormalization((456, 1, 1))
-#                 self.batchRenormThird = chainer.links.BatchRenormalization((10, 1, 1))
-# 
-#     def forward(self, inpt):
-#         
-#         potentials1    = self.first(inpt)
-#         activations1   = None
-#         if self.usingBatchRenorm:
-#             normalization1 = self.batchRenormFirst(potentials1, otherArgs)
-#             activations1   = self.activationType(potentials1)
-#         else:
-#             activations1   = self.activationType(potentials1)
-# 
-# 
-#         potentials2    = self.second(activations1)
-#         activations2   = None
-#         if self.usingBatchRenorm:
-#             normalization2 = self.batchRenormSecond(potentials2, otherArgs)
-#             activations2   = chainer.functions.sigmoid(potentials2)
-#         else:
-#             activations2   = chainer.functions.sigmoid(potentials2)
-# 
-# 
-#         potentials3    = self.third(activations2)
-#         activations3   = None
-#         # Also relevant for both branches of this conditional: they probably meant to have a sigmoid
-#         # activation on the last layer, but it isn't clear on page 8 of ^^^intriguingproperties^^^
-#         if self.usingBatchRenorm:
-#             normalization3 = self.batchRenormThird(potentials3, otherArgs)
-#             activations3   = chainer.functions.sigmoid(potentials3)
-#         else:
-#             activations3   = chainer.functions.sigmoid(potentials3)
-# 
-#         
-#         return activations3
-
-#                                                                                                  #
-####################################################################################################
 
 
 

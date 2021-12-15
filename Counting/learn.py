@@ -287,6 +287,10 @@ with chainer.using_device(DEVICE):
     #                                                                                              #
     ################################################################################################
 
+    # In one of my original PyTorch^^^pytorch^^^ implementations, I used a
+    # Queue^^^multiprocessingqueue^^^ to allow worker processes to move data from themselves to the
+    # process that does the main part of training. The Queue and the workers themselves were
+    # inspired by ^^^pytorch^^^'s use of them (or some page under that page).
     itr = chainer.iterators.MultiprocessIterator(samples,
                                                 parameters.samples_per_iteration,
                                                 n_processes=parameters.workers,

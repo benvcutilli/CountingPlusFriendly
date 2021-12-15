@@ -19,7 +19,7 @@ def FGSM(data, truth, network, lossFunction, step):
 # and ^^^adversarial^^) ^Same signature, except for numRandomPoints and numFGSMRuns, of FGSM as we
 # are going to call FGSM repeatedly (as ^^^towards^^^ says PGD essentially uses repeated FGSM); I
 # actually independently thought of using FGSM, but not sure if the aforementioned statement by
-# ^^^towards^^^ was subconsciously in my mind, so playing it safe here. As in ^^^madry^^^, the
+# ^^^towards^^^ was subconsciously in my mind, so playing it safe here. As in ^^^towards^^^, the
 # infinity norm is used for projection.
 def PGD(data, truth, network, lossFunction, step, numRandomPoints, numFGSMRuns, limit):
 
@@ -37,7 +37,7 @@ def PGD(data, truth, network, lossFunction, step, numRandomPoints, numFGSMRuns, 
 
     for pointIndex in range(numRandomPoints):
         # Another spot where we keep pixel values as integers because of the statements made in
-        # ^^^fgsm^^^ about cameras returning integral values. Limiting between 0 and 255.
+        # ^^^explaining^^^ about cameras returning integral values. Limiting between 0 and 255.
         candidates = generator.integers(
                         package.maximum(data.data - limit, 0),
                         package.minimum(data.data + limit, 255),

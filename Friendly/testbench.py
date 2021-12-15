@@ -57,7 +57,7 @@ argumentParser.add_argument("--step",
                                  (https://arxiv.org/pdf/1706.06083.pdf)",
                             default=2)
 
-# The default amount of noise is the rounded 0-255 equivalent of what ^^^madry^^^ uses, so for
+# The default amount of noise is the rounded 0-255 equivalent of what ^^^towards^^^ uses, so for
 # comparison's sake it is the default here
 argumentParser.add_argument("--allowed-norm",
                             type=int,
@@ -66,7 +66,7 @@ argumentParser.add_argument("--allowed-norm",
                             default=77)
 
 # Configuring PGD^^^towards^^^. Defaults are based on the optimal settings for PGD found in table 1
-# of ^^^madry^^^
+# of ^^^towards^^^
 ####################################################################################################
 #                                                                                                  #
 

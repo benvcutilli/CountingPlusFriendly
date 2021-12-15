@@ -19,7 +19,7 @@ import common
 
 
 
-
+# Idea defined by ^^^cutillielastic^^^
 class ElasticSigmoid(chainer.Link):
 
     def __init__(self):
@@ -118,7 +118,7 @@ class PairwiseSingleElement(chainer.FunctionNode):
                                                                        blockIdx.x);                      \
                                                                                                          \
                             // This loop calculates the gradient for just the incoming activations       \
-                            // See derivation in README to understand why the code does what it          \
+                            // See ^^^cutillipairwise^^^ to understand why the code does what it         \
                             // does                                                                      \
                             for (int n = 0; n < outNeuronsCount; n++) {                                  \
                                                                                                          \                                                             \
@@ -157,7 +157,7 @@ class PairwiseSingleElement(chainer.FunctionNode):
     
 
 
-
+# A description of this layer can be found in ^^^cutillipairwise^^^
 class PairwiseDifference(chainer.Link):
 
     # Accepts the parameters of chainer.functions.im2col(...)^^^chainerim2col^^^, but in keyword
@@ -209,7 +209,7 @@ class PairwiseDifference(chainer.Link):
 
 
 
-
+# Implementation of ^^^cutilliangular^^^
 class Angular(chainer.Link):
 
     # Same comment as for PairwiseDifference.__init__(...)

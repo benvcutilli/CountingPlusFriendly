@@ -13,8 +13,8 @@ import attacks
 # PyTorch ^^^pytorch^^^ as well (for example, ^^^pytorchnormfunction^^^/^^^pytorchnormmethod^^^), to
 # select just the dimensions (the "dimensions" parameter) that will include its data in a single
 # resultant norm. I actually think that I was expecting something like PyTorch's
-# torch.norm(...)^^^pytorchnorm^^^ and/or torch.Tensor.norm(...)^^^tensornorm^^^ to be in Chainer,
-# but it doesn't exist, so I wrote a function that computes it.
+# torch.norm(...)^^^pytorchnormfunction^^^ and/or torch.Tensor.norm(...)^^^pytorchnormmethod^^^ to be
+# in Chainer, but it doesn't exist, so I wrote a function that computes it.
 #   "dimensions" takes its format from "axis" from ^^^chainersum^^^, a tuple of dimension indices
 # (although "axis" accepts other things as well, which this function doesn't). Also accepts None
 # so that None can be specified when calling chainer.functions.sum(...)
@@ -172,7 +172,7 @@ def oneHotConverter(samples, to):
     firstStep             = chainer.dataset.convert.concat_examples_func(samples, to)
 
     # The length of the second dimension of this tensor is set to the number of classes in
-    # MNIST^^^mnist and CIFAR-10^^^cifar10^^^
+    # MNIST^^^mnist and CIFAR-10^^^cifar^^^
     secondStep            = to.xp.zeros(
                                 (firstStep[1].shape[0], 10),
                                 dtype=to.xp.float32

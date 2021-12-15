@@ -18,7 +18,7 @@
         "hintonslides": {
             "Title": "lec6.pdf",
             "Author": "Geoffrey Hinton, Nitish Srivastava, Kevin Swersky (authors appeared in that order on first slide)",
-            "URL": "http://www.cs.toronto.edu/~hinton/coursera/lecture6/lec6.pdf"
+            "URL": "http://www.cs.toronto.edu/~hinton/coursera/lecture6/lec6.pdf",
             "Fetched": "2021.4.16 EDT and 2021.4.17 EDT",
             "Via": "Googling",
             "Comment": "https://towardsdatascience.com/understanding-rmsprop-faster-neural-network-learning-62e116fcf29a, in section 1, suggests that this is the correct reference for RMSprop seeing as these are just slides which appear to be \"unpublished\" (the word chosen by that Towards Data Science section)"
@@ -111,7 +111,7 @@
         },
         "chainergetdevice": {
             "Title": "chainer.get_device — Chainer 7.7.0 documentation",
-            "Author": "Preferred (Networks/Infrastructure), possibly others"
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
             "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.get_device.htm"
         },
         "pythonpathlib": {
@@ -153,8 +153,8 @@
             "Email Information": "This was, I believe, one or more emails in which Bruce told me to limit the number of processes and/or threads I'm using. Probably was around late 2018."
         },
         "numpydtype": {
-            "Title": "https://numpy.org/doc/stable/reference/arrays.dtypes.html"
-            "Author": "People that contribute to SciPy"
+            "Title": "https://numpy.org/doc/stable/reference/arrays.dtypes.html",
+            "Author": "People that contribute to SciPy",
             "URL": "https://numpy.org/doc/stable/reference/arrays.scalars.html"
         },
         "batchrenormalization": {
@@ -166,7 +166,7 @@
         },
         "chainerbatchrenormalization": {
             "Title": "chainer.links.BatchRenormalization — Chainer 7.8.0 documentation",
-            "Author": "Preferred (Networks/Infrastructure), possibly others"
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
             "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.links.BatchRenormalization.html"
         },
         "chainerextension": {
@@ -193,7 +193,7 @@
             "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.optimizers.RMSprop.html"
         },
         "chainerprogressbar": {
-            "Title": "chainer.training.extensions.ProgressBar — Chainer 7.8.0 documentation"
+            "Title": "chainer.training.extensions.ProgressBar — Chainer 7.8.0 documentation",
             "Author": "Preferred (Networks/Infrastructure), possibly others",
             "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.training.extensions.ProgressBar.html"
         },
@@ -246,7 +246,7 @@
         },
         "chainerlink": {
             "Title": "chainer.Link — Chainer 7.8.0 documentation",
-            "Author": "Preferred (Networks/Infrastructure), possibly others"
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
             "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.Link.html"
         },
         "cudacore": {
@@ -269,7 +269,7 @@
         },
         "chainerbatchnormalization": {
             "Title": "chainer.links.BatchNormalization — Chainer 7.8.0 documentation",
-            "Author": "Preferred (Networks/Infrastructure), possibly others"
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
             "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.links.BatchNormalization.html"
         },
         "networksizecrandall": {
@@ -325,7 +325,7 @@
             "School": "Indiana University Bloomington",
             "Semester": "Fall 2017",
             "Department": "School of Informatics and Computing"
-        }
+        },
         "b551spring": {
             "Title": "CS B551: Elements of Artificial Intelligence",
             "Author": "David Crandall, Ali Varamesh, Zehua Zhang, and Ben Cutilli",
@@ -339,6 +339,99 @@
         },
         "squaresfrom": {
             "Comment": "Discussion with David Crandall, approximately in the fall of 2017"
+        },
+        "pdflatex": {
+            "Title": "pdflatex",
+            "Author": "Han The Tan, Petr Sojka, Jiri Zlatuska, Peter Breitenlohner (though they mention that there are other, less contributing, authors); authors were in that order in the man page",
+            "URL": "https://tug.org/applications/pdftex/"
+        },
+        "latex": {
+            "Title": "LaTeX",
+            "Author": "Frank Mittelbach, Joseph Wright, Rainer Schöpf, Bruno Le Floch, Chris Rowley, David Carlise, Jonas Jared Jacek, Johannes Brams, Enrico Gregorio, Javier Bezos, Ulrike Fisher, Will Robertson, Phelype Oleinik, and Marcel Krüger",
+            "URL": "latex-project.org"
+        },
+        "relu": {
+            "Title": "Deep Sparse Rectifier Neural Networks",
+            "Author": "Xavier Glorot, Antoine Bordes, and Yoshua Bengio",
+            "URL": "https://proceedings.mlr.press/v15/glorot11a.html",
+            "Conference": "International Conference on Artificial Intelligence and Statistics",
+            "Year": "2011",
+            "Comments": "Authors were shown on that site in that order, so I copied said order"
+        },
+        "softplus": {
+            "Title": "Incorporating Second-Order Functional Knowledge for Better Option Pricing",
+            "Author": "Charles Dugas, Yoshua Bengio, François Bélisle, Claude Nadeau, and René Garcia",
+            "URL": "https://proceedings.neurips.cc/paper/2000/file/44968aece94f667e4095002d140b5896-Paper.pdf",
+            "Conference": "Neural Information Processing Systems"
+        },
+        "alivaramesh": {
+            "Comment": "Slack DM from Ali Varamesh on 2018.2.7 EST"
+        },
+        "cutilli": {
+            "Title": "Exploring Representation Learning Through Alternate Lenses",
+            "Author": "Benjamin Cutilli",
+            "URL": "github.com/benvcutilli/CountingPlusFriendly/manuscript.pdf",
+            "Version Date": "2021.12.15 EST"
+        },
+        "intext": {
+            "Title": "InText",
+            "Author": "Benjamin Cutilli",
+            "Comment": "Unfinished, unpublished project"
+        },
+        "matplotlib": {
+            "Title": "Matplotlib: A 2D graphics environment",
+            "Author": "J.D. Hunter et al.",
+            "URL": "https://doi.org/10.1109/MCSE.2007.55",
+            "Journal": "Computing in Science & Engineering",
+            "Issue Year": "2007",
+            "Number": "3",
+            "Volume": "9",
+            "Comment": "Pages 95 and 90 are the end and start of this article. Published by IEEE Computer Society. All info here except the \"et al.\" was asked to be cited by https://matplotlib.org/stable/users/project/citing.html"
+        },
+        "guan": {
+            "Title": "Understanding the Ability of Deep Neural Networks to Count Connected Components in Images",
+            "Author": "Shuyue Guan and Murray Loew",
+            "URL": "https://arxiv.org/pdf/2101.01386.pdf",
+            "arXiV ID": "2101.01386v1",
+            "Version Date": "2021.1.5"
+        },
+        "pythonsys": {
+            "Title": "https://docs.python.org/3/",
+            "Author": "Python Software Foundation",
+            "URL": "https://docs.python.org/3/library/sys.html"
+        },
+        "chainerlinearcode": {
+            "Title": "chainer.links.Linear — Chainer 7.8.0 documentation",
+            "Author": "Preferred (Networks/Infrastructure), possibly others",
+            "URL": "https://github.com/chainer/chainer/blob/master/chainer/links/connection/linear.py",
+            "Commit hash": "6264c21937efacf8c2b744e78a3714964864b95e at the latest"
+        },
+        "pytorch": {
+            "Title": "PyTorch",
+            "URL": "https://pytorch.org/docs/stable/index.html",
+            "Authors": "Unknown"
+        },
+        "cowc": {
+            "Title": "A Large Contextual Dataset for Classification, Detection and Counting of Cars with Deep Learning",
+            "Author": "T. Nathan Mundhenk, Goran Konjevod, Wesam A. Salka, and Kofi Boakye",
+            "URL": "https://gdo152.llnl.gov/cowc/mundhenk_et_al_eccv_2016.pdf",
+            "Version Date": "2016",
+            "Conference": "European Conference on Computer Vision",
+            "Comment": "Precedence of authors are based on how they are listed in the paper"
+        },
+        "inception": {
+            "Title": "Rethinking the Inception Architecture for Computer Vision",
+            "Author": "Christian Szegedy, Vincent Vanhoucke, Serge Ioffe, and Jonathan Schlens",
+            "URL": "https://arxiv.org/pdf/1512.00567.pdf",
+            "arXiV ID": "1512.00567v3",
+            "Version Date": "2015.12.11",
+            "Comment": "Authors were listed one-by-one as they were shown in the paper"
+        },
+        "thresholding": {
+            "Title": "Teaching a Robot Dog to Pee Beer - YouTube",
+            "Author": "Michael Reeves and YouTube",
+            "URL": "https://youtu.be/tqsy9Wtr1qE",
+            "Version Date": "2021.4.9"
         }
     },
     
@@ -419,7 +512,7 @@
             {
                 "refkey": "derivativeidentites",
                 "locator": "\"Common Functions\" -> \"Logarithms\""
-            },
+            }
         ],
         "mathisfunexponent": [
             {
@@ -453,13 +546,7 @@
             {
                 "refkey": "numpyunravel"
             }
-        ],
-        "chainerbatchnormalizationinit": [
-            {
-                "refkey": "chainerbatchnormalizationcode",
-                "locator": "BatchNormalization.__init__(..)"
-            }
-        ],
+        ]
         "chainerbatchnormalizationcode": [
             {
                 "refkey": "chainerbatchnormalizationcode"
@@ -723,6 +810,88 @@
         "squaresfrom": [
             {
                 "refkey": "squaresfrom"
+            }
+        ],
+        "pdflatex": [
+            {
+                "refkey": "pdflatex"
+            }
+        ],
+        "latex": [
+            {
+                "refkey": "latex"
+            }
+        ],
+        "relu": [
+            {
+                "refkey": "relu"
+            }
+        ],
+        "softplus": [
+            {
+                "refkey": "softplus"
+            }
+        ],
+        "alivaramesh": [
+            {
+                "refkey": "alivaramesh"
+            }
+        ],
+        "cutilli": [
+            {
+                "refkey": "cutilli"
+            }
+        ],
+        "intext": [
+            {
+                "refkey": "intext"
+            }
+        ],
+        "matplotlib": [
+            {
+                "refkey": "matplotlib"
+            }
+        ],
+        "guan": [
+            {
+                "refkey": "guan"
+            }
+        ],
+        "pythonsys": [
+            {
+                "refkey": "pythonsys"
+            }
+        ],
+        "chainerlinearcode": [
+            {
+                "refkey": "chainerlinearcode"
+            }
+        ],
+        "pytorch": [
+            {
+                "refkey": "pytorch"
+            }
+        ],
+        "multiprocessingqueue": [
+            {
+                "refkey": "pythonmultiprocessing",
+                "locator": "the Queue class"
+            }
+        ],
+        "cowc": [
+            {
+                "refkey": "cowc"
+            }
+        ],
+        "inception": [
+            {
+                "refkey": "inception"
+            }
+        ],
+        "thresholding": [
+            {
+                "refkey": "thresholding",
+                "locator": "see 3 minutes, 58 seconds onward"
             }
         ]
     }

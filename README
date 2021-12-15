@@ -1,0 +1,24 @@
+This folder and subfolders contains LaTeX (.tex) files. They are compiled with ^^^pdflatex^^^.
+Friendly/LaTeX/adversariallogit.tex, and Friendly/LaTeX/ensemble.tex were kept a littler shorter
+than the long summaries as David Crandall recommended that some be short and others be
+long. Also, an approximate 50 pages of content is a rough requirement of ^^^mastersthesis^^^.
+
+This is the content behind my master's thesis^^^cutilli^^^. The in-text citations that you see here are
+supposed to be processed with InText^^^intext^^^, but I didn't get to that point yet. Therefore, in
+order to figure out what references they refer to, look for the non-^^^ part of the citation in
+Friendly/intextconfig.json's (Counting/intextconfig.json if you are trying to do this for citations
+in the "Counting" folder) "markers" object, take the "refkey" value, and then look for that in
+"references". As is usual, ^^^ was chosen for markers because it is not any language feature in
+Python^^^python^^^, JSON^^^json^^^, CUDA C++^^^cuda^^^ or LaTeX^^^latex^^^ and
+Biblatex^^^biblatex^^^.
+
+The requirements for the manuscript part of this thesis were partially set by Professor David
+Crandall. Specifically, he said
+    - I can include section 3 of the manuscript with section 2 if there is a shared theme between
+      them
+    - Some papers' literature reviews will be short, others will be long; I can't remember which
+      ones fit the former and the latter
+    - To use the ^^^iulatex^^^ and ^^^classfile^^^ templates
+    - Figures count towards page length
+Anything else he mentioned can be found throughout this project.
+

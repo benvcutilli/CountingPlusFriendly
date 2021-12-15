@@ -7,16 +7,16 @@
 # for rotational purposes. Probably the same logic applies for scale as well
 
 
-# Python's "sys"^^^pythonsys^^^
+# Python's "sys"^^^pythonsys^^^ module
 import sys
 
-# Python's "argparse"^^^pythonargparse^^^
+# Python's "argparse"^^^pythonargparse^^^ module
 import argparse
 
-# Python's "random"^^^pythonrandom^^^
+# Python's "random"^^^pythonrandom^^^ module
 import random
 
-# Python's "collections" ^^^pythoncollections^^^
+# Python's "collections"^^^pythoncollections^^^ module
 import collections
 
 # "shapely" refers to ^^^shapely^^^

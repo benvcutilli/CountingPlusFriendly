@@ -5,7 +5,7 @@ random.seed()
 # The ^^^chainer^^^ package
 import chainer
 
-# From ^^^pythonmultiprocessing^^^
+# Package from ^^^pythonmultiprocessing^^^
 import multiprocessing
 
 # ^^^pythonmath^^^ module
