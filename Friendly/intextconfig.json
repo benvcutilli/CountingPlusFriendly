@@ -608,6 +608,10 @@
             "URL": "https://support.proquest.com/s/article/Why-is-there-a-word-limit-on-the-length-of-my-abstract",
             "Fetched": "2021.12.15 EST",
             "Via": "searching using https://support.proquest.com/s/"
+        },
+        "edit": {
+            "Comment": "Email (2021.12.27)",
+            "Author": "David Crandall"
         }
     },
 
@@ -1217,6 +1221,11 @@
         "proquestlength": [
             {
                 "refkey": "proquestlength"
+            }
+        ],
+        "edit": [
+            {
+                "refkey": "edit"
             }
         ]
     }   

@@ -20,17 +20,30 @@ into the network actually understanding what the object looks like? Further, how
 determine that a network has such properties in the first place? If a proper representation exists,
 can we localize each instance of an object?
 
-In the second part, we directly address the aforementioned issue brought to light by
-\cite{szegedy2014intriguing}. We take a look at multiple types of defenses, one of which modifies
-the loss function, a commonly used strategy~\cite{goodfellow2015explaining, kannan2018adversarial,
+% The reason for the last comma existing in the next line is because I included the section of text
+% in the comment below this one.
+In the second part, we directly address the issue brought to light by \cite{szegedy2014intriguing},
+% David Crandall, in ^^^edit^^^, asked me to add a part explaning this issue, so this
+% text was added to do so (less the period)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                                  %
+, \textit{adversarial examples}. Adversarial examples occur when an attacker adds noise to an image
+that people would not recognize as being anything meaningful. However, a neural network's prediction
+for the image's class is something unrelated to that of the original image.
+%                                                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+We take a look at multiple types of defenses to prevent this issue, one of which modifies the loss
+function, a commonly used strategy~\cite{goodfellow2015explaining, kannan2018adversarial,
 madry2019deep}, and three structural techniques, one of which modifies the former non-structural
-defense. While not successful, at the very least, we analytically asses the defenses to provide some
+% "assess" was missing an s at the end, and ^^^edit^^^ caught this
+defense. While not successful, at the very least, we analytically assess the defenses to provide some
 kind of justification for them that structural changes can produce some sort of defense against
 adversaries. As a result, it may make sense for future research to consider different types of
 networks as an alternative.
 
+% David Crandall asked^^^edit^^^ me to change the "it" that was previously here to "this thesis"
 These two subjects probably do not do much more than scratch the surface of the topic of
-representation learning, but hopefully it injects some amount of motivation into the field to
+representation learning, but hopefully this thesis injects some amount of motivation into the field to
 further explore the topic. The author believes that not enough focus has been on the core concepts
 that underpin representation, which is backed up by the general consensus that neural networks are a
 mathematical black box.
