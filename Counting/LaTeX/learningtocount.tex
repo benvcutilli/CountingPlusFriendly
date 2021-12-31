@@ -3,6 +3,15 @@ each pixel has the ability to change the total count by a certain amount by just
 image. In other words, the density is the rate of change over a single pixel. The density of every
 pixel forms a \textit{density map}, and the way one is to use this density map is by calculating the
 integral of the density from the first pixel to the last.
+% As ^^^edit2^^^ suggested to do, I put in this text to further illustrate how density works in
+% terms of counting.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                                  %
+For example, say we have an image of asteroids, and we would like to count how many are within the
+image. In this scenario, the density map should contain per-pixel values that sum to one over the
+pixels associated with a single asteroid.
+%                                                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The task then is to find a model that outputs a proper density map. As this paper points out, the
 main question becomes ground truth collection. They point out that when humans count, it is common
@@ -36,7 +45,8 @@ each pixel allows for less training data.
 
 For the first dataset that they discuss (involving determining the number of biological cells in an
 image), each annotation was given a kernel the size of one pixel, and that pixel's value was one as
-a result. The second dataset fo which they were counting humans, each annotation had a kernel with
+% Needed to change the "fo" that was originally here to "for"; this was mentioned by ^^^edit2^^^
+a result. The second dataset for which they were counting humans, each annotation had a kernel with
 diagonal covariance matrix with 4s on the diagonal, making the kernel much wider than the former
 one. These sizes were chosen empirically. The regression model used in both was a simple linear one, whose
 inputs were specific features, not merely the values of the pixels in the image. Overall, the method

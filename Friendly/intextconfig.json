@@ -612,6 +612,9 @@
         "edit": {
             "Comment": "Email (2021.12.27)",
             "Author": "David Crandall"
+        },
+        "edit2": {
+            "Comment": "Suggestions made via email on 2021.12.29 from Donald Williamson"
         }
     },
 
@@ -1226,6 +1229,11 @@
         "edit": [
             {
                 "refkey": "edit"
+            }
+        ],
+        "edit2": [
+            {
+                "refkey": "edit2"
             }
         ]
     }   
