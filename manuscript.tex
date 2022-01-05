@@ -10,7 +10,8 @@
 % Ben modified the value between the squiggly brackets of the commands in this section (and added
 % this line and comment, as well as the section indicators enclosing this area). He also uncommented
 % the \department command and removed the comment that came with that line. Capitalization style
-% used here followed that of the original template.
+% used here followed that of the original template. The PDF was rendered the following January, but
+% ^^^cv^^^ said to put the graduation month here instead.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                                                  %
 \title{Exploring Representation Learning Through Alternate Lenses}
@@ -204,6 +205,13 @@ what, personally, was a difficult time for the author. Thank you, everyone.
 
 \printbibliography
 
+% ^^^cv^^^ says I need to put in a CV, so here it is. We have this document render it because
+% the iuphd class^^^classfile^^^ sets all the correct formatting found at ^^^cv^^^
+\renewcommand{\baselinestretch}{1.0}
+\selectfont
+\newpage
+\input{cv.tex}
+
 %                                                                                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -212,7 +220,6 @@ what, personally, was a difficult time for the author. Thank you, everyone.
 
 % Adds a line for your CV without a page number
 
-% Ben commented this whole command out
-%\addtocontents{toc}{%
-%  \protect\contentsline{chapter}{Curriculum Vitae}{}}
+\addtocontents{toc}{%
+  \protect\contentsline{chapter}{Curriculum Vitae}{}}
 \end{document}

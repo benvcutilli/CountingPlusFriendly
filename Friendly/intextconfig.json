@@ -615,6 +615,12 @@
         },
         "edit2": {
             "Comment": "Suggestions made via email on 2021.12.29 from Donald Williamson"
+        },
+        "requirements": {
+            "Title": "Master's: Formatting: Theses & Dissertations: The University Graduate School: Indiana University Bloomington",
+            "Author": "Indiana University Bloomington",
+            "URL": "https://graduate.indiana.edu/thesis-dissertation/formatting/masters.html",
+            "Fetched": "2021.12.31 EST"
         }
     },
 
@@ -1234,6 +1240,12 @@
         "edit2": [
             {
                 "refkey": "edit2"
+            }
+        ],
+        "cv": [
+            {
+                "refkey": "requirements",
+                "locator": "\"Required and Optional Sections\""
             }
         ]
     }   

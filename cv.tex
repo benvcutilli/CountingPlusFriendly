@@ -1,0 +1,213 @@
+% i. https://graduate.indiana.edu/thesis-dissertation/formatting/masters.html; Master's: Formatting:
+% Theses & Dissertations: The University Graduate School: Indiana University Bloomington; 2021.12.31
+% visit date
+%
+% ii. https://owl.purdue.edu/owl/job_search_writing/resumes_and_vitas/writing_the_cv.html; Writing
+% the Curriculum Vitae // Purdue Writing Lab; 2021.12.31 (visit date)
+% 
+% iii. https://ctan.org/pkg/geometry; CTAN: Package geometry; Hideo Umeki + David Carlisle
+%
+% iv. https://ctan.org/pkg/calc; CTAN: Package calc; Frank Jensen + Kresten Krab Thorup +
+% LaTeX Contributors
+
+% This file is separate from the thesis (from a citation standpoint), and is currently unpublished,
+% authored by Ben Cutilli (me) in January of 2022. * refers to things that were commented out
+% due to requirements found at (i), "Required and Optional Sections". @ (throughout this file)
+% refers to sizes that were modified to work within these requirements. As stated is possible in
+% (ii), we don't restrict the output to one page (which is the case for résumés). Finally, any other
+% commands commented out were done so so that this file can be integrated with manuscript.tex.
+
+% Changed this file for thesis by commenting out things and changing sizes.
+
+%\documentclass{article}
+
+% ^^^geometry^^^ package
+%\usepackage[margin=0.35in]{geometry}
+% Package from ^^^calc^^^
+%\usepackage{calc}
+
+
+
+%\begin{document}
+
+\setlength{\tabcolsep}{0.1in}
+\pagenumbering{gobble}
+
+\begin{center}
+    \begin{LARGE}
+        Benjamin V. Cutilli
+    \end{LARGE} \\
+    % (ii) says that I need to include information on how to be reached
+    \begin{large}
+        benvcutilli@gmail.com \\
+        % *
+        %(215) 421-9125 \\
+        % *
+        %803 Nesbitt Road, Maple Glen, PA 19002
+    \end{large}
+\end{center} \vspace{0.5in}
+
+
+
+
+
+
+
+% Education goes first according to (ii), and also in general I avoid listing job info until
+% the end, as advised by that resource as well.
+\begin{LARGE}
+Education
+\end{LARGE} \vspace{10pt}
+
+\begin{center}
+
+    % I've used tables to create columns/rows for things that aren't really tables, so I use that
+    % strategy here; @
+    \begin{tabular}{p{2.0in} p{4.0in}}
+        Indiana University Bloomington
+                                       &
+                                          % Regarding *, I will have technically graduated in 2021,
+                                          % and so I need to put that year here (they also implied)
+                                          % that I should put the month, so I do that as well.
+                                          Computer Science, Master of Science (2021.12) \newline
+                                          Thesis: \textit{Exploring Representation Learning via
+                                          Alternate Lenses} \newline
+                                          \texttt{github.com/benvcutilli/CountingPlusFriendly}
+                                         \\
+
+        \vspace{16pt} \\
+
+        Haverford College
+                                       &
+                                          Computer Science, Bachelor of Science (2013) \newline
+                                          Thesis: \textit{Computer Vision and its Application in
+                                          Self-Driving Cars} \newline
+                                          \texttt{http://hdl.handle.net/10066/9003}
+                                         \\
+    \end{tabular} \\[0.5in]
+
+\end{center}
+
+
+
+% Same reason for this table and the next as for the first table of this document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                                                      %
+
+
+
+
+% Figured that this would be the thing that made the most sense to list next given that it is
+% more important to a CV than the jobs section, following (ii).
+\begin{LARGE}
+Research
+\end{LARGE} \vspace{10pt}
+
+\begin{center}
+
+    % @
+    \begin{tabular}{p{2.0in} p{4.0in}}
+       \textit{Addressing Supply Chain Risks
+       of Microelectronic Devices
+       through Computer Vision}
+                                         &
+                                            Chen, Wanyan, Rao, Cutilli, Sowinski, Crandall, and
+                                            Templeman \newline
+                                            IEEE Applied Imagery Pattern Recognition Workshop \newline
+                                            2017, \texttt{https://ieeexplore.ieee.org/document/8457956}
+                                          \\
+    
+       \vspace{16pt} \\
+
+
+       \textit{Exploring Representation
+       Learning via Alternate Lenses}
+                                         &  
+                                            Benjamin Cutilli \newline
+                                            Master's Thesis at Indiana University Bloomington
+                                            2021 \newline
+                                            \texttt{github.com/benvcutilli/CountingPlusFriendly}
+                                          \\
+    \end{tabular} \\[0.5in]
+
+\end{center}
+
+
+
+
+
+
+
+
+% Based on the prioritizing mindset of (ii), this section may need to come last. Entries
+% ordered in the aforementioned spirit as well
+\begin{LARGE}
+Work
+\end{LARGE} \vspace{10pt}
+
+\begin{center}
+
+    % I write using this incorrect grammar (from a traditional perspective) in the responsibilities
+    % text because that is what is said by (ii) to be necessary. Also, I prioritize positions that
+    % have more to do with education and research over others as that was suggested by (ii) to be a
+    % good idea. @
+    \begin{tabular}{p{2.0in} p{4.0in}}
+
+        Indiana University Bloomington
+        School of Informatics
+        and Computing
+                              &
+                                  Research Assistant         \newline
+                                  Supervisor: David Crandall \newline
+                                  % (ii) said to keep the grammar the same between similar
+                                  % things, so this date span's format follows that of the entry
+                                  % below
+                                  January - May 2017 \newline
+                                  Advised on research related to visual detection of flawed
+                                  electronics; explored the possibility of using another method for
+                                  the task; attended events related to research
+                               \\
+
+        \vspace{16pt} \\
+    
+        Indiana University
+        Bloomington School
+        of Informatics and
+        Computing
+                             &
+                                  Associate Instructor \newline
+                                  CSCI-B551 Elements of Artificial Intelligence \newline
+                                  January - May 2017 \newline
+                                  Assisted students taking course; graded assignments
+                               \\
+    
+        \vspace{16pt} \\
+
+        NVIDIA Corporation
+                             &
+                                  Internship, Solutions Architect group \newline
+                                  2017 (June - August) \newline
+                                  Developed software to demonstrate NVIDIA hardware; preliminary
+                                  deep learning research; assisted others when needed
+                                \\
+    \end{tabular}
+
+
+
+%                                                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{center}
+
+
+
+
+
+
+
+
+
+
+
+%\end{document}
+ 
