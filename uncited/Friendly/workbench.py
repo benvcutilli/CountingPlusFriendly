@@ -7,7 +7,7 @@ import chainer
 # Package from ^^^pythonpathlib^^^
 import pathlib
 
-# The ^^^json^^^ package
+# The ^^^pythonjson^^^ package
 import json
 
 # See ^^^pythonre^^^ for this library

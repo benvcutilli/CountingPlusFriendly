@@ -8,7 +8,7 @@
 # From ^^^pythonargparse^^^ (the package is, not this line of code)
 import argparse
 
-# Package from ^^^json^^^
+# Package from ^^^pythonjson^^^
 import json
 
 # ^^^chainer^^^, the reference for this package

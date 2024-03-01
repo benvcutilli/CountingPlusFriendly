@@ -37,12 +37,17 @@
             "Version Date": "2020.1.31 EDT",
             "Via": "Google-searching for \"numpy logarithm with custom base\""
         },
-        "pythonargparse": {
+        "pythonargparsecounting": {
             "Title": "argparse — Parser for command-line options, arguments and sub-commands — Python 3.9.4 documentation",
             "Author": "Python Software Foundation",
             "URL": "https://docs.python.org/3/library/argparse.html",
             "Revision date": "2021.4.19",
             "Fetched": "2021.4.19 EDT"
+        },
+	"pythonargparsefriendly": {
+            "Title": "argparse — Parser for command-line options, arguments and sub-commands — Python 3.9.7 documentation",
+            "Author": "Python Software Foundation",
+            "URL": "https://docs.python.org/3/library/argparse.html"
         },
         "pythonbuiltins": {
             "Title": "Built-in Functions — Python 3.9.4 documentation",
@@ -110,14 +115,14 @@
             "Commit hash": "6264c21937efacf8c2b744e78a3714964864b95e"
         },
         "chainergetdevice": {
-            "Title": "chainer.get_device — Chainer 7.7.0 documentation",
-            "Author": "Preferred (Networks/Infrastructure), possibly others",
-            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.get_device.htm"
+            "Title": "chainer.get_device — Chainer 7.8.0 documentation",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.get_device.html",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three"
         },
         "pythonpathlib": {
-            "Title": "pathlib",
-            "Author": "Python Software Foundation",
-            "URL": "https://docs.python.org/3/library/pathlib.htm"
+            "Title": "pathlib — Object-oriented filesystem paths — Python 3.9.7 documentation",
+            "URL": "https://docs.python.org/3/library/pathlib.html",
+            "Author": "Python Software Foundation"
         },
         "pythonjson": {
             "Title": "json",
@@ -125,14 +130,14 @@
             "URL": "https://docs.python.org/3/library/json.html"
         },
         "pythonmath": {
-            "Title": "math",
+            "Title": "math — Mathematical functions — Python 3.9.7 documentation",
             "Author": "Python Software Foundation",
             "URL": "https://docs.python.org/3/library/math.html"
         },
         "pythoncollections": {
-            "Title": "collections",
-            "Author": "Python Software Foundation",
-            "URL": "https://docs.python.org/3/library/collections.html"
+            "Title": "collections — Container datatypes — Python 3.9.6 documentation",
+            "URL": "https://docs.python.org/3/library/collections.html",
+            "Author": "Python Software Foundation"
         },
         "chainersin": {
             "Title": "chainer.functions.sin — Chainer 7.7.0 documentation",
@@ -205,7 +210,7 @@
             "URL": "https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf"
         },
         "missing": {
-            "Reference Meaning": "Don't know which reference should be cited, there can be multiple unknown references that use this single one"
+            "Comment": "Not sure what reference applies here; also, this reference can be used for different unknown references"
         },
         "labeledimagedataset": {
             "Title": "chainer.datasets.LabeledImageDataset — Chainer 7.8.0 documentation",
@@ -222,8 +227,9 @@
         },
         "pillow": {
             "Title": "Pillow",
-            "Author": "Many, including Fredrik Lundh and Alex Clark",
-            "URL": "https://pillow.readthedocs.io/en/stable/"
+            "Author": "Alex Clark et al.",
+            "URL": "https://pillow.readthedocs.io/en/stable/",
+            "Comment": "On the site it appeared that Alex Clark was the primary author and that no other authors are typically considered primary as well"
         },
         "numpy": {
             "Title": "NumPy",
@@ -259,13 +265,13 @@
             "Author": "NVIDIA Corporation",
             "URL": "https://developer.nvidia.com/cuda-toolkit"
         },
-        "batchnormalization": {
+       "batchnormalization": {
             "Title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
-            "Author": "Christian Szegedy and Sergey Ioffe",
+            "Author": "Sergey Ioffe and Christian Szegedy",
             "URL": "https://arxiv.org/pdf/1502.03167.pdf",
-            "Comment": "Sequence in which the authors are displayed is from the paper",
-            "arXiV ID": "1502.03167v7",
-            "Version Date": "2015.3.2"
+            "arXiV ID": "1502.03167v3",
+            "Date of paper": "2015.3.2",
+            "Comment": "Authors in same order as paper"
         },
         "chainerbatchnormalization": {
             "Title": "chainer.links.BatchNormalization — Chainer 7.8.0 documentation",
@@ -347,8 +353,9 @@
         },
         "latex": {
             "Title": "LaTeX",
-            "Author": "Frank Mittelbach, Joseph Wright, Rainer Schöpf, Bruno Le Floch, Chris Rowley, David Carlise, Jonas Jared Jacek, Johannes Brams, Enrico Gregorio, Javier Bezos, Ulrike Fisher, Will Robertson, Phelype Oleinik, and Marcel Krüger",
-            "URL": "latex-project.org"
+            "Author": "Frank Mittelbach, Joseph Wright, Rainer Schöpf, Bruno Le Floch, Chris Rowley, David Carlise, Jonas Jared Jacek, Johannes Brams, Enrico Gregorio, Javier Bezos, Ulrike Fisher, Will Robertson, Phelype Oleinik, Marcel Krüger, Denys Duchier, Michael Downes, Robin Fairbairns, Morten Høgholm, Alan Jeffrey, Thomas Lotze, and Martin Schröder",
+            "URL": "latex-project.org",
+            "Comment": "Authors from Denys Duchier onward were sorted by descending priority assumed to be implied in \"Former Team Members\" at https://www.latex-project.org/about/team/"
         },
         "relu": {
             "Title": "Deep Sparse Rectifier Neural Networks",
@@ -376,7 +383,7 @@
         "intext": {
             "Title": "InText",
             "Author": "Benjamin Cutilli",
-            "Comment": "Unfinished, unpublished project"
+	    "URL": "github.com/benvcutilli/InText"
         },
         "matplotlib": {
             "Title": "Matplotlib: A 2D graphics environment",
@@ -408,8 +415,8 @@
         },
         "pytorch": {
             "Title": "PyTorch",
-            "URL": "https://pytorch.org/docs/stable/index.html",
-            "Authors": "Unknown"
+            "Author": "Multiple",
+            "URL": "https://pytorch.org"
         },
         "cowc": {
             "Title": "A Large Contextual Dataset for Classification, Detection and Counting of Cars with Deep Learning",
@@ -432,6 +439,517 @@
             "Author": "Michael Reeves and YouTube",
             "URL": "https://youtu.be/tqsy9Wtr1qE",
             "Version Date": "2021.4.9"
+        },
+        "chainermatmul": {
+            "Title": "chainer.functions.matmul — Chainer 7.7.0 documentation",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three",
+            "Fetched": "2021 EDT",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.functions.matmul.html"
+        },
+        "pytorchnormfunction": {
+            "Title": "torch.norm — PyTorch 1.8.1 documentation",
+            "URL": "https://pytorch.org/docs/stable/generated/torch.norm.html"
+        },
+        "pytorchnormmethod": {
+            "Title": "torch.Tensor.norm — PyTorch 1.9.0 documentation",
+            "URL": "https://pytorch.org/docs/stable/generated/torch.Tensor.norm.html"
+        },
+        "plotlyfigure": {
+            "Title": "plotly.graph_objects.Figure — 5.1.0 documentation",
+            "Author": "plotly.com",
+            "URL": "https://plotly.com/python-api-reference/generated/plotly.graph_objects.Figure.html",
+            "Fetched": "2021.8.1 EDT"
+        },
+        "intriguingpropertiessite": {
+            "Title": "[1312.6199] Intriguing properties of neural networks",
+            "Author": "Cornell University",
+            "Fetched": "2021.8.5 EDT",
+            "URL": "https://arxiv.org/abs/1312.6199"
+        },
+        "explainingsite": {
+            "Title": "[1412.6572] Explaining and Harnessing Adversarial Examples",
+            "Author": "Cornell University",
+            "Fetched": "2021.8.5 EDT",
+            "URL": "https://arxiv.org/abs/1412.6572"
+        },
+        "obfuscatedgradientssite": {
+            "Title": "[1802.00420] Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples",
+            "Author": "Cornell University",
+            "Fetched": "2021.8.5 EDT",
+            "URL": "https://arxiv.org/abs/1802.00420"
+        },
+        "towardsdeepsite": {
+            "Title": "[1412.5068] Towards Deep Neural Network Architectures Robust to Adversarial Examples",
+            "Author": "Cornell University",
+            "Fetched": "2021.8.5 EDT",
+            "URL": "https://arxiv.org/abs/1412.5068"
+        },
+        "synthesizingrobustsite": {
+            "Title": "[1707.07397] Synthesizing Robust Adversarial Examples",
+            "Author": "Cornell University",
+            "Fetched": "2021.8.5 EDT",
+            "URL": "https://arxiv.org/abs/1707.07397"
+        },
+        "mnist": {
+            "Title": "MNIST Database of Handwritten Digits",
+            "Author": "Yann LeCun, Corinna Cortes, Christopher J.C. Burges; this is the order in which they were listed",
+            "URL": "http://yann.lecun.com/exdb/mnist/"
+        },
+        "chainerfunctions": {
+            "Title": "Functions — Chainer 7.8.0 documentation",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three",
+            "URL": "https://docs.chainer.org/en/stable/reference/functions.html"
+        },
+        "chainermeansquarederrorcode": {
+            "Title": "chainer/mean_squared_error.py at v7.8.0 · chainer/chainer",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three",
+            "URL": "https://github.com/chainer/chainer/blob/v7.8.0/chainer/functions/loss/mean_squared_error.py",
+            "Fetched": "2021.9 EDT",
+            "git commit": "522e017a18008ee00e39f4ae4b30f4f9db3824b2"
+        },
+        "chainermeansquarederrorcode": {
+            "Title": "chainer/squared_error.py at v7.8.0 · chainer/chainer",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three",
+            "URL": "https://github.com/chainer/chainer/blob/v7.8.0/chainer/functions/loss/squared_error.py",
+            "Fetched": "2021.9 EDT",
+            "git commit": "522e017a18008ee00e39f4ae4b30f4f9db3824b2"
+        },
+        "explaining": {
+            "Title": "Explaining and Harnessing Adversarial Examples",
+            "Author": "Ian Goodfellow, Jonathan Shlens, Christian Szegedy",
+            "URL": "https://arxiv.org/pdf/1412.6572.pdf",
+            "arXiV ID": "1412.6572v3",
+            "Version Date": "2015.3.20",
+            "Comment": "Order of authors was taken from the order of the resource"
+        },
+        "chainersum": {
+            "Title": "chainer.functions.sum — Chainer 7.8.0 documentation",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.functions.sum.html"
+        }, 
+        "chainermeansquarederror": {
+            "Title": "chainer.functions.mean_squared_error — Chainer 7.8.0 documentation",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.functions.mean_squared_error.html"
+        },
+        "chainerclassifier": {
+            "Title": "chainer.links.Classifier — Chainer 7.8.0 documentation",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.links.Classifier.html"
+        },
+        "cifar": {
+            "Title": "Learning Multiple Layers of Features from Tiny Images",
+            "URL": "https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf",
+            "Author": "Alex Krizhevsky",
+            "Date of Paper": "2009.4.8",
+            "Page": "32",
+            "Comment": "\"URL\", the paper's year, \"Title\", and \"Author\" values needed to be included according to https://www.cs.toronto.edu/~kriz/cifar.html, \"Reference\"",
+            "Dataset homepage": "https://www.cs.toronto.edu/~kriz/cifar.html"
+        },
+        "chainerim2col": {
+            "Title": "im2col — Chainer 7.8.0 documentation",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.functions.im2col.html"
+        },
+        "p573": {
+            "Title": "Scientific Computing",
+            "Author": "Randall Bramley",
+            "When": "Fall 2017",
+            "School": "Indiana University Bloomington",
+            "Comment": "This was a graduate-level course"
+        },
+        "intriguingproperties": {
+            "Title": "Intriguing Properties of Neural Networks",
+            "Author": "Christan Szgedey, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan, Ian Goodfellow, and Rob Fergus",
+            "arXiV ID": "1312.6199v4",
+            "URL": "https://arxiv.org/pdf/1312.6199.pdf",
+            "Date of paper": "2014.2.19",
+            "Comment": "Author order as presented in paper"
+        },
+        "chainerconvolution2d": {
+            "Title": "chainer.links.Convolution2D — Chainer 7.8.0 documentation",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.links.Convolution2D.html#chainer.links.Convolution2D"
+        },
+        "chainergetmnist": {
+            "Title": "chainer.datasets.get_mnist — Chainer 7.8.0 documentation",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.datasets.get_mnist.html",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three"
+        },
+        "chainerupdater": {
+            "Title": "chainer.training.Updater — Chainer 7.8.0 documentation",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.training.Updater.html",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three"
+        },
+        "chainerconverter": {
+            "Title": "chainer.dataset.Converter — Chainer 7.8.0 documentation",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.dataset.Converter.html",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three"
+        },
+        "pythonre": {
+            "Title": "re — Regular expression operations — Python 3.9.7 documentation",
+            "URL": "https://docs.python.org/3/library/re.html",
+            "Author": "Python Software Foundation"
+        },
+        "chainerfunctions": {
+            "Title": "Functions — Chainer 7.8.0 documentation",
+            "URL": "https://docs.chainer.org/en/stable/reference/functions.html",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three"
+        },
+        "chainerstandardupdater": {
+            "Title": "chainer.training.updaters.StandardUpdater — Chainer 7.8.0 documentation",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.training.updaters.StandardUpdater.html#chainer.training.updaters.StandardUpdater",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three"
+        },
+        "extensionclass": {
+            "Title": "Extension — Chainer 7.8.0 documentation",
+            "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.training.Extension.html",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three"
+        },
+        "towardsdeeplearningsite": {
+            "Title": "[1706.06083] Towards Deep Learning Models Resistant to Adversarial Attacks",
+            "Author": "Cornell University",
+            "Fetched": "2021.10.27 EDT",
+            "URL": "https://arxiv.org/abs/1706.06083"
+        },
+        "rethinkingsite": {
+            "Title": "[1512.00567] Rethinking the Inception Architecture for Computer Vision",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1512.00567",
+            "Fetched": "2021.11.9 EST"
+        },
+        "adversariallogitsite": {
+            "Title": "[1803.06373] Adversarial Logit Pairing",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1803.06373",
+            "Fetched": "2021.11.11 EST"
+        },
+        "mnist": {
+            "Title": "The MNIST Database of Handwritten Digits",
+            "Author": "Yann LeCun, Corinna Cortes, Christopher J.C. Burges (order as presented)",
+            "URL": "http://yann.lecun.com/exdb/mnist/"
+        },
+        "imagenetsite": {
+            "Author": "Standford University",
+            "URL": "http://ai.stanford.edu/~olga/bibtex/ILSVRC15.bib"
+        },
+        "countinginthewildsite": {
+            "Title": "Counting in the Wild - Penguin Dataset",
+            "Author": "Visual Geometry Group",
+            "URL": "https://www.robots.ox.ac.uk/~vgg/data/penguins/",
+            "Fetched": "2021.11.17 EST",
+            "Version Date": "2016.8.19"
+        },
+        "deepinsideconvolutionalsite": {
+            "Title": "[1312.6034] Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1312.6034",
+            "Fetched": "2021.11.17 EST"
+        },
+        "salientobjectsubitizingsite": {
+            "Title": "CVPR 2015 Open Access Repository",
+            "Author": "The Computer Vision Foundation",
+            "URL": "https://openaccess.thecvf.com/content_cvpr_2015/html/Zhang_Salient_Object_Subitizing_2015_CVPR_paper.html",
+            "Fetched": "2021.11 EST"
+        },
+        "learningtocountsite": {
+            "Title": "Visual Geometry Group - University of Oxford",
+            "Author": "Visual Geometry Group",
+            "URL": "https://www.robots.ox.ac.uk/~vgg/research/counting/index_org.html",
+            "Fetched": "2021.11.17 EST"
+        },
+        "understandingtheabilitysite": {
+            "Title": "[2101.01386] Understanding the Ability of Deep Neural Networks to Count Connected Components in Images",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/2101.01386",
+            "Fetched": "2021.11.17 EST"
+        },
+        "thematrixcookbooksite": {
+            "Author": "IMM Publication Database",
+            "URL": "https://www2.imm.dtu.dk/pubdb/pubs/3274-bibtex.txt",
+            "Fetched": "2021.11.18 EST",
+            "Via": "Found using Google Search"
+        },
+        "ensembleadversarialtrainingsite": {
+            "Title": "[1705.07204] Ensemble Adversarial Training: Attacks and Defenses",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1705.07204",
+            "Fetched": "2021.11.18 EST"
+        },
+        "chainersite": {
+            "Title": "chainer/chainer2019_bibtex.txt at master · chainer/chainer · GitHub",
+            "Author": "Prabhat Nagarajan",
+            "URL": "https://github.com/chainer/chainer/blob/master/chainer2019_bibtex.txt",
+            "Fetched": "2021.11.18 EST",
+            "git commit": "1fec9c49431dbe486a621050458c6f18e3d0a110"
+        },
+        "pytorchsite": {
+            "Title": "pytorch/CITATION at master · pytorch/pytorch · GitHub",
+            "Author": "Hong Xu, Kristina Leinweber, Soumith Chintala, and Julia Kreutzer",
+            "URL": "https://github.com/pytorch/pytorch/blob/master/CITATION",
+            "Fetched": "2021.11.18 EST",
+            "git commit": "005146711870a291f4a7a4cc82d97e1e586dcaff"
+        },
+        "understandingneuralnetworkssite": {
+            "Title": "[1506.06579] Understanding Neural Networks Through Deep Visualization",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1506.06579",
+            "Fetched": "2021.11.21 EST"
+        },
+        "batchnormalizationsite": {
+            "Title": "[1502.03167] Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1502.03167",
+            "Fetched": "2021.11.23 EST"
+        },
+        "batchrenormalizationsite": {
+            "Title": "[1702.03275] Batch Renormalization: Towards Reducing Minibatch Dependence in Batch-Normalized Models",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1702.03275",
+            "Fetched": "2021.11.23 EST"
+        },
+        "ensembleadversarial": {
+            "Title": "Ensemble Adversarial Training: Attacks and Defenses",
+            "Author": "Florian Tramèr, Alexey Kurakin, Nicolas Papernot, Ian Goodfellow, Dan Boneh, and Patrick McDaniel",
+            "URL": "https://arxiv.org/pdf/1705.07204.pdf",
+            "Version Date": "2020.4.26",
+            "arXiV ID": "1705.07204v5",
+            "Comment": "Using author precedence from paper in \"Author\" field"
+        },
+        "maxoutsite": {
+            "Title": "[1302.4389] Maxout Networks",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1302.4389",
+            "Fetched": "2021.11.29 EST"
+        },
+        "learningrepresentationssite": {
+            "Title": "Learning representations by back-propagating errors | Nature",
+            "Author": "Springer Nature",
+            "URL": "https://www.nature.com/articles/323533a0",
+            "Fetched": "2021.12.2 EST"
+        },
+        "practicalsite": {
+            "Title": "Practical Black-Box Attacks against Machine Learning | Proceedings of the 2017 ACM on Asia Conference on Computer and Communications Security",
+            "Author": "Association for Computing Machinery",
+            "URL": "https://dl.acm.org/doi/10.1145/3052973.3053009",
+            "Fetched": "2021.12.2 EST"
+        },
+        "limitedmemorysite": {
+            "Title": "On the limited memory BFGS method for large scale optimization | SpringerLink",
+            "URL": "https://link.springer.com/article/10.1007/BF01589116",
+            "Author": "Springer Nature",
+            "Fetched": "2021.12.3 EST",
+            "Via": "https://en.wikipedia.org/wiki/Limited-memory_BFGS"
+        },
+        "lbfgswikipedia": {
+            "Title": "Limited-memory BFGS - Wikipedia",
+            "URL": "https://en.wikipedia.org/wiki/Limited-memory_BFGS",
+            "Fetched": "2021.12.3 EST",
+            "Version Date": "2021.10.17 UTC",
+            "Via": "Google"
+        },
+        "numpysite": {
+            "Title": "numpy/CITATION.bib at main · numpy/numpy · GitHub",
+            "Author": "Pamphile Roy",
+            "URL": "https://github.com/numpy/numpy/blob/main/CITATION.bib",
+            "Fetched": "2021.12.4 EST"
+        },
+        "cupysite": {
+            "Title": "cupy/CITATION.bib at master · cupy/cupy · GitHub",
+            "Author": "Kenichi Maehashi",
+            "URL": "https://github.com/cupy/cupy/blob/master/CITATION.bib",
+            "Fetched": "2021.12.4 EST"
+        },
+        "shapelysite": {
+            "Title": "Shapely/CITATION.txt at main · Toblerity/Shapely · GitHub",
+            "Author": "Sean Gilles, Justin Shenk, and Joel Ostblom",
+            "URL": "https://github.com/Toblerity/Shapely/commits/main/CITATION.txt",
+            "Fetched": "2021.12.4 EST"
+        },
+        "iulatex": {
+            "Filename": "iuphd-doc.tex",
+            "URL": "https://math.indiana.edu/documents/IUThesisClass/iuphd-doc1.tex",
+            "Author": "Indiana University Bloomington Department of Mathematics",
+            "Fetched": "2021.11.18 EST"
+        },
+        "classfile": {
+            "Filename": "iuphd.cls",
+            "Author": "Indiana University Bloomington Department of Mathematics",
+            "URL": "https://math.indiana.edu/documents/IUThesisClass/iuphd.cls",
+            "Fetched": "2021.11.18 EST"
+        },
+        "thespacesite": {
+            "Title": "[1704.03453] The Space of Transferable Adversarial Examples",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1704.03453",
+            "Fetched": "2021.12.9 EST"
+        },
+        "youonlylookoncesite": {
+            "Title": "[1506.02640] You Only Look Once: Unified, Real-Time Object Detection",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1506.02640",
+            "Fetched": "2021.12.10 EST"
+        },
+        "interactivegraphcutssite": {
+            "Title": "Interactive graph cuts for optimal boundary & region segmentation of objects in N-D images | IEEE Conference Publication | IEEE Xplore",
+            "Author": "IEEE",
+            "URL": "https://ieeexplore.ieee.org/document/937505",
+            "Fetched": "2021.12.10 EST"
+        },
+        "deepsparserectifiersite": {
+            "Title": "Deep Sparse Rectifier Neural Networks",
+            "Author": "Proceedings of Machine Learning Research",
+            "URL": "https://proceedings.mlr.press/v15/glorot11a.html",
+            "Fetched": "2021.12.10 EST"
+        },
+        "cifarsite": {
+            "Title": "CIFAR-10 and CIFAR-100 datasets",
+            "Author": "Alex Krizhevsky",
+            "URL": "https://www.cs.toronto.edu/~kriz/cifar.html",
+            "Fetched": "2021.12.10 EST"
+        },
+        "incorporatingsite": {
+            "Title": "NIPS-2000-incorporating-second-order-functional-knowledge-for-better-option-pricing-Bibtex",
+            "Author": "NeurIPS Proceedings",
+            "URL": "https://papers.nips.cc/paper/2000/file/44968aece94f667e4095002d140b5896-Bibtex.bib",
+            "Fetched": "2021.12.10 EST"
+        },
+        "universalapproximatorssite": {
+            "Title": "Multilayer feedforward networks are universal approximators - ScienceDirect",
+            "Author": "Science Direct",
+            "URL": "https://www.sciencedirect.com/science/article/abs/pii/0893608089900208",
+            "Fetched": "2021.12.10 EST"
+        },
+        "robustphysicalworldsite": {
+            "Title": "[1707.08945] Robust Physical-World Attacks on Deep Learning Models",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1707.08945",
+            "Fetched": "2021.12.11 EST"
+        },
+        "goingdeeperwithconvolutionssite": {
+            "Title": "[1409.4842] Going Deeper with Convolutions",
+            "Author": "Cornell University",
+            "URL": "https://arxiv.org/abs/1409.4842",
+            "Fetched": "2021.12.12 EST"
+        },
+        "alargecontextualsite": {
+            "Filename": "10.1007%2F978-3-319-46487-9_48-citation.bib",
+            "Author": "Springer Nature",
+            "URL": "https://citation-needed.springer.com/v2/references/10.1007/978-3-319-46487-9_48?format=bibtex&flavour=citation",
+            "Fetched": "2021.12.12 EST"
+        },
+        "themagicnumbersite": {
+            "Title": "The magic number 4±0: a new look at visual numerosity judgments: OneSearch@IU",
+            "Author": "EBSCO Industries, Inc.",
+            "URL": "https://proxyiub.uits.iu.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&db=edselc&AN=edselc.2-52.0-0017099920&site=eds-live&scope=site",
+            "Fetched": "2021.12.12 EST"
+        },
+        "thediscriminationsite": {
+            "Filename": "10.2307_1418556.txt",
+            "Author": "JStor",
+            "URL": "https://www-jstor-org.proxyiub.uits.iu.edu/citation/text/10.2307/1418556",
+            "Fetched": "2021.12.12 EST"
+        },
+        "subitizingananalysissite": {
+            "Title": "Subitizing: An analysis of its component processes. Journal of Experimental...: .OneSearch@IU",
+            "Author": "EBSCO Industries, Inc.",
+            "URL": "https://proxyiub.uits.iu.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&db=edssch&AN=edssch.oai%3aescholarship.org%2fark%3a%2f13030%2fqt9fn27772&site=eds-live&scope=site",
+            "Fetched": "2021.12.12 EST"
+        },
+        "biblatex": {
+            "Title": "BibLaTeX",
+            "Author": "In order of appearance: Philip Lehman, Joseph Wright, Audrey Boruvka, and Phillip Kime",
+            "URL": "https://ctan.org/pkg/biblatex"    
+        },
+        "osimit": {
+            "Title": "The MIT License | Open Source Initiative",
+            "Author": "Open Source Initiative",
+            "URL": "https://opensource.org/licenses/MIT",
+            "Fetched": "2021.12.14 EST",
+            "Via": "Googled for it"
+        },
+        "amsmath": {
+            "Title": "amsmath",
+            "Author": "American Mathematical Society",
+            "URL": "https://ctan.org/pkg/amsmath"
+        },
+        "graphicx": {
+            "Title": "graphicx",
+            "Author": "David Carlise, Sebastian Rants, and the LaTeX3 Project",
+            "URL": "https://ctan.org/pkg/graphicx",
+            "Comment": "Website had the authors in this order"
+        },
+        "towards": {
+            "Title": "Towards Deep Learning Models Resistant to Adversarial Attacks",
+            "Author": "Alexsander Madry, Alexsander Makelov, Ludwig Schmidt, Dimitri Tsipras, and Adrian Vladu",
+            "URL": "https://arxiv.org/pdf/1706.06083.pdf",
+            "Version Date": "2019.9.4",
+            "arXiV ID": "1706.06083v4",
+            "Comment": "Authors listed as they appear in https://arxiv.org/abs/1706.06083"
+        },
+        "mastersthesis": {
+            "Title": "CSCI-Y 792 Master's Thesis",
+            "Author": "Luddy School of Informatics, Computing, and Engineering",
+            "School": "Indiana University Bloomington"
+        },
+        "numbering": {
+            "Comment": "Email from David Crandall on 2021.12.6"
+        },
+        "numpyndarray": {
+            "Title": "The N-dimensional array (ndarray) — NumPy v1.21 Manual",
+            "URL": "https://numpy.org/doc/stable/reference/arrays.ndarray.html"
+        },
+        
+        "plotly": {
+            "Title": "Plotly",
+            "Author": "Plotly",
+            "URL": "https://plotly.com/python/"
+        },
+        "cleverhans": {
+            "Title": "Cleverhans",
+            "Author": "At least the Cleverhans Lab (see https://github.com/cleverhans-lab/cleverhans/blob/master/README.md) for what is at least a more comprehensive list",
+            "URL": "https://github.com/cleverhans-lab/cleverhans"
+        },
+        "obfuscatedgradients": {
+            "Title": "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples",
+            "Author": "Anish Athalye, Nicolas Carlini, and David Wagner",
+            "URL": "https://arxiv.org/pdf/1802.00420.pdf",
+            "arXiV ID": "1802.00420v4",
+            "Version Date": "2018.7.31",
+            "Comment": "Authors follow the order set out in the author list of the paper"
+        },
+        "alp": {
+            "Title": "Adversarial Logit Pairing",
+            "Author": "Harini Kannan, Alexey Kurakin, Ian Goodfellow",
+            "URL": "https://arxiv.org/pdf/1803.06373.pdf",
+            "arXiV ID": "1803.06373v1",
+            "Version Date": "2018.3.16",
+            "Comment": "Having Kannan come first, then Kurakin, and finally Goodfellow in the author list is from https://arxiv.org/abs/1803.06373"
+        },
+        "proquest": {
+            "Title": "ProQuest",
+            "Author": "ProQuest ExLibris",
+            "URL": "proquest.com"
+        },
+        "proquestlength": {
+            "Title": "Why is there a word limit on the length of my abstract?",
+            "Author": "ProQuest ExLibris",
+            "URL": "https://support.proquest.com/s/article/Why-is-there-a-word-limit-on-the-length-of-my-abstract",
+            "Fetched": "2021.12.15 EST",
+            "Via": "searching using https://support.proquest.com/s/"
+        },
+        "edit": {
+            "Comment": "Email (2021.12.27)",
+            "Author": "David Crandall"
+        },
+        "edit2": {
+            "Comment": "Suggestions made via email on 2021.12.29 from Donald Williamson"
+        },
+        "requirements": {
+            "Title": "Master's: Formatting: Theses & Dissertations: The University Graduate School: Indiana University Bloomington",
+            "Author": "Indiana University Bloomington",
+            "URL": "https://graduate.indiana.edu/thesis-dissertation/formatting/masters.html",
+            "Fetched": "2021.12.31 EST"
         }
     },
     
@@ -466,7 +984,7 @@
         ],
         "argparsenamespace": [
             {
-                "refkey": "pythonargparse",
+                "refkey": "pythonargparsecounting",
                 "locator": "\"The Namespace object\""
             }
         ],
@@ -546,7 +1064,7 @@
             {
                 "refkey": "numpyunravel"
             }
-        ]
+        ],
         "chainerbatchnormalizationcode": [
             {
                 "refkey": "chainerbatchnormalizationcode"
@@ -634,11 +1152,16 @@
                 "locator": "page title"
             }
         ],
-        "pythonargparse": [
+        "pythonargparsecounting": [
             {
-                "refkey": "pythonargparse"
+                "refkey": "pythonargparsecounting"
             }
         ],
+	"pythonargparsefriendly": [
+            {
+	        "refkey": "pythonargparsefriendly"
+	    }	
+	],
         "chainer": [
             {
                 "refkey": "chainer"
@@ -892,6 +1415,519 @@
             {
                 "refkey": "thresholding",
                 "locator": "see 3 minutes, 58 seconds onward"
+            }
+        ],
+        "chainermatmul": [
+            {
+                "refkey": "chainermatmul"
+            }
+        ],
+        "pytorchnormfunction": [
+            {
+                "refkey": "pytorchnormfunction"
+            }
+        ],
+        "pytorchnormmethod": [
+            {
+                "refkey": "pytorchnormmethod"
+            }
+        ],
+        "plotlyfigureshow": [
+            {
+                "refkey": "plotlyfigure",
+                "locator": "Figure.show(...) reference"
+            }
+        ],
+        "intriguingpropertiessite": [
+            {
+                "refkey": "intriguingpropertiessite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "obfuscatedgradientssite": [
+            {
+                "refkey": "obfuscatedgradientssite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "towardsdeepsite": [
+            {
+                "refkey": "towardsdeepsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "synthesizingrobustsite": [
+            {
+                "refkey": "synthesizingrobustsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "chainerfunctions": [
+            {
+                "refkey": "chainerfunctions"
+            }
+        ],
+        "meansquarederrorforwardcode": [
+            {
+                "refkey": "chainermeansquarederrorcode",
+                "locator": "MeanSquaredError.forward_(cpu/gpu)(...) method"
+            }
+        ],
+        "squarederrorforwardcode": [
+            {
+                "refkey": "chainersquarederrorcode",
+                "locator": "body of SquaredError.forward(...)"
+            }
+        ],
+        "explaining": [
+            {
+                "refkey": "explaining"
+            }
+        ],
+        "chainersum": [
+            {
+                "refkey": "chainersum"
+            }
+        ],
+        "chainermeansquarederror": [
+            {
+                "refkey": "chainermeansquarederror"
+            }
+        ],
+        "chainerclassifier": [
+            {
+                "refkey": "chainerclassifier"
+            }
+        ],
+        "cifar": [
+            {
+                "refkey": "cifar10"
+            }
+        ],
+        "p573": [
+            {
+                "refkey": "p573"
+            }
+        ],
+        "batchrenormalizationwhere": [
+            {
+                "refkey": "batchnormalization",
+                "locator": "section 3.2"
+            }
+        ],
+        "intriguingproperties": [
+            {
+                "refkey": "intriguingproperties"
+            }
+        ],
+        "batchnormalizationdiscussion": [
+            {
+                "refkey": "batchnormalizationdiscussion"
+            }
+        ],
+        "chainerconvolution2d": [
+            {
+                "refkey": "chainerconvolution2d"
+            }
+        ],
+        "argumentparserparseargs": [
+            {
+                "refkey": "pythonargparsefriendly",
+                "locator": "ArgumentParser.parse_args(...)"
+            }
+        ],
+        "chainerupdater": [
+            {
+                "refkey": "chainerupdater"
+            }
+        ],
+        "chainerconverter": [
+            {
+                "refkey": "chainerconverter"
+            }
+        ],
+        "pythonre": [
+            {
+                "refkey": "pythonre"
+            }
+        ],
+        "chainerfunctions": [
+            {
+                "refkey": "chainerfunctions"
+            }
+        ],
+        "chainerstandardupdater": [
+            {
+                "refkey": "chainerstandardupdater"
+            }
+        ],
+        "extensionclass": [
+            {
+                "refkey": "extensionclass"
+            }
+        ],
+        "towardsdeeplearningsite": [
+            {
+                "refkey": "towardsdeeplearningsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "rethinkingsite": [
+            {
+                "refkey": "rethinkingsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "adversariallogitsite": [
+            {
+                "refkey": "adversariallogitsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "mnist": [
+            {
+                "refkey": "mnist"
+            }
+        ],
+        "imagenetsite": [
+            {
+                "refkey": "imagenetsite"
+            }
+        ],
+        "countinginthewildsite": [
+            {
+                "refkey": "countinginthewildsite",
+                "locator": "bottom"
+            }
+        ],
+        "deepinsideconvolutionalsite": [
+            {
+                "refkey": "deepinsideconvolutionalsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "salientobjectsubitizingsite": [
+            {
+                "refkey": "salientobjectsubitizingsite",
+                "locator": "\"bibtex\" link at bottom"
+            }
+        ],
+        "learningtocountsite": [
+            {
+                "refkey": "learningtocountsite",
+                "locator": "\"References\""
+            }
+        ],
+        "understandingtheabilitysite": [
+            {
+                "refkey": "understandingtheabilitysite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "thematrixcookbooksite": [
+            {
+                "refkey": "thematrixcookbooksite"
+            }
+        ],
+        "ensembleadversarialtrainingsite": [
+            {
+                "refkey": "ensembleadversarialtrainingsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "chainersite": [
+            {
+                "refkey": "chainersite"
+            }
+        ],
+        "pytorchsite": [
+            {
+                "refkey": "pytorchsite"
+            }
+        ],
+        "understandingneuralnetworksite": [
+            {
+                "refkey": "understandingneuralnetworkssite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "batchrenormalizationsite": [
+            {
+                "refkey": "batchrenormalizationsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "batchnormalizationsite": [
+            {
+                "refkey": "batchnormalizationsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "ensembleadversarialimage": [
+            {
+                "refkey": "ensembleadversarial"
+            }
+        ],
+        "maxoutsite": [
+            {
+                "refkey": "maxoutsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "learningrepresentationssite": [
+            {
+                "refkey": "learningrepresentationssite",
+                "locator": "\"About this article\""
+            }
+        ],
+        "practicalsite": [
+            {
+                "refkey": "practicalsite",
+                "locator": "Quote button"
+            }
+        ],
+        "limitedmemorysite": [
+            {
+                "refkey": "limitedmemorysite"
+            }
+        ],
+        "lbfgswikipedia": [
+            {
+                "refkey": "lbfgswikipedia",
+                "locator": "\"References\""
+            }
+        ],
+        "numpysite": [
+            {
+                "refkey": "numpysite"
+            }
+        ],
+        "cupysite": [
+            {
+                "refkey": "cupysite"
+            }
+        ],
+        "shapelysite": [
+            {
+                "refkey": "shapelysite"
+            }
+        ],
+        "iulatex": [
+            {
+                "refkey": "iulatex"
+            }
+        ],
+        "classfile": [
+            {
+                "refkey": "classfile"
+            }
+        ],
+        "thespacesite": [
+            {
+                "refkey": "thespacesite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "youonlylookoncesite": [
+            {
+                "refkey": "youonlylookoncesite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "interactivegraphcutssite": [
+            {
+                "refkey": "interactivegraphcutssite",
+                "locator": "\"Cite This\" button"
+            }
+        ],
+        "deepsparserectifiersite": [
+            {
+                "refkey": "deepsparserectifiersite",
+                "locator": "\"Cite this Paper\""
+            }
+        ],
+        "cifarsite": [
+            {
+                "refkey": "cifarsite",
+                "locator": "bottom"
+            }
+        ],
+        "incorporatingsite": [
+            {
+                "refkey": "incorporatingsite"
+            }
+        ],
+        "universalapproximatorssite": [
+            {
+                "refkey": "universalapproximatorssite"
+            }
+        ],
+        "robustphysicalworldsite": [
+            {
+                "refkey": "robustphysicalworldsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "goingdeeperwithconvolutionssite": [
+            {
+                "refkey": "goingdeeperwithconvolutionssite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "alargecontextualsite": [
+            {
+                "refkey": "alargecontextualsite",
+                "locator": "\"Cite paper\""
+            }
+        ],
+        "thediscriminationsite": [
+            {
+                "refkey": "thediscrimination",
+                "locator": "clicked \"Cite this item\""
+            }
+        ],
+        "themagicnumbersite": [
+            {
+                "refkey": "themagicnumbersite",
+                "locator": "\"Cite\" link"
+            }
+        ],
+        "subitizingananalysissite": [
+            {
+                "refkey": "subitizingananalysissite",
+                "locator": "click \"Cite\""
+            }
+        ],
+        "biblatex": [
+            {
+                "refkey": "biblatex"
+            }
+        ],
+        "osimit": [
+            {
+                "refkey": "osimit"
+            }
+        ],
+        "cutillipairwise": [
+            {
+                "refkey": "cutilli",
+                "locator": "section 3.2.3"
+            }
+        ],
+        "cutilliangular": [
+            {
+                "refkey": "cutilli",
+                "locator": "section 3.2.4"
+            }
+        ],
+        "cutillielastic": [
+            {
+                "refkey": "cutilli",
+                "locator": "section 3.2.2"
+            }
+        ],
+        "cutilligradient": [
+            {
+                "refkey": "cutilli",
+                "locator": "section 3.2.1"
+            }
+        ],
+        "amsmath": [
+            {
+                "refkey": "amsmath"
+            }
+        ],
+        "chainerim2col": [
+            {
+                "refkey": "chainerim2col"
+            }
+        ],
+        "explainingsite": [
+            {
+                "refkey": "explainingsite",
+                "locator": "\"Export Bibtex Citation\" in right-side bar"
+            }
+        ],
+        "graphicx": [
+            {
+                "refkey": "graphicx"
+            }
+        ],
+        "towards": [
+            {
+                "refkey": "towards"
+            }
+        ],
+        "mastersthesis": [
+            {
+                "refkey": "mastersthesis"
+            }
+        ],
+        "numbering": [
+            {
+                "refkey": "numbering"
+            }
+        ],
+        "plotly": [
+            {
+                "refkey": "plotly"
+            }
+        ],
+        "variabledata": [
+            {
+                "refkey": "chainervariable",
+                "locator": "\"data\" attribute"
+            }
+        ],
+        "numpyndarray": [
+            {
+                "refkey": "numpyndarray"
+            }
+        ],
+        "matplotlibsite": [
+            {
+                "refkey": "matplotlibsite"
+            }
+        ],
+        "cleverhans": [
+            {
+                "refkey": "cleverhans"
+            }
+        ],
+        "obfuscatedgradients": [
+            {
+                "refkey": "obfuscatedgradients"
+            }
+        ],
+        "alp": [
+            {
+                "refkey": "alp"
+            }
+        ],
+        "proquest": [
+            {
+                "refkey": "proquest"
+            }
+        ],
+        "proquestlength": [
+            {
+                "refkey": "proquestlength"
+            }
+        ],
+        "edit": [
+            {
+                "refkey": "edit"
+            }
+        ],
+        "edit2": [
+            {
+                "refkey": "edit2"
+            }
+        ],
+        "cv": [
+            {
+                "refkey": "requirements",
+                "locator": "\"Required and Optional Sections\""
             }
         ]
     }
