@@ -1,20 +1,20 @@
 # † Each argument for this program can swap in a different piece to try attacks in different ways,
-# different models, etc. Can test on MNIST^^^mnist^^^ and eventually CIFAR-10^^^cifar^^^, the
+# different models, etc. Can test on MNIST[e1b8ca] and eventually CIFAR-10[c7fedb], the
 # testing or training subsets. When adversarial sample creation is activated, the whole dataset is
-# attacked as that is what is done in ^^^intriguingproperties^^^; however there is an ability (well,
+# attacked as that is what is done in [c214f9]; however there is an ability (well,
 # not as of this writing) to do one image at a time to be able to do image analysis as is also done
 # in that paper.
 
-# From ^^^pythonargparsefriendly^^^ (the package is, not this line of code)
+# From [702285] (the package is, not this line of code)
 import argparse
 
-# Package from ^^^pythonjson^^^
+# Package from [61fceb]
 import json
 
-# ^^^chainer^^^, the reference for this package
+# [170ecf], the reference for this package
 import chainer
 
-# Pathlib^^^pythonpathlib^^^
+# Pathlib[889500]
 import pathlib
 
 import attacks
@@ -34,8 +34,8 @@ argumentParser.add_argument("generateAgainst",
                             type=str,
                             help="The network used to generated adversarial examples. This is \
                                  useful for black box attacks")
-# Choosing between MNIST's^^^mnist^^^ (pixel values for MNIST are flipped as described in the
-# README) and CIFAR-10's^^^cifar^^^ training and testing subsets
+# Choosing between MNIST's[e1b8ca] (pixel values for MNIST are flipped as described in the
+# README) and CIFAR-10's[c7fedb] training and testing subsets
 argumentParser.add_argument("input",
                             type=str,
                             choices=["MNISTtest", "MNISTtrain", "CIFARtest", "CIFARtrain"],
@@ -49,7 +49,7 @@ argumentParser.add_argument("--attack",
                             help="Allows you to pick your desired attack if you would like to \
                                  attack instead of doing normal evaluation")
 
-# Regarding ^^^explaining^^^'s FGSM and ^^^towards^^^'s PGD
+# Regarding [f0143f]'s FGSM and [7e5d83]'s PGD
 argumentParser.add_argument("--step",
                             type=float,
                             help="The step size (0 to 255 range) you want to be using during FGSM (\
@@ -57,7 +57,7 @@ argumentParser.add_argument("--step",
                                  (https://arxiv.org/pdf/1706.06083.pdf)",
                             default=2)
 
-# The default amount of noise is the rounded 0-255 equivalent of what ^^^towards^^^ uses, so for
+# The default amount of noise is the rounded 0-255 equivalent of what [7e5d83] uses, so for
 # comparison's sake it is the default here
 argumentParser.add_argument("--allowed-norm",
                             type=int,
@@ -65,8 +65,8 @@ argumentParser.add_argument("--allowed-norm",
                                  example (a.k.a the L-infinity norm)",
                             default=77)
 
-# Configuring PGD^^^towards^^^. Defaults are based on the optimal settings for PGD found in table 1
-# of ^^^towards^^^
+# Configuring PGD[7e5d83]. Defaults are based on the optimal settings for PGD found in table 1
+# of [7e5d83]
 ####################################################################################################
 #                                                                                                  #
 
@@ -135,7 +135,7 @@ dataset.repeat  = False
 # to write in any other files, at least for attacks that don't require options for additional
 # settings)
 attack          = getattr(attacks, parameters.attack, None)
-# None is passed in here as parse_args(...)^^^argumentparserparseargs^^^ does so when the user
+# None is passed in here as parse_args(...)[702285, ArgumentParser.parse_args(...)] does so when the user
 # doesn't pass in a value for --other-loss-term; --other-loss-term can be found in workbench.py
 lossFn          = common.ArbitraryLoss(attackNetworkMeta["classification_loss_term"], None)
 
@@ -162,8 +162,8 @@ for pairs in chainer.iterators.SerialIterator(dataset, 200, False, False):
     ################################################################################################
     #                                                                                              #
 
-    # Mimicking what an Updater probably does^^^chainerupdater^^^, passing in the pair from the
-    # dataset to a converter^^^chainerconverter^^^ with the pair being encapsulated in another
+    # Mimicking what an Updater probably does[1b849a], passing in the pair from the
+    # dataset to a converter[f1523f] with the pair being encapsulated in another
     # list/tuple that would hold each pair if the batch contained more than one pair. Need to do
     # this twice, with oneHotConverter providing us with a one-hot encoding of the ground truth for
     # use in attacking images.

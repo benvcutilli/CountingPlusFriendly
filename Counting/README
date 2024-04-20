@@ -1,4 +1,4 @@
-These files are for section 2 of ^^^cutilli^^^.
+These files are for section 2 of [cfb615].
 
 
 
@@ -15,7 +15,7 @@ Derivation of Modified SoftPlus derivatives:
                |                                  |                 Straight-forward chain rule
                |   The chain rule ----------------   needs
                 -- this (derivative of base_b_log(a) from
-                   ^^^mathisfunlog^^^) in order to be
+                   [e396d8, "Common Functions" -> "Logarithms"]) in order to be
                    executed
 
 
@@ -25,19 +25,19 @@ Derivation of Modified SoftPlus derivatives:
                            ln(b)(1 + b^a)   |_________|          1 + b^a
                                                 ^
                                                 |
-                                    ^^^mathisfunexponent^^^'s
+                                    [e396d8, "Common Functions" -> "Exponential"]'s
                                        derivative for b^a
 
 
 This result can be turned into a Sigmoidal-like form (I hoped to be able to do this because
-^^^softplus^^^ implies that the derivative of SoftPlus is the sigmoid function) like this:
+[cf158f] implies that the derivative of SoftPlus is the sigmoid function) like this:
 
          b^a             1                    1                 1
      ---------- = ---------------- = ------------------- = ------------                          (2)
       1 + b^a     b^(-a) (1 + b^a)   b^(-a) + b^(-a) b^a    1 + b^(-a)
 
 This final form reduces the number of exponentiations we need to do compared to (1), so that is why
-I have chosen it. Further, since ^^^softplus^^^ implies that (less a constant) integrating sigmoid
+I have chosen it. Further, since [cf158f] implies that (less a constant) integrating sigmoid
 results in SoftPlus, I sanity checked my derivative by comparing it to the sigmoid function. The
 second derivative of Modified SoftPlus would be the derivative of (2) (not sure if I have seen a
 similar derivation before -- I probably have, but I don't think I remember any of it if I did --
@@ -58,7 +58,7 @@ because it is basically the same as that of the sigmoid function's derivative):
 
 
                                   ----Derivative of a base to a power
-                                  |  ^^^mathisfunexponent^^^ to
+                                  |  [e396d8, "Common Functions" -> "Exponential"] to
           chain rule _            | facilitate the use of the chain rule
             __________|__         |                            |
            |             |        |          ____________  ____|__
@@ -80,7 +80,7 @@ because it is basically the same as that of the sigmoid function's derivative):
 The shape files and models can be found in ModelsAndData.zip at
 https://drive.google.com/file/d/1auT4J6Jgm1yjqj1eoq1DzCbWRCyLyFMW/view?usp=sharing. The "forpaper"
 and "forpaper2" folders contained images that were used in the manuscript, and their byproducts from
-detection.py were also used in the paper. In the LaTeX^^^latex^^^ .tex files in the LaTeX folder,
+detection.py were also used in the paper. In the LaTeX[32da90] .tex files in the LaTeX folder,
 you can see which images correspond to which model by looking at the folder name, and suffixing it
 with "network"; this results in the folder for the model, and can be found in the first level of
 that archive. The datasets and settings used for that model can be found in the settings.json folder

@@ -1,0 +1,41 @@
+Unfortunately for the works that followed, \cite{athalye2018obfuscated}, for lack of a formal
+descriptive phrase, ``rained on their parade''. They confront the idea of \textit{obfuscated
+gradients} (credited to \cite{10.1145/3052973.3053009} by \cite{athalye2018obfuscated}), which they
+explain is the scenario in which there are no gradients that can be used for a white-box attack. To
+counter these defenses, to this author's best recollection, they employ two main methods,
+\textit{Backward Pass Differentiable Approximation} and \textit{Expectation Over Transform} (the
+latter is from \cite{athalye2018synthesizing}); for brevity, they use the acronyms \textit{BPDA} and
+\textit{EOT}, so we will do the same for the same reason.
+
+BDPA solves the issue where the gradients are not easy to retrieve. In this technique, the part of
+the machine learning algorithm for which the gradients cannot be calculated is replaced by a
+near-equivalent that has this property. However, this replacement only occurs when calculating
+gradients. They imply that it is likely necessary to use some kind of running average of the
+gradients used to generate the adversarial example when iterative methods are used; this is due to
+the fact that one single gradient calculation would be an approximation given the different
+function.
+
+The next method, Expectation over Transform, finds the expectation of the gradient when any one of
+many different operations may be used on the input at any forward pass before it goes into the
+network. In the EOT paper~\cite{athalye2018synthesizing}, they highlight transformations such as
+scaling, brightness modification, and rotations. In \cite{athalye2018obfuscated}, these
+transformations take the form of anything non-deterministic that is done to the image for the
+intentional or unintentional sake of defending the network. The idea is that the average gradient
+will be a decent approximation to an adversarial gradient. It is not clear if the averaging only
+occurs in an offline setting or if it occurs online as well (such as during gradient descent
+optimization when creating the adversarial example). Further, in at least one case, the literal
+average is not used; instead, it is a simple summation of gradients.
+
+They find the vast majority of their attacks successful implying, if not outright saying, that
+white-box attacks should not be the only metric by which a defense's effectiveness should be
+evaluated. Further, they outline a series of steps that a researcher should take to properly state
+the performance of their proposed defense; this appears to have mainly been done because most of the
+defenses evaluated were overstating their technique's effectiveness. These steps are 1. ``[e]valuate
+against adaptive attacks''\cite{athalye2018obfuscated}[§ 6], 2. "[m]ake specific, testable
+claims"\cite{athalye2018obfuscated}[§ 6] and 3. "[d]efine a (realistic) threat
+model"\cite{athalye2018obfuscated}[§ 6]. The last two are self-explanatory, and for the first,
+``adaptive attacks'' appears to be described as ``[attacks] that [are] constructed after a defense
+has been completely specified, where the adversary takes advantage of knowledge of the defense and
+is only restricted by the threat model''~\cite{athalye2018obfuscated}[§ 6.3]. In this case, the
+``threat model'' defines what the adversary knows. In \cite{athalye2018obfuscated}[§ 6.3], they
+state that running the whole gamut of modern attacks would fit this definition.

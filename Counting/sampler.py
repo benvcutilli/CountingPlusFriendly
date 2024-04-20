@@ -1,37 +1,37 @@
-# This program uses Shapely^^^shapely^^^ at the recommendation of ^^^shapelyvia^^^ in order to
+# This program uses Shapely[863f65] at the recommendation of [40ceda, radouxju's answer] in order to
 # see if a shape intersects other shapes. It just so happens that it is also able to manipulate
 # shape properties as well (which you can see in the code). This file creates images with triangles
-# and squares, the latter of which might be an idea attributed to ^^^squaresfrom^^^.
+# and squares, the latter of which might be an idea attributed to [3e46ce].
 
 # A: Could do a sampling of a continuous random variable here, but discrete is probably good enough
 # for rotational purposes. Probably the same logic applies for scale as well
 
 
-# Python's "sys"^^^pythonsys^^^ module
+# Python's "sys"[a9bde3] module
 import sys
 
-# Python's "argparse"^^^pythonargparsecounting^^^ module
+# Python's "argparse"[38e732] module
 import argparse
 
-# Python's "random"^^^pythonrandom^^^ module
+# Python's "random"[f14ddd] module
 import random
 
-# Python's "collections"^^^pythoncollections^^^ module
+# Python's "collections"[658323] module
 import collections
 
-# "shapely" refers to ^^^shapely^^^
+# "shapely" refers to [863f65]
 import shapely.geometry, shapely.affinity
 
-# Pillow^^^pillow^^^'s PIL
+# Pillow[699ba0]'s PIL
 import PIL.Image, PIL.ImageDraw
 
-# "math"^^^pythonmath^^^ is imported here
+# "math"[7c779f] is imported here
 import math
 
-# Module from ^^^pythonpathlib^^^
+# Module from [889500]
 import pathlib
 
-# json^^^pythonjson^^^ module
+# json[61fceb] module
 import json
 
 def makeSampleFiles(controls):
@@ -108,7 +108,7 @@ def makeSampleFiles(controls):
         # generated. The method of repeating a thing's representation for how many times it exists,
         # then uniformly drawing them from that list to come up with a random choice, may not be my
         # original idea; I think it most likely came from code I was looking at that was distributed
-        # to students ^^^b551fall^^^; the class may have even been ^^^b551spring^^^ when I was a
+        # to students [ce8e49]; the class may have even been [e5d7be] when I was a
         # teaching assistant.
         ############################################################################################
         #                                                                                          #
@@ -220,7 +220,7 @@ x.add_argument("--no-shape-scaling",
                help="Shapes will be the same size")
 # This argument is used to address an issue where empty space pixels are counted (instead of
 # intelligent shape detection) if the shapes are all the same size. This problem was pointed out by
-# ^^^identicalshapes^^^.
+# [a0256e].
 x.add_argument("--scale-bounds",
                default=[10, 20],
                type=int,
@@ -234,7 +234,7 @@ x.add_argument("--scale-bounds",
                     up being integers, not floating point. If you don't provide this when opting \
                     for --no-shape-scaling, the first integer in the two-integer default value of \
                     this argument will be used")
-# ^^^guan^^^ proposed this concept of selecting scale
+# [0b1618] proposed this concept of selecting scale
 x.add_argument("--limit-scale-resampling",
                action="store_true",
                help="Don't sample every time a new shape is created; use the same scale for the \

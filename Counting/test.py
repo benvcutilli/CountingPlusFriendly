@@ -3,13 +3,13 @@
 
 
 
-# This import is regarding ^^^pythonargparsecounting^^^
+# This import is regarding [38e732]
 import argparse
 
-# pathlib: ^^^pythonpathlib^^^
+# pathlib: [889500]
 import pathlib
 
-# "chainer" reference: ^^^chainer^^^
+# "chainer" reference: [170ecf]
 import chainer
 
 import common

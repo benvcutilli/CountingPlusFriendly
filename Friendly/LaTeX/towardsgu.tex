@@ -1,0 +1,32 @@
+Prior to \cite{goodfellow2015explaining}, Shixiang Gu and Luca Rigazio, in \cite{gu2015deep}, made
+an attempt at solving the adversarial example problem. They made two important contributions to this
+field.
+
+The first was addressing the natural intuition that one would try to use an autoencoder to return an
+adversarial example to its clean state. Training of this autoencoder consisted of not just the
+inputs being the modified images and the original (off of which the loss is calculated) but also the
+non-modified image and the original. This was done to ensure that the autoencoder wouldn't
+unnecessarily de-noise its input. This was a largely successful method, but it revealed a flaw of
+using such techniques: this autoencoder is also a neural network, and it can also be attacked with
+essentially the same success rate of just attacking the classifier. Even worse, they found that the
+magnitude of this new noise was substantially \textit{smaller} than the original noise. Further,
+they point out that ``[f]or any pre-processing, it is always possible to backpropagate the error
+signal through the additional functions and find new adversarial examples...''\cite{gu2015deep}[p.
+5], essentially eliminating any usefulness of any other solutions like their autoencoder, and
+implying that differentiable methods of countering this noise, regardless if it is an autoencoder or
+some other method, are included too. It is important to point out, however, that these autoencoders
+are also linear neural networks, so it's possible that this mindset isn't valid for denoising
+approaches that avoid the linearity issue discussed in \cite{goodfellow2015explaining}.
+
+For their other contribution, they desired to introduce an additional penalty, during training, on
+the magnitude of the gradient w.r.t the image. The idea behind this is that small changes to an
+image should not escape the local, correctly-classified region created by training on the
+non-adversarial example. However, they stated that they did not have the computational resources to
+do this. Instead, for each layer, they penalized the 2-norm of the gradient from a layer's output
+w.r.t.\ its successor, using the image as a predecessor to the first layer. These penalties were
+added up per image (as in, the gradients penalized were obtained by backpropagating from the loss of
+each image, not from the loss of each batch). Their results did show improvement, but not in a
+significant way. One reason could be that the addition they tried does not obey the chain rule;
+multiplying the norms may have made more sense to get the chain rule effect. However, a more
+plausible explanation for this issue will be discussed later when we implement their ideal
+full-gradient ourselves.

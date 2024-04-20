@@ -1,24 +1,24 @@
-# "chainer"^^^chainer^^^ package
+# "chainer"[170ecf] package
 import chainer
 
 import networkcomponents
 
-# Note 1: Every missing parameter of the BatchRenormalization^^^chainerbatchrenormalization^^^
+# Note 1: Every missing parameter of the BatchRenormalization[7ca151]
 # constructor except dmax, use_gamma, rmax, and use_beta are assumed to be assigned to defaults that
 # are at least somewhat optimal (I don't know what dtype does)
 #
-# Note 2: Following the strategy of ^^^batchrenormalizationwhere^^^ to put batch renormalization
+# Note 2: Following the strategy of [867913, section 3.2] to put batch renormalization
 # between the "linear" part of a layer and the activation.
 
 
-# ^^^intriguingproperties^^^ has this network ("FC-100-100-10" and "FC-123-456-10"). † It is a
+# [c214f9] has this network ("FC-100-100-10" and "FC-123-456-10"). † It is a
 # universal class in that this class makes both networks (see parameter for __init__(...)) and
 # allows the user to change which network they want to benchmark. It is here so that that paper's
 # results can be compared to ours. However, we added in optional Batch
-# Renormalization^^^batchrenormalization^^^ layers (regular Batch
-# Normalization^^^batchnormalization^^^ was recommended by^^^alivaramesh^^^ to
+# Renormalization[e1d64c] layers (regular Batch
+# Normalization[867913] was recommended by[16ccf1] to
 # converge faster; I modified this suggestion by using Batch Renormalization instead). We are also
-# using the technique from Yann LeCun^^^missing^^^ where he said that you can treat a linear layers
+# using the technique from Yann LeCun[71bd98] where he said that you can treat a linear layers
 # as convolutional ones that have a kernel size equal to the size of the input. † This allows us to
 # use the non-activation, convolutional-style layers in networkcomponents.py, putting their classes
 # in the layerType parameter of __init__ and calling them without needing to put conditionals into
@@ -107,7 +107,7 @@ class SzegedyLinear(chainer.Chain):
                                         hyperparameters["final"][kwargNames["out"]]
                                     )
             # They may have meant to have a SoftMax activation on the last layer, but it isn't clear
-            # on page 8 of ^^^intriguingproperties^^^, so I just go with the activation specified by
+            # on page 8 of [c214f9], so I just go with the activation specified by
             # the user
             self.final_activ      = activationType() if construct else activationType
             # Note 1 applies
@@ -215,9 +215,9 @@ class SzegedyLinear(chainer.Chain):
 
 
 
-# Works for MNIST^^^mnist^^^ and CIFAR-10^^^cifar^^^; in theory, other datasets with 10 classes
+# Works for MNIST[e1b8ca] and CIFAR-10[c7fedb]; in theory, other datasets with 10 classes
 # could work, but the second-to-last layer's output would be very large. See SzegedyLinear's comment
-# which gives the rationale for Batch Renormalization^^^batchrenormalization^^^.
+# which gives the rationale for Batch Renormalization[e1d64c].
 class MalleableConvolutional(chainer.Chain):
 
     # † The "layerType", "activationType", and "usingBatchRenorm" parameters allows the user to
@@ -330,7 +330,7 @@ class MalleableConvolutional(chainer.Chain):
                                     ) if usingBatchRenorm else None
 
 
-            # 10 classes for MNIST^^^mnist^^^ and CIFAR-10^^^cifar^^^
+            # 10 classes for MNIST[e1b8ca] and CIFAR-10[c7fedb]
             self.final_preactiv = chainer.links.Linear(None, 10)
             self.final_activ    = activationType() if construct else activationType
             # See note 1, and also the 10 here has the same meaning as the "10" in the
@@ -398,7 +398,7 @@ class MalleableConvolutional(chainer.Chain):
 
 
 
-# Inspired by ^^^chainerclassifier^^^ (roles of parameters of methods, the methods themselves,
+# Inspired by [e10c70] (roles of parameters of methods, the methods themselves,
 # self.getLoss and self.network being the same as Classifer.loss, Classifier.predictor, maybe its
 # superclass) except it calls an instance of common.ArbitraryLoss instead of the kinds of functions
 # required by Classifier. Just like Classifier, however, you need to pass in to the constructor the
@@ -412,7 +412,7 @@ class ArbitraryLossClassifier(chainer.Chain):
     def __init__(self, network, getLoss):
         super().__init__()
         self.getLoss = getLoss
-        # I suspect that chainer.links.Classifier^^^chainerclassifier^^^ sets the passed-in network
+        # I suspect that chainer.links.Classifier[e10c70] sets the passed-in network
         # as part of its learnable self. There appears to be a bug that occurs when that isn't done,
         # and it was fixed adding in code that does that fixes this
         with self.init_scope():

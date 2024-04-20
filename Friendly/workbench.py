@@ -1,19 +1,19 @@
-# argparse package: ^^^pythonargparsefriendly^^^
+# argparse package: [702285]
 import argparse
 
-# The package supplied by ^^^chainer^^^
+# The package supplied by [170ecf]
 import chainer
 
-# Package from ^^^pythonpathlib^^^
+# Package from [889500]
 import pathlib
 
-# The ^^^pythonjson^^^ package
+# The [61fceb] package
 import json
 
-# See ^^^pythonre^^^ for this library
+# See [3f00f2] for this library
 import re
 
-# Importing ^^^pillow^^^
+# Importing [699ba0]
 import PIL
 
 import common
@@ -58,7 +58,7 @@ argumentParser.add_argument("network",
                             help="Which network you want to use. Names are the network names seen  \
                                   in networks.py")
 
-# The full reference for the paper mentioned below: ^^^intriguingproperties^^^
+# The full reference for the paper mentioned below: [c214f9]
 argumentParser.add_argument("--szegedy-linear-modifier",
                             type=str,
                             help="A string that aids in the construction of \
@@ -68,7 +68,7 @@ argumentParser.add_argument("--szegedy-linear-modifier",
                                   pdf/42503.pdf",
                             default="FC-100-100-10")
 
-# chainer.functions is here:^^^chainerfunctions^^^.
+# chainer.functions is here:[b72fa5].
 argumentParser.add_argument("--activation",
                             type=str,
                             help="Which function (relative to chainer.functions or \
@@ -83,7 +83,7 @@ argumentParser.add_argument("--activation",
                                  default="none")
 
 # Input strings for this option are the names of their classes:
-# "Convolution2D"^^^chainerconvolution2d^^^, and "PairwiseDifference" and "Angular", which can be
+# "Convolution2D"[5af28f], and "PairwiseDifference" and "Angular", which can be
 # found in networkcomponenets.py)
 argumentParser.add_argument("--layer",
                             type=str,
@@ -101,8 +101,8 @@ argumentParser.add_argument("--layer",
 #                            choices=["stochastic"],
 #                            help="What you want to use to optimize the network")
 
-# This argument allows the user to choose the dataset they want to use (MNIST^^^mnist^^^ or
-# CIFAR-10^^^cifar^^^). See below during dataset setup for the reason for "mnistinverted".
+# This argument allows the user to choose the dataset they want to use (MNIST[e1b8ca] or
+# CIFAR-10[c7fedb]). See below during dataset setup for the reason for "mnistinverted".
 argumentParser.add_argument("trainOn",
                             type=str,
                             help="Choose a dataset; \"mnistinverted\" simply means that pixels are \
@@ -111,7 +111,7 @@ argumentParser.add_argument("trainOn",
                                   be interpreted according to http://yann.lecun.com/exdb/mnist/)",
                             choices=["mnist", "mnistinverted", "cifar10"])
 
-# Both of these options use the idea (probably from ^^^missing^^^) of passing in compound options
+# Both of these options use the idea (probably from [71bd98]) of passing in compound options
 # where one or more additional settings for the specific option is included with the option itself
 # in the same string.
 ####################################################################################################
@@ -126,9 +126,9 @@ def deCompound(s):
     else:
         raise Exception("Invalid option value used: {}".format(s))
 
-# See ^^^chainermeansquarederror^^^; this is the full reference for
+# See [cf684f]; this is the full reference for
 # https://docs.chainer.org/en/stable/reference/generated/chainer.functions.mean_squared_error.html.
-# Further, chainer.functions can be found at ^^^chainerfunctions^^^.
+# Further, chainer.functions can be found at [b72fa5].
 argumentParser.add_argument("--classification-loss-term",
                             type=deCompound,
                             action="append",
@@ -140,7 +140,7 @@ argumentParser.add_argument("--classification-loss-term",
                                  floating-point weight just before the name to give a weight to \
                                  the respective loss emitted")
 
-# Help message URL is this reference: ^^^chainerfunctions^^^.
+# Help message URL is this reference: [b72fa5].
 argumentParser.add_argument("--other-loss-term",
                             type=deCompound,
                             action="append",
@@ -155,7 +155,7 @@ argumentParser.add_argument("--other-loss-term",
 ####################################################################################################
 
 
-# As the help statement says, Batch Renormalization^^^batchrenormalization^^^ can be turned on with
+# As the help statement says, Batch Renormalization[e1d64c] can be turned on with
 # this option.
 argumentParser.add_argument("--renormalize",
                             action="store_true",
@@ -163,7 +163,7 @@ argumentParser.add_argument("--renormalize",
                                  (https://arxiv.org/pdf/1702.03275.pdf)",
                             default=False)
 
-# See ^^^chainergetdevice^^^ to find out about what needs to be passed to this argument (the "device
+# See [5b1d7a] to find out about what needs to be passed to this argument (the "device
 # spec").
 argumentParser.add_argument("--device",
                             type=str,
@@ -209,12 +209,12 @@ argumentParser.add_argument("--fraction-validation",
                                  validation. Actual sample count will be rounded as necessary.")
 
 #   --perturbation-norm and --adversarial-training-with refer to the usage of adversarial training,
-# which (I believe) is from ^^^explaining^^^, and uses either PGD from ^^^towards^^^ or
-# FGSM^^^explaining^^^ as training adversaries.
+# which (I believe) is from [f0143f], and uses either PGD from [7e5d83] or
+# FGSM[f0143f] as training adversaries.
 ####################################################################################################
 #                                                                                                  #
 
-# "https://arxiv.org/pdf/1706.06083.pdf" refers to ^^^towards^^^. Valid inputs were made to be the
+# "https://arxiv.org/pdf/1706.06083.pdf" refers to [7e5d83]. Valid inputs were made to be the
 # same as that of testbench.py.
 argumentParser.add_argument("--adversarial-training-with",
                             type=str,
@@ -263,7 +263,7 @@ includingLoss                  = networks.ArbitraryLossClassifier(net, lossFunct
 
 
 # These datasets are loaded in with integer pixels (to hardware precision) as we will be following
-# the mindset outlined in ^^^explaining^^^ that adversarial noise must be integral as cameras and
+# the mindset outlined in [f0143f] that adversarial noise must be integral as cameras and
 # the like capture images using integer values. Therefore, I believe they imply that any real-world
 # attack would be using the aforementioned kind of noise. We will be doing that within this project.
 # This section used to check if the network was linear or convolutional, and tailored the dataset
@@ -276,12 +276,12 @@ includingLoss                  = networks.ArbitraryLossClassifier(net, lossFunct
 
 dataPairs  = None
 
-# Loading MNIST^^^mnist^^^ the erroneous way (clarified in README)
+# Loading MNIST[e1b8ca] the erroneous way (clarified in README)
 if parameters.trainOn == "mnistinverted":
     dataPairs = chainer.datasets.get_mnist(scale=255,
                                            ndim=3,
                                            withlabel=True)
-# The user chose CIFAR-10^^^cifar^^^ to train on
+# The user chose CIFAR-10[c7fedb] to train on
 elif parameters.trainOn == "cifar10":
     dataPairs = chainer.datasets.get_cifar10(withlabel=True,
                                              ndim=3,
@@ -355,7 +355,7 @@ loop.extend(
 
 loop.extend(chainer.training.extensions.snapshot(), trigger=(10, "epoch"))
 # Passing in a Classifier that run the accuracy calculation in the spirit of Standard
-# Updater^^^chainerstandardupdater^^^
+# Updater[7d9306]
 loop.extend(
     chainer.training.extensions.Evaluator(
         validationSerialIterator,

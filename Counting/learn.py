@@ -2,17 +2,17 @@
 # file:
 #    (1) Added the momentum version of SGD for the convergence issue using Sigmoids mentioned in the
 #        comment for Convolutional in networks.py.
-#    (2) RMSprop^^^rmsprop^^^ was added to this code; however, it may be the case that Chainer
-#        doesn't implement this properly as ^^^rmspropcode^^^ shows no point at which the step size
+#    (2) RMSprop[88c6d0, slide "6e" up to (non-inclusive) last slide] was added to this code; however, it may be the case that Chainer
+#        doesn't implement this properly as [3c31a8, RMSpropRule.update_core_cpu(...)] shows no point at which the step size
 #        gets bigger after successive gradients with the same sign, as prescribed in
-#        ^^^rmsprop^^^ (although, that reference may not actually want such
+#        [88c6d0, slide "6e" up to (non-inclusive) last slide] (although, that reference may not actually want such
 #        functionality; it isn't clear). Trying this optimizer because of the changes outlined in
 #        networks.py to the "Convolutional" network (also in networks.py); since Sigmoid activation
 #        functions were used at the time, the network was likely not learning well due to vanishing
-#        gradients. ^^^rmsprop^^^ had mentioned that it could more easily handle these plateaus, so
-#        I gave it a shot (even ^^^rmspropcode^^^'s implementation, if not the same as ^^^rmsprop^^^
+#        gradients. [88c6d0, slide "6e" up to (non-inclusive) last slide] had mentioned that it could more easily handle these plateaus, so
+#        I gave it a shot (even [3c31a8, RMSpropRule.update_core_cpu(...)]'s implementation, if not the same as [88c6d0, slide "6e" up to (non-inclusive) last slide]
 #        intended, would do that as small successive gradients will cause steps as large as bigger
-#        successive gradients would; this is because, as stated in ^^^rmsprop^^^, this sequence of
+#        successive gradients would; this is because, as stated in [88c6d0, slide "6e" up to (non-inclusive) last slide], this sequence of
 #        similar-magnitude gradients woud mean that the square root of the weighted average would be
 #        equal in magnitude to the current gradient, so the division of the gradient by that square
 #        root value would be roughly 1, regardless of how large or small the running average is).
@@ -24,23 +24,23 @@
 
 
 
-# From ^^^pythonargparsecounting^^^
+# From [38e732]
 import argparse
 
-# Chainer^^^chainer^^^
+# Chainer[170ecf]
 import chainer
 chainer.backends.cuda.set_max_workspace_size(200000000)
 
-# ^^^pythonpathlib^^^ module
+# [889500] module
 import pathlib
 
-# Importing ^^^pythonjson^^^
+# Importing [61fceb]
 import json
 
-# The ^^^pythonmath^^^ module
+# The [7c779f] module
 import math
 
-# collections module^^^pythoncollections^^^
+# collections module[658323]
 import collections
 
 import networks
@@ -65,9 +65,9 @@ argumentParser.add_argument("model",
                                  comments above them)",
                             choices=["convolutional", "convolutionallarge"])
 # "pureChainerMSP", "modifiedSoftPlus", "sin", "relu", and "sigmoid" refer to (and uses the names
-# of) networks.pureChainerMSP, networks.modifiedSoftPlus, ^^^chainersin^^^, ^^chainerrelu^^^ (which
-# implements ^^^relu^^^), and ^^^chainersigmoid^^^, respectively. "softplus" refers to
-# ^^^softplus^^^. See the README for why these functions are used.
+# of) networks.pureChainerMSP, networks.modifiedSoftPlus, [13668a], ^^chainerrelu^^^ (which
+# implements [bffa08]), and [79c583], respectively. "softplus" refers to
+# [cf158f]. See the README for why these functions are used.
 argumentParser.add_argument("activation",
                             type=str,
                             help="The activation function of the network",
@@ -102,7 +102,7 @@ argumentParser.add_argument("--optimizer",
 # found commonly throughout the command line world.
 #
 # The default value here is chosen to minimize the stress on the CPU as far as how many threads or
-# processes are running simultaneously, as requested by Bruce Shei^^^bruceemail^^^ (the specific
+# processes are running simultaneously, as requested by Bruce Shei[f8aaea] (the specific
 # number probably wasn't requested, though)
 argumentParser.add_argument("--workers",
                            type=int,
@@ -149,11 +149,11 @@ argumentParser.add_argument("--notes",
                             help="Anything you would like to add to the settings.json file \
                                  output to saveFolder")
 
-# This argument is regarding Batch Renormalization^^^batchrenormalization^^^
+# This argument is regarding Batch Renormalization[e1d64c]
 argumentParser.add_argument("--renormalize",
                             action="store_true",
                             help="Use Batch Renormalization")
-# Full reference for the webpage found in the help string: ^^^chainergetdevice^^^. The idea
+# Full reference for the webpage found in the help string: [5b1d7a]. The idea
 # of having a command line parameter that can control which device is used is from something
 # that I had done previously; maybe it was from when I had tried to write this project
 # before.
@@ -170,9 +170,9 @@ parameters = argumentParser.parse_args()
 
 
 # Changes the values of rmax and dmax, which are attributes of
-# chainer.links.BatchRenormalization^^^chainerbatchrenormalization^^^. The rmax and dmax values
+# chainer.links.BatchRenormalization[7ca151]. The rmax and dmax values
 # of that class are set to increasingly higher values (though only slightly higher), as
-# recommended by ^^^batchrenormalization^^^.
+# recommended by [e1d64c].
 class RMaxDMaxModifier(chainer.training.Extension):
 
     def __init__(self):
@@ -197,7 +197,7 @@ class RMaxDMaxModifier(chainer.training.Extension):
         self.lastEpoch           = 0
         self.epochsBetweenChange = 20
 
-    # Using the same parameter name as chainer.training.Extension's^^^chainerextension^^^
+    # Using the same parameter name as chainer.training.Extension's[a4f797]
     # .__call__(...) just because I can't think of anything better
     def __call__(self, trainer):
 
@@ -275,7 +275,7 @@ with chainer.using_device(DEVICE):
     if parameters.optimizer == "momentum":
         optimizer = chainer.optimizers.MomentumSGD(parameters.learning_rate, parameters.momentum)
     if parameters.optimizer == "rmsprop":
-        # Leaving the "alpha" parameter^^^chainerrmsprop^^^ unchanged from default because I
+        # Leaving the "alpha" parameter[083483] unchanged from default because I
         # couldn't get my own alpha to work correctly
         optimizer = chainer.optimizers.RMSprop(parameters.learning_rate)
 
@@ -287,10 +287,10 @@ with chainer.using_device(DEVICE):
     #                                                                                              #
     ################################################################################################
 
-    # In one of my original PyTorch^^^pytorch^^^ implementations, I used a
-    # Queue^^^multiprocessingqueue^^^ to allow worker processes to move data from themselves to the
+    # In one of my original PyTorch[05c8ff] implementations, I used a
+    # Queue[9f139d, the Queue class] to allow worker processes to move data from themselves to the
     # process that does the main part of training. The Queue and the workers themselves were
-    # inspired by ^^^pytorch^^^'s use of them (or some page under that page).
+    # inspired by [05c8ff]'s use of them (or some page under that page).
     itr = chainer.iterators.MultiprocessIterator(samples,
                                                 parameters.samples_per_iteration,
                                                 n_processes=parameters.workers,
@@ -320,7 +320,7 @@ with chainer.using_device(DEVICE):
     recordTrigger     = chainer.training.triggers.ManualScheduleTrigger(recordTriggerList,
                                                                         "iteration")
     # Commented out due to a "Fail to allocate bitmap" message and parent process kill that appears
-    # to be a Matplotlib error according to ^^^stackoverflowweirdbug^^^                                                                   "iteration")
+    # to be a Matplotlib error according to [9858b9, page title]                                                                   "iteration")
     #trainer.extend(chainer.training.extensions.PlotReport(y_keys=["main/loss"],
     #                                                     filename="loss.png",
     #                                                     marker=None,
@@ -331,7 +331,7 @@ with chainer.using_device(DEVICE):
 
 
     # Including the iteration number and epoch number, originally displayed by
-    # ProgressBar^^^chainerprogressbar^^^, because I am replacing ProgressBar with the PrintReport
+    # ProgressBar[f58355], because I am replacing ProgressBar with the PrintReport
     # held in display and need to still see the iteration and epoch that I could originally see with
     # ProgressBar.
     ################################################################################################
@@ -367,15 +367,15 @@ with chainer.using_device(DEVICE):
 
     trainer.extend(RMaxDMaxModifier(), priority=chainer.training.PRIORITY_READER)
 
-    # I may have used this idea (or heard of it from) elsewhere^^^missing^^^, but I am saving the
-    # values passed in through the command line to a JSON^^^json^^^ file in the folder that the
+    # I may have used this idea (or heard of it from) elsewhere[71bd98], but I am saving the
+    # values passed in through the command line to a JSON[a2a49d] file in the folder that the
     # neural network is saved in.
     ################################################################################################
     #                                                                                              #
 
     settingsFile = open(pathlib.Path(parameters.saveFolder, "settings.json"), "w")
-    # Calling vars(...)^^^builtinsvars^^^ on a Namespace instance^^^argparsenamespace^^^ to get a
-    # mapping object is an idea from ^^^argparsenamespace^^^
+    # Calling vars(...)[4ee6c6, vars(...) section] on a Namespace instance[38e732, "The Namespace object"] to get a
+    # mapping object is an idea from [38e732, "The Namespace object"]
     json.dump(vars(parameters), settingsFile, indent=3)
     settingsFile.close()
 

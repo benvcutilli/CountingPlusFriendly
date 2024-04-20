@@ -1,4 +1,4 @@
-# This file performs localization via a modification of ^^^saliency^^^'s method called a "saliency
+# This file performs localization via a modification of [eb336e]'s method called a "saliency
 # map". That method performs backpropagation from the output of the network to the image, then, in
 # the multi-channel-image case, for each pixel, finds the channel of that pixel whose absolute value
 # is the max of all channels for that pixel, and displays that absolute value as an intensity on the
@@ -11,7 +11,7 @@
 # saliency. Then, taking a page again from saliency, we perform the same abosolute value + max
 # calculation of saliency on these channels again, creating a saliency map M'. The hope is that any
 # strong correlation (determined by the values of M' meeting a threshold; using a threshold was
-# inspired by ^^^thresholding^^^) between a location in M and a location in M' means that they are
+# inspired by [621788, see 3 minutes, 58 seconds onward]) between a location in M and a location in M' means that they are
 # locations where parts of the same shape is. This is because it could be the case that a change in
 # value of pixel p means that the saliency of p' needs to be reduced or increased so that the shape
 # count remains the same (or approximately the same) as the network would hopefully compensate for
@@ -29,8 +29,8 @@
 #   There is a requirement for activation functions to be smooth and doubly-differentiable for this
 # to work, which is further elaborated on in networks.py above the Convolutional class's defintion.
 
-# chainer, PIL, pathlib, math, and argparse are packages from ^^^chainer^^^, ^^^pillow^^^,
-# ^^^pythonpathlib^^^, ^^^pythonmath^^^, and ^^^pythonargparsecounting^^^
+# chainer, PIL, pathlib, math, and argparse are packages from [170ecf], [699ba0],
+# [889500], [7c779f], and [38e732]
 ####################################################################################################
 #                                                                                                  #
 
@@ -57,12 +57,12 @@ def saliency(var):
                 )
            )
 
-# Outputs a saliency^^^saliency^^^ image. Also works for the saliency of the saliency.
+# Outputs a saliency[eb336e] image. Also works for the saliency of the saliency.
 def makeImage(saliency, where):
     # Normalize between 0 and 255 (rounding as these should be integers). This normalization is
-    # probably similar to, if not exactly, what ^^^saliency^^^ does (they don't specify the
+    # probably similar to, if not exactly, what [eb336e] does (they don't specify the
     # specifics). Higher saliency gets a higher number, as this is what they appear to do in
-    # ^^^saliency^^^. They also output greyscale images, so we do that too.
+    # [eb336e]. They also output greyscale images, so we do that too.
     ################################################################################################
     #                                                                                              #
     
@@ -126,7 +126,7 @@ network       = common.recreateNetwork(arguments.networkLocation, arguments.sett
 
 
 # Performing the saliency calculation step and saving it as an image (both of which are done in
-# ^^^saliency^^^)
+# [eb336e])
 ####################################################################################################
 #                                                                                                  #
 
@@ -172,9 +172,9 @@ print(output)
 
 maxShapesToDetect = round(chainer.functions.sum(output).item())
 while (not fullyExamined) and (counter <= maxShapesToDetect):
-    # This code pattern of calling unravel_index(...)^^^numpyunravel^^^ on the return value of
-    # argmax(...)^^^numpyargmax^^^ is not my idea; it is probably from ^^^unravelargmax^^^
-    # or somewhere on ^^^numpy^^^'s website, but the date of retrieval is unknown.
+    # This code pattern of calling unravel_index(...)[b042b0] on the return value of
+    # argmax(...)[328aab] is not my idea; it is probably from [328aab, "Examples"]
+    # or somewhere on [3873b6]'s website, but the date of retrieval is unknown.
     ################################################################################################
     #                                                                                              #
 

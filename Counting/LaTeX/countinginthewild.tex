@@ -1,0 +1,46 @@
+\cite{Arteta16} extends the findings of \cite{learningtocount} (its density map and more) while
+considering a new annotation scenario. In this paper, they had a dataset of images of groups of
+penguins; however, mutiple dots instead of a single dot were placed on each penguin, one for each
+annotator that annotated the image. Therefore, they posited that they can use this information to
+determine the size of each penguin in addition to other features.
+
+Instead of training a density model based off a ground truth density map, they took an intermediate
+step. Specifically, they trained the network to segment the penguins from the background, and then
+used this segmentation to find connected components within the segmentation area. This allowed them
+to assign density to each connected component (instead of, say, one density for the whole foreground
+segment) resulting in the ground truth used to train the part of neural network dedicated to density
+estimation. They state that segmentation, with more importance placed on the network's respective
+segmentation error, will encourage the network to learn better representations, potentially leading
+to better density prediction. Another reason could be possibly related to the general sentiment of
+locational accuracy given in \cite{learningtocount}. For \cite{Arteta16}, being locationally
+accurate can be justified by considering a much different scenario. In this case, one large
+connected component would have the correct density for integration, but would not encode the fact
+that pixels in the component that represent more area in the real world should probably be assigned
+higher density (as these pixels would be shortchanged with respect to ground truth density).
+However, it is important to point out that neural networks (one is used in the paper) might be able
+to learn this encoding by choosing a proper weight for the pixel location. On the other hand, a
+neural network trained with better information would likely perform better, so this argument likely
+holds water regardless.
+
+Another output of the neural network was trained to be part of estimating the variance in the
+expected number of dots that would be placed in a connected component if the image were part of the
+annotated set of images. The variance predicted is spread out over the pixels so that each pixel
+gets a share of the variance. As a result, integrating the variance estimated each pixel over the
+connected component, just as is done with density, would get one the output actually desired.
+
+The main finding of this paper is that, if there are multiple annotators per penguin, the
+distribution of the locations of annotations within that penguin will depend on the penguin's size.
+As a result, it would make sense to take that into consideration when determining the correct
+density in a given area to train against. In order to compare the effectiveness of using the
+annotations to determine size, they ran this training method against two other techniques. Both the
+proposed method and one of the competing methods used each annotation as the center of a Gaussian
+distribution. Each annotation contributed an amount of ground truth to a pixel's label based on how
+far away it was from the pixel, with distance weighted by the pixel's respective value within the
+Gaussian kernel. The only differences were that the second method did not use spacing of annotations
+to determine an appropriate size for these Gaussian kernels, and that this method did not use
+segmentation to come up with a more accurate ground truth density map. This method had per-pixel
+depth information with the rest of the ground truth data.
+
+While not as good, using the relative positions of annotations with segmentation worked almost as
+well using the true depth at each pixel in the positions's places, and substantially better than the
+third method.

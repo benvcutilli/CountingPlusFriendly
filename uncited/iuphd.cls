@@ -1,5 +1,5 @@
 % Ben modified this file where marked, but, otherwise, the line of text after the whitespace gap
-% onward wasn't created by Ben, it was from [d51208]. Ben changed the degree from "Doctor of
+% onward wasn't created by Ben, it was from ^^^classfile^^^. Ben changed the degree from "Doctor of
 % Philosophy" to "Master of Science" and the "Doctoral" in "Doctoral committee" to "Master's" (these
 % word/phrase changes were chosen because it matched the grammar of the surrounding text in addition
 % to capitalization). Lines with a comment containing only "@" were created to signify where this

@@ -1,0 +1,31 @@
+Representation is a very important part of neural networks (and machine learning in general). We
+have put an emphasis on subitization as well as adversarial examples in order to discuss this topic,
+and shown what appears to be success in representation learning via learning to count. More complex
+situations need to be explored, as well as changes to and full implementation of our detection
+methods to really make it work, and what we have seen with our experiments hints at this truly being
+possible. We did not demonstrate a network with full subitization capabilities, but modifications to
+the training and/or network may make this a reality.
+
+
+As for adversarial examples, we did not have success, but we did lay out substantial justification
+for the defenses that we proposed; hopefully, this analysis leads us to (a) related method(s) that
+corrects for any analytical flaws in what we have proposed. Specifically, we emphasized structure
+over additional loss terms, with the exception of GMR. However, even a modified form of GMR, in the
+future, might benefit from structural changes, such as when any of these modifications are used in
+conjunction with methods such as Elastic Sigmoid. While papers like \textit{Adversarial Logit
+Pairing}~\cite{kannan2018adversarial} appear to be very close to a cure, the space of attacks seems
+boundless, and this author believes that mathematical proofs are required in order to fully address
+this issue. In the author's opinion, proving that iterative optimizers and special loss terms really
+achieve ideal networks is difficult due to the dynamic nature of these methods and the infinite set
+of points over which they are optimizing. Seeing as methods like Adversarial Logit Pairing and
+adversarial training are defenses that fit within this definition, the author is somewhat skeptical
+about their true effectiveness. This is because adversarial examples like what can be found in
+~\cite{eykholt2018robust} focus on fooling networks relative to \text{all} human perception, and
+noise bounded by $L_{\infty}$ or similar metrics clearly does not model this. Structural changes
+appear easier to prove (from an adversarial example view), so they may make the most sense to pursue
+further. In the end, we look into this topic because the adversarial example community inherently
+focuses nearly completely on representation.
+
+In summation, topic of representation needs substantially more resources dedicated to it. For the
+author, this thesis is merely a starting point, and we plan to build upon this work. We need to
+solidify the fundamentals before we can truly unleash deep learning.

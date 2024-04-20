@@ -82,7 +82,7 @@
             "Title": "Derivative Rules",
             "Author": "MathIsFun.com",
             "URL": "https://www.mathsisfun.com/calculus/derivatives-rules.html",
-            "Fetched": "2021.4.21 EDT",
+            "Fetched": "At least 2021.4.21 EDT",
             "Via": "Googling \"derivative identities\""
         },
         "python": {
@@ -296,7 +296,7 @@
             "Author": "Preferred (Networks/Infrastructure), possibly others",
             "URL": "https://docs.chainer.org/en/stable/reference/generated/chainer.iterators.MultiprocessIterator.html"
         },
-        "multiprocessslownsysresults": {
+        "multiprocessiteratorslownsysresults": {
             "Comment": "Profiling the program showed this, but I can't remember how"
         },
         "pytorchutils": {
@@ -395,6 +395,12 @@
             "Volume": "9",
             "Comment": "Pages 95 and 90 are the end and start of this article. Published by IEEE Computer Society. All info here except the \"et al.\" was asked to be cited by https://matplotlib.org/stable/users/project/citing.html"
         },
+	"matplotlibsite": {
+	    "Title": "Citing Matplotlib — Matplotlib 3.8.3 documentation",
+	    "Author": "Matplotlib development team",
+	    "URL": "https://matplotlib.org/stable/users/project/citing.html",
+	    "Comment": "I forgot to add this reference when I finished thesis; this may not be the exact original place; the version number in the title almost certainly isn't"
+	},
         "guan": {
             "Title": "Understanding the Ability of Deep Neural Networks to Count Connected Components in Images",
             "Author": "Shuyue Guan and Murray Loew",
@@ -950,7 +956,37 @@
             "Author": "Indiana University Bloomington",
             "URL": "https://graduate.indiana.edu/thesis-dissertation/formatting/masters.html",
             "Fetched": "2021.12.31 EST"
-        }
+        },
+	"intextreadme": {
+	    "Title": "README",
+	    "Author": "Ben Cutilli",
+	    "URL": "https://github.com/benvcutilli/InText/blob/main/README"
+	},
+	"graphing": {
+	    "Comment": "Might have been an in-person meeting"
+	},
+	"chainersquarederrorcode": {
+            "Title": "chainer/squared_error.py at v7.8.0 · chainer/chainer",
+            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three",
+            "URL": "https://github.com/chainer/chainer/blob/v7.8.0/chainer/functions/loss/squared_error.py",
+            "Fetched": "2021.9 EDT",
+            "git commit": "522e017a18008ee00e39f4ae4b30f4f9db3824b2"
+        },
+	"geometry": {
+	    "Title": "geometry – Flexible and complete interface to document dimensions",
+	    "Author": "David Carlisle, Hideo Umeki (Carlisle's name came before Umeki)",
+	    "URL": "https://ctan.org/pkg/geometry"
+	},
+	"calc": {
+	    "Title": "calc – Simple arithmetic in LATEX commands",
+	    "Author": "The LaTeX Project Team, Frank Jensen, Kresten Krab Thorp",
+	    "URL": "https://ctan.org/pkg/calc",
+	    "Comment": "This reference put Latex Proj. Team, then Jensen, then Thorp"
+	},
+	"sourcecontrol": {
+	    "Title": "Git",
+	    "URL": "https://git-scm.com/"
+	}
     },
     
     "markers": {
@@ -1028,13 +1064,13 @@
         ],
         "mathisfunlog": [
             {
-                "refkey": "derivativeidentites",
+                "refkey": "derivativeidentities",
                 "locator": "\"Common Functions\" -> \"Logarithms\""
             }
         ],
         "mathisfunexponent": [
             {
-                "refkey": "mathisfunexponent",
+                "refkey": "derivativeidentities",
                 "locator": "\"Common Functions\" -> \"Exponential\""
             }
         ],
@@ -1148,7 +1184,7 @@
         ],
         "stackoverflowweirdbug": [
             {
-                "refkey": "stackoverflowweirddbug",
+                "refkey": "stackoverflowweirdbug",
                 "locator": "page title"
             }
         ],
@@ -1501,7 +1537,7 @@
         ],
         "cifar": [
             {
-                "refkey": "cifar10"
+                "refkey": "cifar"
             }
         ],
         "p573": [
@@ -1645,7 +1681,7 @@
                 "refkey": "pytorchsite"
             }
         ],
-        "understandingneuralnetworksite": [
+        "understandingneuralnetworkssite": [
             {
                 "refkey": "understandingneuralnetworkssite",
                 "locator": "\"Export Bibtex Citation\" in right-side bar"
@@ -1782,7 +1818,7 @@
         ],
         "thediscriminationsite": [
             {
-                "refkey": "thediscrimination",
+                "refkey": "thediscriminationsite",
                 "locator": "clicked \"Cite this item\""
             }
         ],
@@ -1929,6 +1965,80 @@
                 "refkey": "requirements",
                 "locator": "\"Required and Optional Sections\""
             }
-        ]
-    }
+        ],
+	"intextreadme": [
+	    {
+		"refkey": "intextreadme"
+	    }
+	],
+	"graphing": [
+	    {
+	        "refkey": "graphing"
+	    }
+	],
+	"geometry": [
+	    {
+	        "refkey": "geometry"
+	    }
+	],
+	"calc": [
+	    {
+	        "refkey": "calc"
+	    }
+	],
+	"sourcecontrol": [
+	    {
+	        "refkey": "sourcecontrol"
+	    }
+	]
+    },
+
+    "citeIn": [
+	"README",
+	"abstract.tex",
+	"biblatex.bib",
+	"conclusion.tex",
+	"cv.tex",
+	"introduction.tex",
+	"iuphd.cls",
+	"manuscript.tex",
+	"LICENSE",
+	"Counting/common.py",
+        "Counting/detection.py",
+        "Counting/learn.py",
+        "Counting/networks.py",
+        "Counting/README",
+        "Counting/replacementiterator.py",
+        "Counting/sampler.py",
+        "Counting/test.py",
+	"Counting/LaTeX/countinginthewild.tex",
+        "Counting/LaTeX/deepinsideconvolutionalnetworks.tex",
+        "Counting/LaTeX/learningtocount.tex",
+        "Counting/LaTeX/nonliteraturereview.tex",
+        "Counting/LaTeX/salientobjectsubitizing.tex",
+        "Counting/LaTeX/understandingtheability.tex",
+        "Friendly/attacks.py",
+	"Friendly/common.py",
+	"Friendly/networkcomponents.py",
+	"Friendly/networks.py",
+	"Friendly/README",
+	"Friendly/RMaxDMaxModifier.py",
+	"Friendly/tackons.py",
+	"Friendly/testbench.py",
+	"Friendly/workbench.py",
+	"Friendly/LaTeX/adversariallogit.tex",
+        "Friendly/LaTeX/angular.tex",
+        "Friendly/LaTeX/elastic.tex",
+        "Friendly/LaTeX/ensemble.tex",
+        "Friendly/LaTeX/gradientbased.tex",
+        "Friendly/LaTeX/harnessing.tex",
+        "Friendly/LaTeX/intriguingproperties.tex",
+        "Friendly/LaTeX/obfuscated.tex",
+        "Friendly/LaTeX/pairwise.tex",
+        "Friendly/LaTeX/results.tex",
+        "Friendly/LaTeX/towardsgu.tex",
+        "Friendly/LaTeX/towardsmadry.tex"
+    ],
+
+    "delimiter": "^^^"
 }

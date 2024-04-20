@@ -1,0 +1,1217 @@
+
+eb336e      Title                          Deep Inside Convolutional Networks: Visualize Image Class
+                                                                  ification Models and Saliency Maps
+                                                                                                    
+            Author                              Karen Simonyan, Andrea Vedaldi, and Andrew Zisserman
+                                                                                                    
+            URL                                                  https://arxiv.org/pdf/1312.6034.pdf
+            Version Date                                                                   2014.4.19
+            arXiv ID                                                                     1312.6034v2
+            Common                                               Paper put the authors in that order
+
+621788      Title                                         Teaching a Robot Dog to Pee Beer - YouTube
+                                                                                                    
+            Author                                                        Michael Reeves and YouTube
+            URL                                                         https://youtu.be/tqsy9Wtr1qE
+            Version Date                                                                    2021.4.9
+
+170ecf      Title                                                                            Chainer
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                                                                          chainer.org
+
+699ba0      Title                                                                             Pillow
+            Author                                                                 Alex Clark et al.
+            URL                                             https://pillow.readthedocs.io/en/stable/
+            Comment                        On the site it appeared that Alex Clark was the primary a
+                                            uthor and that no other authors are typically considered
+                                                                                     primary as well
+                                                                                                    
+
+889500      Title                          pathlib — Object-oriented filesystem paths — Python 3.9.7
+                                                                                       documentation
+            URL                                       https://docs.python.org/3/library/pathlib.html
+                                                                                                    
+            Author                                                        Python Software Foundation
+
+7c779f      Title                          math — Mathematical functions — Python 3.9.7 documentatio
+                                                                                                   n
+            Author                                                        Python Software Foundation
+            URL                                          https://docs.python.org/3/library/math.html
+                                                                                                    
+
+38e732      Title                          argparse — Parser for command-line options, arguments and
+                                                           sub-commands — Python 3.9.4 documentation
+                                                                                                    
+            Author                                                        Python Software Foundation
+            URL                                      https://docs.python.org/3/library/argparse.html
+                                                                                                    
+            Revision date                                                                  2021.4.19
+            Fetched                                                                    2021.4.19 EDT
+
+b042b0      Title                                           numpy.unravel_index — NumPy v1.20 Manual
+            Author                                                                SciPy contributors
+            URL                            https://numpy.org/doc/stable/reference/generated/numpy.un
+                                                                                    ravel_index.html
+
+328aab      Title                                                  numpy.argmax — NumPy v1.20 Manual
+            Author                                                                SciPy contributors
+            URL                            https://numpy.org/doc/stable/reference/generated/numpy.ar
+                                                                                           gmax.html
+            Fetched                                                     2021.4 EDT or 2021.5.1-2 EDT
+
+3873b6      Title                                                                              NumPy
+            URL                                                                            numpy.org
+
+2dfbd9      Comment                                                               Email (2021.12.27)
+            Author                                                                    David Crandall
+
+71bd98      Comment                        Not sure what reference applies here; also, this referenc
+                                                      e can be used for different unknown references
+                                                                                                    
+
+66d095      Comment                        Suggestions made via email on 2021.12.29 from Donald Will
+                                                                                              iamson
+
+cfb615      Title                          Exploring Representation Learning Through Alternate Lense
+                                                                                                   s
+            Author                                                                  Benjamin Cutilli
+            URL                            github.com/benvcutilli/CountingPlusFriendly/manuscript.pd
+                                                                                                   f
+            Version Date                                                              2021.12.15 EST
+
+e396d8      Title                                                                   Derivative Rules
+            Author                                                                     MathIsFun.com
+            URL                            https://www.mathsisfun.com/calculus/derivatives-rules.htm
+                                                                                                   l
+            Fetched                                                           At least 2021.4.21 EDT
+            Via                                                     Googling "derivative identities"
+
+cf158f      Title                          Incorporating Second-Order Functional Knowledge for Bette
+                                                                                    r Option Pricing
+            Author                         Charles Dugas, Yoshua Bengio, François Bélisle, Claude Na
+                                                                               deau, and René Garcia
+            URL                            https://proceedings.neurips.cc/paper/2000/file/44968aece9
+                                                                    4f667e4095002d140b5896-Paper.pdf
+                                                                                                    
+            Conference                                         Neural Information Processing Systems
+
+32da90      Title                                                                              LaTeX
+            Author                          Frank Mittelbach, Joseph Wright, Rainer Schöpf, Bruno Le
+                                           Floch, Chris Rowley, David Carlise, Jonas Jared Jacek, Jo
+                                           hannes Brams, Enrico Gregorio, Javier Bezos, Ulrike Fishe
+                                            r, Will Robertson, Phelype Oleinik, Marcel Krüger, Denys
+                                           Duchier, Michael Downes, Robin Fairbairns, Morten Høgholm
+                                                   , Alan Jeffrey, Thomas Lotze, and Martin Schröder
+                                                                                                    
+                                                                                                    
+                                                                                                    
+            URL                                                                    latex-project.org
+            Comment                        Authors from Denys Duchier onward were sorted by descendi
+                                           ng priority assumed to be implied in "Former Team Members
+                                                      " at https://www.latex-project.org/about/team/
+                                                                                                    
+
+658323      Title                          collections — Container datatypes — Python 3.9.6 document
+                                                                                               ation
+            URL                                   https://docs.python.org/3/library/collections.html
+                                                                                                    
+            Author                                                        Python Software Foundation
+
+39e3c0      Title                                                                        softplus.py
+            Author                                                                    User "chainer"
+            URL                            https://github.com/chainer/chainer/blob/v7.7.0/chainer/fu
+                                                                      nctions/activation/softplus.py
+                                                                                                    
+            Fetched                                                             Around 2021.4.24 EDT
+
+b72fa5      Title                                            Functions — Chainer 7.8.0 documentation
+            URL                            https://docs.chainer.org/en/stable/reference/functions.ht
+                                                                                                  ml
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+
+45a312      Title                                 chainer.FunctionNode — Chainer 7.8.0 documentation
+                                                                                                    
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                             ainer.FunctionNode.html
+
+d1423b      Title                                     chainer.Variable — Chainer 7.8.0 documentation
+                                                                                                    
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                                 ainer.Variable.html
+
+96f1da      Title                                                                 _backprop_utils.py
+            Author                                                                    User "chainer"
+            URL                            https://github.com/chainer/chainer/blob/f53e57434089fa6f8
+                                                  dfe93a1306ba394cbabf8ad/chainer/_backprop_utils.py
+                                                                                                    
+            Chainer version                                                                    7.7.0
+
+c3e7d9      Title                             Define your own function — Chainer 7.7.0 documentation
+                                                                                                    
+            Author                                      Preferred Networks, Preferred Infrastructure
+                                                                                                    
+            URL                             https://docs.chainer.org/en/stable/guides/functions.html
+                                                                                                    
+            Fetched                        late 2020 or early 2021 (timezone unknown), 2021.4.24 EDT
+                                                                                                    
+
+16c481      Title                                               Module — PyTorch 1.9.0 documentation
+            Author                                                      Non-specific PyTorch authors
+            URL                            https://pytorch.org/docs/stable/generated/torch.nn.Module
+                                                                                               .html
+
+307958      Title                                         chainer.Link — Chainer 7.8.0 documentation
+                                                                                                    
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                                     ainer.Link.html
+
+c72348      Title                          copy — Shallow and deep copy operations — Python 3.9.4 do
+                                                                                         cumentation
+            Author                                                        Python Software Foundation
+            URL                            https://docs.python.org/3/library/copy.html?highlight=cop
+                                                                                       y#module-copy
+            Fetched                                                                    2021.4.24 EDT
+
+faa580      Title                                      NumPy: Logarithm with base n - Stack Overflow
+                                                                                                    
+            Author                                           Users "dwitvliet" and "Philipp Stephan"
+            URL                            https://stackoverflow.com/questions/25169297/numpy-logari
+                                                                                     thm-with-base-n
+            Fetched                                                                    2021.4.18 EDT
+            Version Date                                                               2020.1.31 EDT
+            Via                              Google-searching for "numpy logarithm with custom base"
+                                                                                                    
+
+554041      Title                                    Programming Guide :: CUDA Toolkit Documentation
+                                                                                                    
+            Author                                                                NVIDIA Corporation
+            URL                            https://docs.nvidia.com/cuda/cuda-c-programming-guide/ind
+                                                                                             ex.html
+
+976898      Title                                                    CUDA Toolkit | NVIDIA Developer
+            Author                                                                NVIDIA Corporation
+            URL                                            https://developer.nvidia.com/cuda-toolkit
+                                                                                                    
+
+938dad      Title                                                                The Matrix Cookbook
+            Authors                        Kaare Brandt Petersen, Michael Syskind Pedersen (I assume
+                                               it is in that order because the book has it that way)
+                                                                                                    
+            URL                            https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pd
+                                                                                                   f
+            Published                                                                     2012.11.15
+
+867913      Title                          Batch Normalization: Accelerating Deep Network Training b
+                                                                 y Reducing Internal Covariate Shift
+                                                                                                    
+            Author                                                Sergey Ioffe and Christian Szegedy
+            URL                                                 https://arxiv.org/pdf/1502.03167.pdf
+            arXiV ID                                                                    1502.03167v3
+            Date of paper                                                                   2015.3.2
+            Comment                                                   Authors in same order as paper
+
+f5ff13      Title                          chainer.links.BatchNormalization — Chainer 7.8.0 document
+                                                                                               ation
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                 ainer.links.BatchNormalization.html
+                                                                                                    
+
+442c02      Title                                                             batch_normalization.py
+            Author                                                                    User "chainer"
+            URL                            https://github.com/chainer/chainer/blob/v7.7.0/chainer/li
+                                                            nks/normalization/batch_normalization.py
+                                                                                                    
+            Fetched                                                               First half of 2021
+            Commit hash                                     6264c21937efacf8c2b744e78a3714964864b95e
+
+1e9156      Title                                 chainer.links.Linear — Chainer 7.8.0 documentation
+                                                                                                    
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://github.com/chainer/chainer/blob/master/chainer/li
+                                                                            nks/connection/linear.py
+                                                                                                    
+            Commit hash                       6264c21937efacf8c2b744e78a3714964864b95e at the latest
+                                                                                                    
+
+bffa08      Title                                              Deep Sparse Rectifier Neural Networks
+            Author                                  Xavier Glorot, Antoine Bordes, and Yoshua Bengio
+                                                                                                    
+            URL                                     https://proceedings.mlr.press/v15/glorot11a.html
+                                                                                                    
+            Conference                     International Conference on Artificial Intelligence and S
+                                                                                           tatistics
+            Year                                                                                2011
+            Comments                       Authors were shown on that site in that order, so I copie
+                                                                                        d said order
+
+481502      Title                               chainer.functions.relu — Chainer 7.7.0 documentation
+                                                                                                    
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                           ainer.functions.relu.html
+                                                                                                    
+
+16ccf1      Comment                                       Slack DM from Ali Varamesh on 2018.2.7 EST
+                                                                                                    
+
+e1d64c      Title                          Batch Renormalization: Towards Reducing Minibatch Depende
+                                                                      nce in Batch-Normalized Models
+                                                                                                    
+            Author                                                                      Sergey Ioffe
+            URL                                                 https://arxiv.org/pdf/1702.03275.pdf
+            arXiv ID                                                                    1702.03275v2
+            Version date                                                                   2017.3.30
+
+7ca151      Title                          chainer.links.BatchRenormalization — Chainer 7.8.0 docume
+                                                                                             ntation
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                               ainer.links.BatchRenormalization.html
+                                                                                                    
+
+b3cf40      Title                           A Large Contextual Dataset for Classification, Detection
+                                                             and Counting of Cars with Deep Learning
+                                                                                                    
+            Author                         T. Nathan Mundhenk, Goran Konjevod, Wesam A. Salka, and K
+                                                                                          ofi Boakye
+            URL                            https://gdo152.llnl.gov/cowc/mundhenk_et_al_eccv_2016.pdf
+                                                                                                    
+            Version Date                                                                        2016
+            Conference                                        European Conference on Computer Vision
+            Comment                        Precedence of authors are based on how they are listed in
+                                                                                           the paper
+
+2c77d4      Title                          Rethinking the Inception Architecture for Computer Vision
+                                                                                                    
+            Author                         Christian Szegedy, Vincent Vanhoucke, Serge Ioffe, and Jo
+                                                                                      nathan Schlens
+            URL                                                 https://arxiv.org/pdf/1512.00567.pdf
+            arXiV ID                                                                    1512.00567v3
+            Version Date                                                                  2015.12.11
+            Comment                         Authors were listed one-by-one as they were shown in the
+                                                                                               paper
+
+5b1f25      Comment                        Talking (or emailing or whatever) with David Crandall aro
+                                                                                und the fall of 2017
+
+61fceb      Title                                                                               json
+            Author                                                        Python Software Foundation
+            URL                                          https://docs.python.org/3/library/json.html
+                                                                                                    
+
+7214f3      Title                                              Matplotlib: A 2D graphics environment
+            Author                                                                J.D. Hunter et al.
+            URL                                                 https://doi.org/10.1109/MCSE.2007.55
+            Journal                                               Computing in Science & Engineering
+            Issue Year                                                                          2007
+            Number                                                                                 3
+            Volume                                                                                 9
+            Comment                        Pages 95 and 90 are the end and start of this article. Pu
+                                           blished by IEEE Computer Society. All info here except th
+                                           e "et al." was asked to be cited by https://matplotlib.or
+                                                                  g/stable/users/project/citing.html
+                                                                                                    
+                                                                                                    
+
+3e890c      Title                          chainer.datasets.LabeledImageDataset — Chainer 7.8.0 docu
+                                                                                           mentation
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                             ainer.datasets.LabeledImageDataset.html
+                                                                                                    
+
+7674ac      Comment                                             Might have been an in-person meeting
+
+88c6d0      Title                                                                           lec6.pdf
+            Author                         Geoffrey Hinton, Nitish Srivastava, Kevin Swersky (author
+                                                            s appeared in that order on first slide)
+                                                                                                    
+            URL                            http://www.cs.toronto.edu/~hinton/coursera/lecture6/lec6.
+                                                                                                 pdf
+            Fetched                                                  2021.4.16 EDT and 2021.4.17 EDT
+            Via                                                                             Googling
+            Comment                        https://towardsdatascience.com/understanding-rmsprop-fast
+                                           er-neural-network-learning-62e116fcf29a, in section 1, su
+                                           ggests that this is the correct reference for RMSprop see
+                                           ing as these are just slides which appear to be "unpublis
+                                           hed" (the word chosen by that Towards Data Science sectio
+                                                                                                  n)
+                                                                                                    
+                                                                                                    
+
+3c31a8      Title                                                                         rmsprop.py
+            Author                                                                    User "chainer"
+            URL                            https://github.com/chainer/chainer/blob/v7.7.0/chainer/op
+                                                                                 timizers/rmsprop.py
+            Fetched                                                                    2021.4.17 EDT
+
+13668a      Title                                chainer.functions.sin — Chainer 7.7.0 documentation
+                                                                                                    
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                            ainer.functions.sin.html
+                                                                                                    
+
+79c583      Title                            chainer.functions.sigmoid — Chainer 7.7.0 documentation
+                                                                                                    
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                        ainer.functions.sigmoid.html
+                                                                                                    
+
+f8aaea      Email Information              This was, I believe, one or more emails in which Bruce to
+                                           ld me to limit the number of processes and/or threads I'm
+                                                               using. Probably was around late 2018.
+                                                                                                    
+
+5b1d7a      Title                                   chainer.get_device — Chainer 7.8.0 documentation
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                               ainer.get_device.html
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+
+a4f797      Title                           chainer.training.Extension — Chainer 7.8.0 documentation
+                                                                                                    
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                       ainer.training.Extension.html
+                                                                                                    
+
+083483      Title                           chainer.optimizers.RMSprop — Chainer 7.8.0 documentation
+                                                                                                    
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                       ainer.optimizers.RMSprop.html
+                                                                                                    
+
+05c8ff      Title                                                                            PyTorch
+            Author                                                                          Multiple
+            URL                                                                  https://pytorch.org
+
+9f139d      Title                          multiprocessing — Process-based parallelism — Python 3.9.
+                                                                                     7 documentation
+            Author                                                        Python Software Foundation
+            URL                               https://docs.python.org/3/library/multiprocessing.html
+                                                                                                    
+
+9858b9      Title                          python - Matplotlib - Fail to allocate bitmap - Stack Ove
+                                                                                               rflow
+            Author                                                  Users "Jordy", Valentino Lorentz
+            URL                            https://stackoverflow.com/questions/53897248/matplotlib-f
+                                                                              ail-to-allocate-bitmap
+            Fetched                                                                    2021.6.23 EDT
+            Version Date                                 Starting 2018.12.22, ending 2018.12.31, EDT
+                                                                                                    
+            Via                                    I googled the error "[f]ailed to allocate bitmap"
+                                                                                                    
+
+f58355      Title                          chainer.training.extensions.ProgressBar — Chainer 7.8.0 d
+                                                                                        ocumentation
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                          ainer.training.extensions.ProgressBar.html
+                                                                                                    
+
+a2a49d      Title                                Standard ECMA-404: The JSON Data Interchange Syntax
+                                                                                                    
+            Author                                                                ECMA International
+            Edition                                                                              2nd
+            Version Date                                                                     2017.12
+            URL                            https://www.ecma-international.org/wp-content/uploads/ECM
+                                                                 A-404_2nd_edition_december_2017.pdf
+                                                                                                    
+
+4ee6c6      Title                                    Built-in Functions — Python 3.9.4 documentation
+                                                                                                    
+            Author                                                        Python Software Foundation
+            URL                                     https://docs.python.org/3/library/functions.html
+                                                                                                    
+
+f14ddd      Title                          random — Generate pseudo-random numbers — Python 3.9.7 do
+                                                                                         cumentation
+            Author                                                        Python Software Foundation
+            URL                                        https://docs.python.org/3/library/random.html
+                                                                                                    
+
+3e1f51      Title                          chainer.iterators.MultiprocessIterator — Chainer 7.8.0 do
+                                                                                         cumentation
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                           ainer.iterators.MultiprocessIterator.html
+                                                                                                    
+
+2ea3fa      Comment                        Profiling the program showed this, but I can't remember h
+                                                                                                  ow
+
+448261      Title                                     torch.utils.data — PyTorch 1.9.1 documentation
+                                                                                                    
+            Author                                                                          Multiple
+            URL                                            https://pytorch.org/docs/stable/data.html
+                                                                                                    
+
+ba7b10      Title                             chainer.dataset.Iterator — Chainer 7.8.0 documentation
+                                                                                                    
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                         ainer.dataset.Iterator.html
+                                                                                                    
+
+f832fc      Title                          chainer.iterators.MultithreadIterator — Chainer 7.8.0 doc
+                                                                                          umentation
+            Author                              Preferred (Networks/Infrastructure), possibly others
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                            ainer.iterators.MultithreadIterator.html
+                                                                                                    
+
+09bb19      Title                                    chainer/iterator.py at v7.8.0 · chainer/chainer
+                                                                                                    
+            Author                                                           Whoever wrote this file
+            URL                            https://github.com/chainer/chainer/blob/v7.8.0/chainer/da
+                                                                                   taset/iterator.py
+            Git hash                                        0e5d6127ebc9adb8112442c6e3a8a2abe9e3b007
+
+863f65      Title                                                                            Shapely
+            Author                         See "Credits" on https://shapely.readthedocs.io/en/stable
+                                                                                       /project.html
+            URL                                            https://shapely.readthedocs.io/en/stable/
+                                                                                                    
+
+40ceda      Title                           algorithm - Finding if two polygons Intersect in Python?
+                                                     - Geographic Information Systems Stack Exchange
+                                                                                                    
+            Author                              Users "radouxju", "Martin Thoma", "Devdatta Tengshe"
+                                                                                                    
+            URL                            https://gis.stackexchange.com/questions/90055/how-to-find
+                                                                -if-two-polygons-intersect-in-python
+                                                                                                    
+            Fetched                                                                         2017.8/9
+            Via                                                                      Probably Google
+
+3e46ce      Comment                        Discussion with David Crandall, approximately in the fall
+                                                                                             of 2017
+
+a9bde3      Title                                                         https://docs.python.org/3/
+            Author                                                        Python Software Foundation
+            URL                                           https://docs.python.org/3/library/sys.html
+                                                                                                    
+
+ce8e49      Title                                       CS B551: Elements of Artificial Intelligence
+                                                                                                    
+            Author                          David Crandall, Sven Bambach, Zhenhua Chen, Shujon Naha,
+                                                          Yang Zhang, Hanfei Mei, and Tejashree Khot
+                                                                                                    
+            School                                                    Indiana University Bloomington
+            Semester                                                                       Fall 2017
+            Department                                           School of Informatics and Computing
+
+e5d7be      Title                                       CS B551: Elements of Artificial Intelligence
+                                                                                                    
+            Author                         David Crandall, Ali Varamesh, Zehua Zhang, and Ben Cutill
+                                                                                                   i
+            School                                                    Indiana University Bloomington
+            Semester                                                                     Spring 2017
+            Department                                           School of Informatics and Computing
+
+a0256e      Comment                                                        Email from David Crandall
+            Date                                                                           2017.9.23
+
+0b1618      Title                          Understanding the Ability of Deep Neural Networks to Coun
+                                                                    t Connected Components in Images
+                                                                                                    
+            Author                                                       Shuyue Guan and Murray Loew
+            URL                                                 https://arxiv.org/pdf/2101.01386.pdf
+            arXiV ID                                                                    2101.01386v1
+            Version Date                                                                    2021.1.5
+
+222b7f      Title                                           The MIT License | Open Source Initiative
+            Author                                                            Open Source Initiative
+            URL                                                  https://opensource.org/licenses/MIT
+            Fetched                                                                   2021.12.14 EST
+            Via                                                                       Googled for it
+
+7ffa04      Title                                                    CIFAR-10 and CIFAR-100 datasets
+            Author                                                                   Alex Krizhevsky
+            URL                                          https://www.cs.toronto.edu/~kriz/cifar.html
+                                                                                                    
+            Fetched                                                                   2021.12.10 EST
+
+e1b8ca      Title                                           The MNIST Database of Handwritten Digits
+            Author                         Yann LeCun, Corinna Cortes, Christopher J.C. Burges (orde
+                                                                                     r as presented)
+            URL                                                    http://yann.lecun.com/exdb/mnist/
+
+c7fedb      Title                              Learning Multiple Layers of Features from Tiny Images
+                                                                                                    
+            URL                            https://www.cs.toronto.edu/~kriz/learning-features-2009-T
+                                                                                               R.pdf
+            Author                                                                   Alex Krizhevsky
+            Date of Paper                                                                   2009.4.8
+            Page                                                                                  32
+            Comment                        "URL", the paper's year, "Title", and "Author" values nee
+                                           ded to be included according to https://www.cs.toronto.ed
+                                                                     u/~kriz/cifar.html, "Reference"
+                                                                                                    
+            Dataset homepage                             https://www.cs.toronto.edu/~kriz/cifar.html
+                                                                                                    
+
+c214f9      Title                                           Intriguing Properties of Neural Networks
+            Author                          Christan Szgedey, Wojciech Zaremba, Ilya Sutskever, Joan
+                                                Bruna, Dumitru Erhan, Ian Goodfellow, and Rob Fergus
+                                                                                                    
+            arXiV ID                                                                     1312.6199v4
+            URL                                                  https://arxiv.org/pdf/1312.6199.pdf
+            Date of paper                                                                  2014.2.19
+            Comment                                               Author order as presented in paper
+
+702285      Title                          argparse — Parser for command-line options, arguments and
+                                                           sub-commands — Python 3.9.7 documentation
+                                                                                                    
+            Author                                                        Python Software Foundation
+            URL                                      https://docs.python.org/3/library/argparse.html
+                                                                                                    
+
+f0143f      Title                                     Explaining and Harnessing Adversarial Examples
+                                                                                                    
+            Author                                Ian Goodfellow, Jonathan Shlens, Christian Szegedy
+                                                                                                    
+            URL                                                  https://arxiv.org/pdf/1412.6572.pdf
+            arXiV ID                                                                     1412.6572v3
+            Version Date                                                                   2015.3.20
+            Comment                        Order of authors was taken from the order of the resource
+                                                                                                    
+
+7e5d83      Title                          Towards Deep Learning Models Resistant to Adversarial Att
+                                                                                                acks
+            Author                         Alexsander Madry, Alexsander Makelov, Ludwig Schmidt, Dim
+                                                                      itri Tsipras, and Adrian Vladu
+                                                                                                    
+            URL                                                 https://arxiv.org/pdf/1706.06083.pdf
+            Version Date                                                                    2019.9.4
+            arXiV ID                                                                    1706.06083v4
+            Comment                        Authors listed as they appear in https://arxiv.org/abs/17
+                                                                                            06.06083
+
+1b849a      Title                             chainer.training.Updater — Chainer 7.8.0 documentation
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                         ainer.training.Updater.html
+                                                                                                    
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+
+f1523f      Title                            chainer.dataset.Converter — Chainer 7.8.0 documentation
+                                                                                                    
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                        ainer.dataset.Converter.html
+                                                                                                    
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+
+4ab53d      Title                          Obfuscated Gradients Give a False Sense of Security: Circ
+                                                          umventing Defenses to Adversarial Examples
+                                                                                                    
+            Author                                  Anish Athalye, Nicolas Carlini, and David Wagner
+                                                                                                    
+            URL                                                 https://arxiv.org/pdf/1802.00420.pdf
+            arXiV ID                                                                    1802.00420v4
+            Version Date                                                                   2018.7.31
+            Comment                        Authors follow the order set out in the author list of th
+                                                                                             e paper
+
+197141      Title                                                          Adversarial Logit Pairing
+            Author                                     Harini Kannan, Alexey Kurakin, Ian Goodfellow
+                                                                                                    
+            URL                                                 https://arxiv.org/pdf/1803.06373.pdf
+            arXiV ID                                                                    1803.06373v1
+            Version Date                                                                   2018.3.16
+            Comment                        Having Kannan come first, then Kurakin, and finally Goodf
+                                           ellow in the author list is from https://arxiv.org/abs/18
+                                                                                            03.06373
+                                                                                                    
+
+8247c4      Title                                                                         Cleverhans
+            Author                         At least the Cleverhans Lab (see https://github.com/cleve
+                                           rhans-lab/cleverhans/blob/master/README.md) for what is a
+                                                                   t least a more comprehensive list
+                                                                                                    
+            URL                                         https://github.com/cleverhans-lab/cleverhans
+                                                                                                    
+
+b8bf89      Title                                                                             InText
+            Author                                                                  Benjamin Cutilli
+            URL                                                        github.com/benvcutilli/InText
+
+3f00f2      Title                          re — Regular expression operations — Python 3.9.7 documen
+                                                                                              tation
+            URL                                            https://docs.python.org/3/library/re.html
+                                                                                                    
+            Author                                                        Python Software Foundation
+
+5af28f      Title                          chainer.links.Convolution2D — Chainer 7.8.0 documentation
+                                                                                                    
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                           ainer.links.Convolution2D.html#chainer.links.Convolution2
+                                                                                                   D
+
+cf684f      Title                          chainer.functions.mean_squared_error — Chainer 7.8.0 docu
+                                                                                           mentation
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                             ainer.functions.mean_squared_error.html
+                                                                                                    
+
+7d9306      Title                          chainer.training.updaters.StandardUpdater — Chainer 7.8.0
+                                                                                       documentation
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                           ainer.training.updaters.StandardUpdater.html#chainer.trai
+                                                                       ning.updaters.StandardUpdater
+                                                                                                    
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+
+964016      Title                                               im2col — Chainer 7.8.0 documentation
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                         ainer.functions.im2col.html
+                                                                                                    
+
+ef4545      Title                             chainer.functions.matmul — Chainer 7.7.0 documentation
+                                                                                                    
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+            Fetched                                                                         2021 EDT
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                         ainer.functions.matmul.html
+                                                                                                    
+
+f9d804      Title                                                               Scientific Computing
+            Author                                                                   Randall Bramley
+            When                                                                           Fall 2017
+            School                                                    Indiana University Bloomington
+            Comment                                                 This was a graduate-level course
+
+e10c70      Title                             chainer.links.Classifier — Chainer 7.8.0 documentation
+                                                                                                    
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                         ainer.links.Classifier.html
+                                                                                                    
+
+966bc2      Title                                            Extension — Chainer 7.8.0 documentation
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                       ainer.training.Extension.html
+                                                                                                    
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+
+b177d3      Title                               chainer/squared_error.py at v7.8.0 · chainer/chainer
+                                                                                                    
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+            URL                            https://github.com/chainer/chainer/blob/v7.8.0/chainer/fu
+                                                                       nctions/loss/squared_error.py
+                                                                                                    
+            Fetched                                                                       2021.9 EDT
+            git commit                                      522e017a18008ee00e39f4ae4b30f4f9db3824b2
+
+b177d3      Title                               chainer/squared_error.py at v7.8.0 · chainer/chainer
+                                                                                                    
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+            URL                            https://github.com/chainer/chainer/blob/v7.8.0/chainer/fu
+                                                                       nctions/loss/squared_error.py
+                                                                                                    
+            Fetched                                                                       2021.9 EDT
+            git commit                                      522e017a18008ee00e39f4ae4b30f4f9db3824b2
+
+1b144c      Title                                chainer.functions.sum — Chainer 7.8.0 documentation
+                                                                                                    
+            Author                         Either Preferred Networks, Preferred Infrastructure, othe
+                                                                                    rs, or all three
+            URL                            https://docs.chainer.org/en/stable/reference/generated/ch
+                                                                            ainer.functions.sum.html
+                                                                                                    
+
+7a1513      Title                                           torch.norm — PyTorch 1.8.1 documentation
+            URL                            https://pytorch.org/docs/stable/generated/torch.norm.html
+                                                                                                    
+
+4d49cb      Title                                    torch.Tensor.norm — PyTorch 1.9.0 documentation
+                                                                                                    
+            URL                            https://pytorch.org/docs/stable/generated/torch.Tensor.no
+                                                                                             rm.html
+
+ff3b19      Title                             The N-dimensional array (ndarray) — NumPy v1.21 Manual
+                                                                                                    
+            URL                            https://numpy.org/doc/stable/reference/arrays.ndarray.htm
+                                                                                                   l
+
+11cd4d      Filename                                                                   iuphd-doc.tex
+            URL                            https://math.indiana.edu/documents/IUThesisClass/iuphd-do
+                                                                                              c1.tex
+            Author                          Indiana University Bloomington Department of Mathematics
+                                                                                                    
+            Fetched                                                                   2021.11.18 EST
+
+39dc03      Title                                                                           ProQuest
+            Author                                                                 ProQuest ExLibris
+            URL                                                                         proquest.com
+
+338de7      Title                            Why is there a word limit on the length of my abstract?
+                                                                                                    
+            Author                                                                 ProQuest ExLibris
+            URL                            https://support.proquest.com/s/article/Why-is-there-a-wor
+                                                                d-limit-on-the-length-of-my-abstract
+                                                                                                    
+            Fetched                                                                   2021.12.15 EST
+            Via                                      searching using https://support.proquest.com/s/
+                                                                                                    
+
+a58954      Title                                                                           pdflatex
+            Author                         Han The Tan, Petr Sojka, Jiri Zlatuska, Peter Breitenlohn
+                                           er (though they mention that there are other, less contri
+                                           buting, authors); authors were in that order in the man p
+                                                                                                 age
+                                                                                                    
+            URL                                                 https://tug.org/applications/pdftex/
+
+dde20c      Title                                                         CSCI-Y 792 Master's Thesis
+            Author                           Luddy School of Informatics, Computing, and Engineering
+                                                                                                    
+            School                                                    Indiana University Bloomington
+
+fb55b2      Title                                                                           Python 3
+            Author                                                        Python Software Foundation
+            URL                                                                           python.org
+
+d7e76f      Title                                                                           BibLaTeX
+            Author                         In order of appearance: Philip Lehman, Joseph Wright, Aud
+                                                                       rey Boruvka, and Phillip Kime
+                                                                                                    
+            URL                                                        https://ctan.org/pkg/biblatex
+
+d51208      Filename                                                                       iuphd.cls
+            Author                          Indiana University Bloomington Department of Mathematics
+                                                                                                    
+            URL                            https://math.indiana.edu/documents/IUThesisClass/iuphd.cl
+                                                                                                   s
+            Fetched                                                                   2021.11.18 EST
+
+03e540      Title                                                                                Git
+            URL                                                                 https://git-scm.com/
+
+263b52      Title                          geometry – Flexible and complete interface to document di
+                                                                                            mensions
+            Author                          David Carlisle, Hideo Umeki (Carlisle's name came before
+                                                                                              Umeki)
+            URL                                                        https://ctan.org/pkg/geometry
+
+40d9a1      Title                                         calc – Simple arithmetic in LATEX commands
+                                                                                                    
+            Author                          The LaTeX Project Team, Frank Jensen, Kresten Krab Thorp
+                                                                                                    
+            URL                                                            https://ctan.org/pkg/calc
+            Comment                        This reference put Latex Proj. Team, then Jensen, then Th
+                                                                                                 orp
+
+4ae91e      Title                          [1802.00420] Obfuscated Gradients Give a False Sense of S
+                                             ecurity: Circumventing Defenses to Adversarial Examples
+                                                                                                    
+            Author                                                                Cornell University
+            Fetched                                                                     2021.8.5 EDT
+            URL                                                     https://arxiv.org/abs/1802.00420
+
+3b3c34      Title                          [1412.6572] Explaining and Harnessing Adversarial Example
+                                                                                                   s
+            Author                                                                Cornell University
+            Fetched                                                                     2021.8.5 EDT
+            URL                                                      https://arxiv.org/abs/1412.6572
+
+81e7d2      Title                               [1312.6199] Intriguing properties of neural networks
+                                                                                                    
+            Author                                                                Cornell University
+            Fetched                                                                     2021.8.5 EDT
+            URL                                                      https://arxiv.org/abs/1312.6199
+
+82a75e      Title                          [1412.5068] Towards Deep Neural Network Architectures Rob
+                                                                         ust to Adversarial Examples
+                                                                                                    
+            Author                                                                Cornell University
+            Fetched                                                                     2021.8.5 EDT
+            URL                                                      https://arxiv.org/abs/1412.5068
+
+c7ca55      Title                              [1707.07397] Synthesizing Robust Adversarial Examples
+                                                                                                    
+            Author                                                                Cornell University
+            Fetched                                                                     2021.8.5 EDT
+            URL                                                     https://arxiv.org/abs/1707.07397
+
+f856ce      Title                          [1706.06083] Towards Deep Learning Models Resistant to Ad
+                                                                                   versarial Attacks
+            Author                                                                Cornell University
+            Fetched                                                                   2021.10.27 EDT
+            URL                                                     https://arxiv.org/abs/1706.06083
+
+78168a      Title                          [1512.00567] Rethinking the Inception Architecture for Co
+                                                                                       mputer Vision
+            Author                                                                Cornell University
+            URL                                                     https://arxiv.org/abs/1512.00567
+            Fetched                                                                    2021.11.9 EST
+
+d83ec6      Title                                             [1803.06373] Adversarial Logit Pairing
+            Author                                                                Cornell University
+            URL                                                     https://arxiv.org/abs/1803.06373
+            Fetched                                                                   2021.11.11 EST
+
+b38463      Author                                                              Standford University
+            URL                                     http://ai.stanford.edu/~olga/bibtex/ILSVRC15.bib
+                                                                                                    
+
+8c0643      Title                                             Counting in the Wild - Penguin Dataset
+            Author                                                             Visual Geometry Group
+            URL                                      https://www.robots.ox.ac.uk/~vgg/data/penguins/
+                                                                                                    
+            Fetched                                                                   2021.11.17 EST
+            Version Date                                                                   2016.8.19
+
+b22ee2      Title                          [1312.6034] Deep Inside Convolutional Networks: Visualisi
+                                                    ng Image Classification Models and Saliency Maps
+                                                                                                    
+            Author                                                                Cornell University
+            URL                                                      https://arxiv.org/abs/1312.6034
+            Fetched                                                                   2021.11.17 EST
+
+edb77b      Title                                                   CVPR 2015 Open Access Repository
+            Author                                                    The Computer Vision Foundation
+            URL                            https://openaccess.thecvf.com/content_cvpr_2015/html/Zhan
+                                                    g_Salient_Object_Subitizing_2015_CVPR_paper.html
+                                                                                                    
+            Fetched                                                                      2021.11 EST
+
+5bbe8a      Title                                       Visual Geometry Group - University of Oxford
+                                                                                                    
+            Author                                                             Visual Geometry Group
+            URL                            https://www.robots.ox.ac.uk/~vgg/research/counting/index_
+                                                                                            org.html
+            Fetched                                                                   2021.11.17 EST
+
+f8c2f4      Title                          [2101.01386] Understanding the Ability of Deep Neural Net
+                                                       works to Count Connected Components in Images
+                                                                                                    
+            Author                                                                Cornell University
+            URL                                                     https://arxiv.org/abs/2101.01386
+            Fetched                                                                   2021.11.17 EST
+
+9b0430      Author                                                          IMM Publication Database
+            URL                                   https://www2.imm.dtu.dk/pubdb/pubs/3274-bibtex.txt
+                                                                                                    
+            Fetched                                                                   2021.11.18 EST
+            Via                                                            Found using Google Search
+
+9c1718      Title                          [1705.07204] Ensemble Adversarial Training: Attacks and D
+                                                                                             efenses
+            Author                                                                Cornell University
+            URL                                                     https://arxiv.org/abs/1705.07204
+            Fetched                                                                   2021.11.18 EST
+
+ef0c98      Title                          chainer/chainer2019_bibtex.txt at master · chainer/chaine
+                                                                                          r · GitHub
+            Author                                                                 Prabhat Nagarajan
+            URL                            https://github.com/chainer/chainer/blob/master/chainer201
+                                                                                        9_bibtex.txt
+            Fetched                                                                   2021.11.18 EST
+            git commit                                      1fec9c49431dbe486a621050458c6f18e3d0a110
+
+579b95      Title                              pytorch/CITATION at master · pytorch/pytorch · GitHub
+                                                                                                    
+            Author                          Hong Xu, Kristina Leinweber, Soumith Chintala, and Julia
+                                                                                            Kreutzer
+            URL                              https://github.com/pytorch/pytorch/blob/master/CITATION
+                                                                                                    
+            Fetched                                                                   2021.11.18 EST
+            git commit                                      005146711870a291f4a7a4cc82d97e1e586dcaff
+
+bf1815      Title                          [1506.06579] Understanding Neural Networks Through Deep V
+                                                                                        isualization
+            Author                                                                Cornell University
+            URL                                                     https://arxiv.org/abs/1506.06579
+            Fetched                                                                   2021.11.21 EST
+
+931142      Title                          [1502.03167] Batch Normalization: Accelerating Deep Netwo
+                                                    rk Training by Reducing Internal Covariate Shift
+                                                                                                    
+            Author                                                                Cornell University
+            URL                                                     https://arxiv.org/abs/1502.03167
+            Fetched                                                                   2021.11.23 EST
+
+36027e      Title                          [1702.03275] Batch Renormalization: Towards Reducing Mini
+                                                         batch Dependence in Batch-Normalized Models
+                                                                                                    
+            Author                                                                Cornell University
+            URL                                                     https://arxiv.org/abs/1702.03275
+            Fetched                                                                   2021.11.23 EST
+
+551f5f      Title                                                        [1302.4389] Maxout Networks
+            Author                                                                Cornell University
+            URL                                                      https://arxiv.org/abs/1302.4389
+            Fetched                                                                   2021.11.29 EST
+
+d92f64      Title                          Learning representations by back-propagating errors | Nat
+                                                                                                 ure
+            Author                                                                   Springer Nature
+            URL                                             https://www.nature.com/articles/323533a0
+            Fetched                                                                    2021.12.2 EST
+
+17a481      Title                          On the limited memory BFGS method for large scale optimiz
+                                                                                ation | SpringerLink
+            URL                                 https://link.springer.com/article/10.1007/BF01589116
+                                                                                                    
+            Author                                                                   Springer Nature
+            Fetched                                                                    2021.12.3 EST
+            Via                                    https://en.wikipedia.org/wiki/Limited-memory_BFGS
+                                                                                                    
+
+771484      Title                                                    Limited-memory BFGS - Wikipedia
+            URL                                    https://en.wikipedia.org/wiki/Limited-memory_BFGS
+                                                                                                    
+            Fetched                                                                    2021.12.3 EST
+            Version Date                                                              2021.10.17 UTC
+            Via                                                                               Google
+
+15eca3      Title                          Practical Black-Box Attacks against Machine Learning | Pr
+                                            oceedings of the 2017 ACM on Asia Conference on Computer
+                                                                         and Communications Security
+                                                                                                    
+            Author                                               Association for Computing Machinery
+            URL                                       https://dl.acm.org/doi/10.1145/3052973.3053009
+                                                                                                    
+            Fetched                                                                    2021.12.2 EST
+
+1fea50      Title                                  numpy/CITATION.bib at main · numpy/numpy · GitHub
+                                                                                                    
+            Author                                                                      Pamphile Roy
+            URL                                https://github.com/numpy/numpy/blob/main/CITATION.bib
+                                                                                                    
+            Fetched                                                                    2021.12.4 EST
+
+af489d      Title                                   cupy/CITATION.bib at master · cupy/cupy · GitHub
+                                                                                                    
+            Author                                                                  Kenichi Maehashi
+            URL                                https://github.com/cupy/cupy/blob/master/CITATION.bib
+                                                                                                    
+            Fetched                                                                    2021.12.4 EST
+
+18cb5b      Title                          Shapely/CITATION.txt at main · Toblerity/Shapely · GitHub
+                                                                                                    
+            Author                                       Sean Gilles, Justin Shenk, and Joel Ostblom
+                                                                                                    
+            URL                            https://github.com/Toblerity/Shapely/commits/main/CITATIO
+                                                                                               N.txt
+            Fetched                                                                    2021.12.4 EST
+
+d125a1      Title                          [1704.03453] The Space of Transferable Adversarial Exampl
+                                                                                                  es
+            Author                                                                Cornell University
+            URL                                                     https://arxiv.org/abs/1704.03453
+            Fetched                                                                    2021.12.9 EST
+
+b33a7b      Title                          [1506.02640] You Only Look Once: Unified, Real-Time Objec
+                                                                                         t Detection
+            Author                                                                Cornell University
+            URL                                                     https://arxiv.org/abs/1506.02640
+            Fetched                                                                   2021.12.10 EST
+
+e76013      Title                          Interactive graph cuts for optimal boundary & region segm
+                                           entation of objects in N-D images | IEEE Conference Publi
+                                                                                cation | IEEE Xplore
+                                                                                                    
+            Author                                                                              IEEE
+            URL                                          https://ieeexplore.ieee.org/document/937505
+                                                                                                    
+            Fetched                                                                   2021.12.10 EST
+
+959686      Title                                              Deep Sparse Rectifier Neural Networks
+            Author                                          Proceedings of Machine Learning Research
+            URL                                     https://proceedings.mlr.press/v15/glorot11a.html
+                                                                                                    
+            Fetched                                                                   2021.12.10 EST
+
+ab19c4      Title                          NIPS-2000-incorporating-second-order-functional-knowledge
+                                                                   -for-better-option-pricing-Bibtex
+                                                                                                    
+            Author                                                               NeurIPS Proceedings
+            URL                            https://papers.nips.cc/paper/2000/file/44968aece94f667e40
+                                                                           95002d140b5896-Bibtex.bib
+                                                                                                    
+            Fetched                                                                   2021.12.10 EST
+
+bf3ab8      Title                          Multilayer feedforward networks are universal approximato
+                                                                                  rs - ScienceDirect
+            Author                                                                    Science Direct
+            URL                            https://www.sciencedirect.com/science/article/abs/pii/089
+                                                                                       3608089900208
+            Fetched                                                                   2021.12.10 EST
+
+03f17c      Title                          [1707.08945] Robust Physical-World Attacks on Deep Learni
+                                                                                           ng Models
+            Author                                                                Cornell University
+            URL                                                     https://arxiv.org/abs/1707.08945
+            Fetched                                                                   2021.12.11 EST
+
+617edf      Title                                         [1409.4842] Going Deeper with Convolutions
+                                                                                                    
+            Author                                                                Cornell University
+            URL                                                      https://arxiv.org/abs/1409.4842
+            Fetched                                                                   2021.12.12 EST
+
+90f6cc      Filename                                     10.1007%2F978-3-319-46487-9_48-citation.bib
+                                                                                                    
+            Author                                                                   Springer Nature
+            URL                            https://citation-needed.springer.com/v2/references/10.100
+                                               7/978-3-319-46487-9_48?format=bibtex&flavour=citation
+                                                                                                    
+            Fetched                                                                   2021.12.12 EST
+
+015d90      Filename                                                             10.2307_1418556.txt
+            Author                                                                             JStor
+            URL                            https://www-jstor-org.proxyiub.uits.iu.edu/citation/text/
+                                                                                     10.2307/1418556
+            Fetched                                                                   2021.12.12 EST
+
+a7a363      Title                          The magic number 4±0: a new look at visual numerosity jud
+                                                                                gments: OneSearch@IU
+            Author                                                            EBSCO Industries, Inc.
+            URL                            https://proxyiub.uits.iu.edu/login?url=https://search.ebs
+                                           cohost.com/login.aspx?direct=true&db=edselc&AN=edselc.2-5
+                                                             2.0-0017099920&site=eds-live&scope=site
+                                                                                                    
+            Fetched                                                                   2021.12.12 EST
+
+00916e      Title                          Subitizing: An analysis of its component processes. Journ
+                                                                al of Experimental...: .OneSearch@IU
+                                                                                                    
+            Author                                                            EBSCO Industries, Inc.
+            URL                            https://proxyiub.uits.iu.edu/login?url=https://search.ebs
+                                           cohost.com/login.aspx?direct=true&db=edssch&AN=edssch.oai
+                                           %3aescholarship.org%2fark%3a%2f13030%2fqt9fn27772&site=ed
+                                                                                   s-live&scope=site
+                                                                                                    
+            Fetched                                                                   2021.12.12 EST
+
+1946c9      Title                                 Citing Matplotlib — Matplotlib 3.8.3 documentation
+                                                                                                    
+            Author                                                       Matplotlib development team
+            URL                              https://matplotlib.org/stable/users/project/citing.html
+                                                                                                    
+            Comment                        I forgot to add this reference when I finished thesis; th
+                                           is may not be the exact original place; the version numbe
+                                                               r in the title almost certainly isn't
+                                                                                                    
+
+b07a1b      Title                          Master's: Formatting: Theses & Dissertations: The Univers
+                                                 ity Graduate School: Indiana University Bloomington
+                                                                                                    
+            Author                                                    Indiana University Bloomington
+            URL                            https://graduate.indiana.edu/thesis-dissertation/formatti
+                                                                                     ng/masters.html
+            Fetched                                                                   2021.12.31 EST
+
+adf890      Title                                                                            amsmath
+            Author                                                     American Mathematical Society
+            URL                                                         https://ctan.org/pkg/amsmath
+
+b9ecb1      Title                                                                           graphicx
+            Author                            David Carlise, Sebastian Rants, and the LaTeX3 Project
+                                                                                                    
+            URL                                                        https://ctan.org/pkg/graphicx
+            Comment                                            Website had the authors in this order
+
+1e66fe      Comment                                           Email from David Crandall on 2021.12.6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INTEXT INTERNAL ONLY
+Counting/detection.py^c152b972f86f4eac283582519c7cc1f58126cecf686cc112a8e4515e8ed5e6c9
+Counting/LaTeX/nonliteraturereview.tex^7c2256e15d94f479796e8e9a3f84885f4fdcccd8d347eeecb4ff9e9056edfc49
+Counting/LaTeX/understandingtheability.tex^7feacb52ceda9ff5c5323acb3352efaf95fc7293f6f0a17125eecb47dca5dafc
+Counting/LaTeX/learningtocount.tex^3b7ce45d628fcc857087fe3f0e62e270850f1425a8c0da3ed413e324231aa477
+Counting/LaTeX/deepinsideconvolutionalnetworks.tex^4478dcac8948ded132726fb3509b72f7cbcc5e8d01af84a7deb24de5575811d7
+Counting/LaTeX/salientobjectsubitizing.tex^53e883f758375b02e7fc75a8e44fa3ef52ac67a96fe0361781b1a1995e99f2c7
+Counting/LaTeX/countinginthewild.tex^e2e57f29de779dc666e0bdfb76e66724985f822b5e6f32ade630e731dedc76ec
+Counting/test.py^77a5ce7090b47d8714493ce2f6d4134ec0964e256e790d47d729b198f95c898e
+Counting/README^7df937b3e0d1e55c91578ee9bbed29fcd9c3dec0a70aa326fd1328509d99f13c
+Counting/networks.py^0c5eea7b88c435f1a53a81861696cae34f9800ef8fdc166afbf2b16b5884725c
+Counting/common.py^dfcdf097c6273a752e672f5dcee324ea8588fc1eb7f64f4d08c08e3a459ee3a3
+Counting/learn.py^4c13704564ffc8c61aa94415788d481ca46d225eb50346f61f73b242d809e174
+Counting/replacementiterator.py^2917108755c9c8e378319981fee05ec4fafd1ad32acd151f328b50914f41acc4
+Counting/sampler.py^64b0b7d584c26795d7652afd48b02ce8f7e5d5fbcb3cf58cb6f724a700f1b719
+LICENSE^00698157e14a2478b88bb42c4d32c6e73eb2e5f56c7bcbfdb915a047667423b0
+conclusion.tex^b8a7f6bbec13553b3f21b70fd02066cf937374a0287af16e5e848cbe220fbf98
+Friendly/LaTeX/ensemble.tex^50d558d5829ff40a83791abb146a30390774fe564d18d72b069da7b9907b1912
+Friendly/LaTeX/pairwise.tex^5778090efc889cc55019a2530514fdd2113456c2cc5464fdb22a5a126c75a0e3
+Friendly/LaTeX/harnessing.tex^a9cf70ad68211610cd8d231c7fa30fdd49080fd6e54881d42475a5be3563677b
+Friendly/LaTeX/towardsgu.tex^425487b477a0b781538cf241f0e259963f7cd50788c01a080132ce76a1b8c57a
+Friendly/LaTeX/results.tex^36d9e42bdc032c37673a83e2ae7d00ad963f134103e5c205a95351c1b0f0239f
+Friendly/LaTeX/elastic.tex^a9afbdacefaca6e4921180559f4a4a109cf67db9d2c06077c8814d7c80c74f83
+Friendly/LaTeX/angular.tex^c4bd1d61b832ba9cd957080171afd38e00a0e90f30f3dabdd5bf6bd06effb508
+Friendly/LaTeX/gradientbased.tex^afbd1d6ee3686d5043fbc5027dcacfe686781c9aad6d9f01eea63af35b100e69
+Friendly/LaTeX/obfuscated.tex^02576d7df309d0e0c33d5c2d016e5657caa79d00bd75bf59981c01527189f169
+Friendly/LaTeX/adversariallogit.tex^d9b0f1e21e140e7a5de507cedc457018de1a34b44fd5de7deaa146cf3b56ad7b
+Friendly/LaTeX/towardsmadry.tex^6776ff46021dafcc75201e8fd985672cd06b6853e341b8fe8462418751440b2d
+Friendly/LaTeX/intriguingproperties.tex^7f50ff9188dc5a959d4cad14cfd7bfb49cb2e5f7b741d11fb7811825e535f176
+Friendly/testbench.py^5bfef5024119f11cc90d99ef9066ef9f4f682f47c5f82c6c0e1705da42a0e423
+Friendly/README^7cd05a34b7a8c2777599b41ffb85d9b50db113858a05a59bb07dc62dc31139d5
+Friendly/workbench.py^6cbfe1a1c9677bb12f9ab0e219ba18d5608a72449632cba9d485e46c6152bea2
+Friendly/networkcomponents.py^a3386fc444e37c384bfe9f2199dd043338db1d5918c13ef4a6edda5c1627c35b
+Friendly/networks.py^b6bdcce96cdcf2074c4531b726b09d3fa036665034af8095cfa9b459b043298a
+Friendly/RMaxDMaxModifier.py^7a45d489141a0ea29db71ec21d07501576015bdd61f5d9c5bf63bdf2fde7f742
+Friendly/tackons.py^bd7cb41c13f5fdda2f3758169df3bed319b9ad8f5d382d7c14256286c88379ed
+Friendly/common.py^2390f130451f21f3c6d49725e8e1ea1610507ba4ea9a3b6935832bcf5b2bf0f2
+Friendly/attacks.py^8674dc5bb342f5f46d3d0c9504d7d66bd78e21d62a081dbaba59cee72295a551
+abstract.tex^ca43aecda8854d030dfbded22ead695837c44f39fa5b73622d10d28c391c93ef
+README^4abfa60fd98280c147f1f9242e89cdd38264486cb51f36c2231d3f9d426d7412
+cv.tex^a3117f57d583302ff8c1cac20cf2d61cc2395ef6312350256889a7faa04729df
+biblatex.bib^294aa6efc4f811f1920b5fdf7bc30cb6cade59e531d93394a61a7eb98a43f1d3
+manuscript.tex^a7aa4cfa0798ed1a8ae81752eab00629b149e2cf02abcf268aff9c879de67889
+introduction.tex^eff1d73265a7e6e7a41e4bb17e247058611bec75b9c2d44a9c86396c165d0ac2
+iuphd.cls^2f46464f03309d1c7b5db38eb57687d680748ab9c84769aa58fd83075f15b0b9
+references^ff235a1ca56ca0f54225f819ca427635e941674142631f7da6bb6f569d9c0e45

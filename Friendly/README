@@ -1,0 +1,23 @@
+The purpose of this folder is to address the concept of "adversarial examples", initially developed
+(or popularized, not sure) by [c214f9]. Specifically, the aim here is to develop a
+defense against such vulnerabilities. This code supports two datasets: CIFAR-10[c7fedb] and
+MNIST[e1b8ca]. To be consistent with [c214f9], we use the inverted version of
+MNIST. CIFAR-10 is supported at the suggestion by Ali Varamesh to do so. This code also allows
+black-box attacks (with testbench.py), an idea from [c214f9] (and endorsed by
+[4ab53d]). All pixel values in adversarial examples seen by the network are
+integral (but in floating-point format) because [f0143f] points out that they are w.r.t.
+images and camera sensors. Therefore it makes sense to only allow attacks that end up being integral
+(they might have been trying to say this as well). Further, we tentatively support adversarial
+training[f0143f][7e5d83] via FGSM[f0143f] and PGD[7e5d83], the latter of
+which was implemented because [197141] uses it.
+
+This is meant to be similar to Cleverhans[8247c4], which is a benchmarking suite for
+adversarial examples. Parts made to achieved this goal are marked in the comments with †.
+
+The title is "Friendly" as it is kind of the opposite of adversarial; the idea is that if a network
+is protected, it is "Friendly", although that doesn't really make any sense.
+
+These files contain ^^^ -- and intextconfig.json exists -- for future use of InText[b8bf89].
+
+Models mentioned in manuscript.pdf in the folder above this one can be found at
+https://drive.google.com/file/d/1iiOc-0kEMeIH890TuI8UZodXR8ZDv-J3/view?usp=sharing

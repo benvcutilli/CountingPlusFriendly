@@ -18,7 +18,7 @@ localization as a byproduct of the second derivative of counting, which, althoug
 due to time limits we had and ambiguity in the paper, differs from their methods; one of them uses
 the output of the model as a guide for a separate counting method, for example.
 
-% ^^^edit^^^: change "that" to "than"
+% [2dfbd9]: change "that" to "than"
 With respect to \cite{guan2021understanding}, they make much stronger claims than this author feels
 comfortable with. We aim to show that these networks can indeed subitize (up to a
 object-dissimilarity limit), regardless of whether or not it is terribly accurate. Further, they
@@ -163,7 +163,7 @@ the one from which we backpropagated) from the set of unassigned pixels. We do t
 (where $i$ is from the remaining pixels) until we no longer have no more shapes to find (based on
 the count output by the network).
 
-% Other papers^^^missing^^^ that do qualitative analysis look into results without it being in a
+% Other papers[71bd98] that do qualitative analysis look into results without it being in a
 % dedicated results section, so I decided that it is OK for me to do that here (don't remember if I
 % used those previous works for this reason before I started writing this, or as justification for
 % keeping it the way I have it while I was writing this).
@@ -324,6 +324,6 @@ on the object itself. However, it is also possible that the network learns to id
 that many objects in the image share, and, as a result, its children pixels do not span the object
 entirely, making bounding box prediction problematic.
 
-% ^^^edit2^^^ said that the first quotation mark wasn't the correct kind, which made me realize that
+% [66d095] said that the first quotation mark wasn't the correct kind, which made me realize that
 % I didn't use the proper `` and '', so this was changed.
 Our code and models can be found in the ``Counting'' folder at \cite{mycode}.

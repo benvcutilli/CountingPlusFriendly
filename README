@@ -1,15 +1,15 @@
-This folder and subfolders contains LaTeX (.tex) files. They are compiled with ^^^pdflatex^^^.
+This folder and subfolders contains LaTeX (.tex) files. They are compiled with [a58954].
 Friendly/LaTeX/adversariallogit.tex, and Friendly/LaTeX/ensemble.tex were kept a littler shorter
 than the long summaries as David Crandall recommended that some be short and others be
-long. Also, an approximate 50 pages of content is a rough requirement of ^^^mastersthesis^^^.
+long. Also, an approximate 50 pages of content is a rough requirement of [dde20c].
 
-This is the content behind my master's thesis^^^cutilli^^^. The in-text citations that you see here
-are processed with InText^^^intext^^^. References can be found in the "references" file. The
+This is the content behind my master's thesis[cfb615]. The in-text citations that you see here
+are processed with InText[b8bf89]. References can be found in the "references" file. The
 metadata file for InText is intextconfiguration.json. Files with InText markers can be found under
 "uncited". As is usual, ^^^ was chosen for markers because it is not any language feature in
-Python^^^python^^^, JSON^^^json^^^, CUDA C++^^^gpulanguage^^^ or LaTeX^^^latex^^^ and
-Biblatex^^^biblatex^^^. All computational code runs with Chainer^^^chainer^^^ on
-Python 3^^^python^^^ unless otherwise noted. All .py files are written in Python 3 with the
+Python[fb55b2], JSON[a2a49d], CUDA C++[554041, throughout] or LaTeX[32da90] and
+Biblatex[d7e76f]. All computational code runs with Chainer[170ecf] on
+Python 3[fb55b2] unless otherwise noted. All .py files are written in Python 3 with the
 same exception mentioned in the previous sentence.
 
 The requirements for the manuscript part of this thesis were partially set by Professor David
@@ -18,10 +18,10 @@ Crandall. Specifically, he said
       them
     - Some papers' literature reviews will be short, others will be long; I can't remember which
       ones fit the former and the latter
-    - To use the ^^^iulatex^^^ and ^^^classfile^^^ templates
+    - To use the [11cd4d] and [d51208] templates
     - Figures count towards page length
 Anything else he mentioned can be found throughout this project.
 
-We use Git^^^sourcecontrol^^^ to track changes of everything here. NOTE: This commit isn't the
+We use Git[03e540] to track changes of everything here. NOTE: This commit isn't the
 original; the original is 1947e2a765e20c87e080da22b4ecc4da1f272b02. That was the version that was
 graded and accepted.

@@ -1,0 +1,25 @@
+\cite{kannan2018adversarial} came up with the idea of \textit{Adversarial Logit Pairing} (ALP). This
+method puts both images with and without the perturbation through the network, but, instead of just
+making sure that the adversarial image predicts the same class as the normal one (a la
+\cite{goodfellow2015explaining}), the $L_2$ distance between the logit outputs of both images is
+also penalized. In the case of a batch of images, the average $L_2$ norm is used.
+
+They also attempted \textit{Clean Logit Pairing} (CLP) which involves no adversarial examples.
+Instead, they did the same logit penalty between pairs of undisturbed images in the batch, but did
+not do adversarial training. Again, this penalty is averaged over every image in the batch. They
+point out that the effect of this is that the logits for each image will be more even due to the
+fact that the other image probably has substantially different logits, so the penalty will bring the
+two logits together. Because of this, they also tried a technique called \textit{Logit Squeezing}.
+If the aforementioned cause of the effectiveness of Clean Logit Pairing is what is happening, then
+it may make sense to just penalize the norm of the logits of each image (instead of the distance
+between two different images). It is not stated, but each of these penalties (one per image) are
+probably also averaged as in the previous methods.
+
+When compared to a modified version of the PGD defense that originated in \cite{madry2019deep}, ALP
+ended up modestly beating PGD against both white and black box (transfer) attacks using PGD on
+MNIST\cite{lecun} and Street View House Numbers (SVHN)\cite{yuval}, and only lost by a small amount
+when testing clean examples from SVHN. It also performed best against other defenses on tests on
+ImageNet\cite{ILSVRC15}, both black-box and white-box, while non-adversarial performance remained on
+par with the PGD-based defense. Both CLP and Logit Squeezing were as good from a white-box
+perspective (although not quite good as ALP), and was comparable in other contexts.
+
