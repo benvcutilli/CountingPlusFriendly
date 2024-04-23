@@ -199,7 +199,7 @@ class BatchNormalizationCustom(chainer.Link):
             # of this layer to generate the parameters in these variables is what
             # [442c02] does (or some other class in Chainer, possibly
             # [1e9156]), so this may be why I do this here (code not copied from
-            # anywhere; the pattern would have been the only thing taken from there).
+            # anywhere; the code pattern would have been the only thing taken from there).
             self.scale = chainer.Parameter(chainer.numpy.array(1, dtype=chainer.numpy.float32))
             self.push  = chainer.Parameter(chainer.numpy.array(1, dtype=chainer.numpy.float32))
 

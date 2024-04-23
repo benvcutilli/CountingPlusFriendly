@@ -513,13 +513,6 @@
             "Fetched": "2021.9 EDT",
             "git commit": "522e017a18008ee00e39f4ae4b30f4f9db3824b2"
         },
-        "chainermeansquarederrorcode": {
-            "Title": "chainer/squared_error.py at v7.8.0 · chainer/chainer",
-            "Author": "Either Preferred Networks, Preferred Infrastructure, others, or all three",
-            "URL": "https://github.com/chainer/chainer/blob/v7.8.0/chainer/functions/loss/squared_error.py",
-            "Fetched": "2021.9 EDT",
-            "git commit": "522e017a18008ee00e39f4ae4b30f4f9db3824b2"
-        },
         "explaining": {
             "Title": "Explaining and Harnessing Adversarial Examples",
             "Author": "Ian Goodfellow, Jonathan Shlens, Christian Szegedy",

@@ -732,12 +732,12 @@ e10c70      Title                             chainer.links.Classifier — Chain
             Author                         Either Preferred Networks, Preferred Infrastructure, othe
                                                                                     rs, or all three
 
-b177d3      Title                               chainer/squared_error.py at v7.8.0 · chainer/chainer
+7adec0      Title                          chainer/mean_squared_error.py at v7.8.0 · chainer/chainer
                                                                                                     
             Author                         Either Preferred Networks, Preferred Infrastructure, othe
                                                                                     rs, or all three
             URL                            https://github.com/chainer/chainer/blob/v7.8.0/chainer/fu
-                                                                       nctions/loss/squared_error.py
+                                                                  nctions/loss/mean_squared_error.py
                                                                                                     
             Fetched                                                                       2021.9 EDT
             git commit                                      522e017a18008ee00e39f4ae4b30f4f9db3824b2
@@ -1179,7 +1179,7 @@ Counting/LaTeX/salientobjectsubitizing.tex^53e883f758375b02e7fc75a8e44fa3ef52ac6
 Counting/LaTeX/countinginthewild.tex^e2e57f29de779dc666e0bdfb76e66724985f822b5e6f32ade630e731dedc76ec
 Counting/test.py^77a5ce7090b47d8714493ce2f6d4134ec0964e256e790d47d729b198f95c898e
 Counting/README^7df937b3e0d1e55c91578ee9bbed29fcd9c3dec0a70aa326fd1328509d99f13c
-Counting/networks.py^0c5eea7b88c435f1a53a81861696cae34f9800ef8fdc166afbf2b16b5884725c
+Counting/networks.py^ad9af3ba979960594dfcd08c85fec3bc77f6deb868ed72ed21a0d36c425623c0
 Counting/common.py^dfcdf097c6273a752e672f5dcee324ea8588fc1eb7f64f4d08c08e3a459ee3a3
 Counting/learn.py^4c13704564ffc8c61aa94415788d481ca46d225eb50346f61f73b242d809e174
 Counting/replacementiterator.py^2917108755c9c8e378319981fee05ec4fafd1ad32acd151f328b50914f41acc4
@@ -1202,9 +1202,9 @@ Friendly/testbench.py^5bfef5024119f11cc90d99ef9066ef9f4f682f47c5f82c6c0e1705da42
 Friendly/README^7cd05a34b7a8c2777599b41ffb85d9b50db113858a05a59bb07dc62dc31139d5
 Friendly/workbench.py^6cbfe1a1c9677bb12f9ab0e219ba18d5608a72449632cba9d485e46c6152bea2
 Friendly/networkcomponents.py^a3386fc444e37c384bfe9f2199dd043338db1d5918c13ef4a6edda5c1627c35b
-Friendly/networks.py^b6bdcce96cdcf2074c4531b726b09d3fa036665034af8095cfa9b459b043298a
+Friendly/networks.py^2b994bbea211da970ce2ac9d9d9b2c4017522fee49cd68585e74b3efe3a13329
 Friendly/RMaxDMaxModifier.py^7a45d489141a0ea29db71ec21d07501576015bdd61f5d9c5bf63bdf2fde7f742
-Friendly/tackons.py^bd7cb41c13f5fdda2f3758169df3bed319b9ad8f5d382d7c14256286c88379ed
+Friendly/tackons.py^006b4ae609e6e56faf09fed8534f987ac1ab5c5fa5add465adb38ec3ff9c14d6
 Friendly/common.py^2390f130451f21f3c6d49725e8e1ea1610507ba4ea9a3b6935832bcf5b2bf0f2
 Friendly/attacks.py^8674dc5bb342f5f46d3d0c9504d7d66bd78e21d62a081dbaba59cee72295a551
 abstract.tex^ca43aecda8854d030dfbded22ead695837c44f39fa5b73622d10d28c391c93ef
@@ -1214,4 +1214,4 @@ biblatex.bib^294aa6efc4f811f1920b5fdf7bc30cb6cade59e531d93394a61a7eb98a43f1d3
 manuscript.tex^a7aa4cfa0798ed1a8ae81752eab00629b149e2cf02abcf268aff9c879de67889
 introduction.tex^eff1d73265a7e6e7a41e4bb17e247058611bec75b9c2d44a9c86396c165d0ac2
 iuphd.cls^2f46464f03309d1c7b5db38eb57687d680748ab9c84769aa58fd83075f15b0b9
-references^ff235a1ca56ca0f54225f819ca427635e941674142631f7da6bb6f569d9c0e45
+references^a0e919d54fc155d1c97b224820333159ba27308ccd77d313f81a2958d071d019

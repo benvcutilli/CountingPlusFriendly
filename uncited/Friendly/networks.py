@@ -141,7 +141,7 @@ class SzegedyLinear(chainer.Chain):
 
         hyperparameters["in0out1"] =  {
                                         # This entry was switched to a 2D kernel because, to
-                                        # implement black box attacks datasets,
+                                        # implement black box attacks, datasets
                                         # were switched to 4D
                                         "ksize": (length1D, length1D),
                                         kwargNames["in"]: depth,

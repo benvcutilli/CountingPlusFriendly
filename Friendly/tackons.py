@@ -31,7 +31,7 @@ def hessianNorm(batch, loss):
 # there are in "guesses"
 def squaredDistance(guesses, labels, aggregate=True):
     
-    # Using subtraction in the numerator may have been from [b177d3, MeanSquaredError.forward_(cpu/gpu)(...) method],
+    # Using subtraction in the numerator may have been from [7adec0, MeanSquaredError.forward_(cpu/gpu)(...) method],
     # [b177d3, body of SquaredError.forward(...)], or some other reference, but I mean I would have done it this
     # way even if I hadn't seen that reference, so this may be a needless citation (and, again, I'm
     # not even sure if I used the reference for this). They also might have done one big subtraction
